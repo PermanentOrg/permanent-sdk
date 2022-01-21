@@ -4,7 +4,7 @@
   "description": "Functional Node.js SDK for Permanent.org",
   "main": "src/index.ts",
   "scripts": {
-    "lint": "eslint ./src --ext .ts,.tsx",
+    "lint": "eslint ./src --ext .ts",
     "build": "tsc",
     "test": "jest"
   },
