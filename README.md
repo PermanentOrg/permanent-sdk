@@ -1,6 +1,19 @@
 # permanent-sdk
 This project is a TypeScript SDK for interfacing with Permanent.org's API.
 
+## Code
+
+The project is organized as follows:
+
+```
+- docs // Contains documentation related to the project
+- src  // Contains all project code
+| - sdk   // The core / exposed functionality of the SDK
+| - utils.ts
+| - types.ts
+| - index.ts // project root, exports the full contents of /sdk and the externally needed types from types.js
+```
+
 ## Contributing
 
 Contributors to this repository agree to adhere to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). To report violations, get in touch with engineers@permanent.org.
