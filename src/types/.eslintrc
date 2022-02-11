@@ -1,0 +1,5 @@
+{
+  "rules": {
+		"sort-exports/sort-exports": [2, { "sortDir": "asc" }]
+	}
+}
