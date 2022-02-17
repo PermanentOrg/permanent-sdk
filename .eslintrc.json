@@ -5,7 +5,8 @@
     },
     "plugins": [
       "@typescript-eslint",
-      "eslint-plugin-import"
+      "eslint-plugin-import",
+      "sort-exports"
     ],
     "extends": [
       "plugin:@typescript-eslint/all",
