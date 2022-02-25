@@ -15,7 +15,8 @@
     "rules": {
       "import/prefer-default-export": "off",
       "import/no-default-export":  "error",
-      "@typescript-eslint/prefer-readonly-parameter-types": "off"
+      "@typescript-eslint/prefer-readonly-parameter-types": "off",
+      "sort-exports/sort-exports": [2, { "sortDir": "asc" }]
     },
     "env": {
       "es6": true,
