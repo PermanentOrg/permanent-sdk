@@ -10,7 +10,8 @@ jobs:
         with:
           node-version: 16.x
       - run: npm install --production=false
-      - run: npm test
+      - run: npm test -- --coverage
+      - uses: codecov/codecov-action@v2
 
   run_regression_tests:
     runs-on: ubuntu-latest
