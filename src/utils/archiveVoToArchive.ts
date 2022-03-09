@@ -6,8 +6,10 @@ import {
   ArchiveType,
   AccessRole,
   ArchiveStatus,
-} from '../types'
+} from '../types';
 import { archiveVoToThumbnails } from './archiveVoToThumbnails';
+import { itemVoToItem } from './itemVoToItem';
+import { folderVoToFolder } from './folderVoToFolder';
 import { isArchiveType } from './isArchiveType';
 import { isAccessRole } from './isAccessRole';
 import { isArchiveStatus } from './isArchiveStatus';
@@ -27,7 +29,8 @@ export const archiveVoToArchive = (archiveVo: ArchiveVo): Archive => ({
   type: typeCodeToArchiveType(archiveVo.type),
   name: archiveVo.fullName,
   description: archiveVo.description,
-  children: [],
+  items: archiveVo.itemVOs.map(itemVoToItem),
+  folders: archiveVo.childFolderVOs.map(folderVoToFolder),
   currentAccountAccessRole: accessRoleCodeToAccessRole(archiveVo.accessRole),
   thumbnails: archiveVoToThumbnails(archiveVo),
   containsPublicContent: archiveVo.public,
