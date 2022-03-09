@@ -8,7 +8,6 @@ import type { ArchiveStatus } from './ArchiveStatus';
 export interface Archive {
   id: number;
   slug: string;
-  displayDate: Date;
   type: ArchiveType;
   name: string;
   description: string;
