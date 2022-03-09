@@ -5,4 +5,5 @@ export enum ArchiveType {
   Nonprofit = 'type.archive.nonprofit',
   Organization = 'type.archive.organization',
   Person = 'type.archive.person',
+  Unknown = 'unknown', // This status does not exist on the backend
 }

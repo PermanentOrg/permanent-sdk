@@ -8,4 +8,5 @@ export enum AccessRole {
   Manager = 'access.role.manager',
   Owner = 'access.role.owner',
   Viewer = 'access.role.viewer',
+  Unknown = 'unknown', // This status does not exist on the backend
 }
