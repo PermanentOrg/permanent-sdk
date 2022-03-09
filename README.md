@@ -26,4 +26,4 @@ Found a vulnerability? Report this and any other security concerns to engineers@
 
 ## License
 
-This code is free software licensed as [AGPLv3](LICENSE), or at your option, any final, later version published by the Free Software Foundation.
+This code is free and open source software licensed under the [MIT](LICENSE) License.
