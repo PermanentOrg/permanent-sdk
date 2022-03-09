@@ -3,4 +3,5 @@
 export enum ThumbnailStatus {
   Generating = 'status.archive.gen_avatar',
   Ok = 'status.generic.ok',
+  Unknown = 'unknown', // This status does not exist on the backend
 }
