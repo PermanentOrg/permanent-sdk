@@ -11,7 +11,8 @@ export interface Archive {
   type: ArchiveType;
   name: string;
   description: string;
-  readonly children: (Folder | Item)[];
+  readonly folders: Folder[];
+  readonly items: Item[];
   readonly currentAccountAccessRole: AccessRole;
   readonly thumbnails: Thumbnail[];
   readonly containsPublicContent: boolean;
