@@ -1,4 +1,4 @@
-# permanent-sdk
+# @permanentorg/sdk
 This project is a TypeScript SDK for interfacing with Permanent.org's API.
 
 ## Code

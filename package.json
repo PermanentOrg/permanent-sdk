@@ -1,5 +1,5 @@
 {
-  "name": "permanent-sdk",
+  "name": "@permanentorg/sdk",
   "version": "0.0.0",
   "description": "Functional Node.js SDK for Permanent.org",
   "module": "dist/esm/index.js",
@@ -15,6 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/PermanentOrg/permanent-sdk.git"
   },
+  "funding": "https://permanent.org/donate/",
   "author": {
     "name": "Permanent.org",
     "email": "engineers@permanent.org",
@@ -23,6 +24,11 @@
   "contributors": [
     {
       "name": "Natalie Martin"
+    },
+    {
+      "name": "Daniel Schultz",
+      "email": "slifty@gmail.com",
+      "url": "https://slifty.com"
     }
   ],
   "license": "MIT",
@@ -32,6 +38,9 @@
   "engines": {
     "node": ">=14.0"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/PermanentOrg/permanent-sdk#readme",
   "devDependencies": {
     "@tsconfig/esm": "^1.0.0",
