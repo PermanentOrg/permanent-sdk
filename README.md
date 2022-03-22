@@ -1,6 +1,8 @@
 # @permanentorg/sdk
 This project is a TypeScript SDK for interfacing with Permanent.org's API.
 
+You can view [the project's changelog](CHANGELOG.md) to learn more about our releases.
+
 ## Code
 
 The project is organized as follows:
@@ -19,6 +21,8 @@ The project is organized as follows:
 Contributors to this repository agree to adhere to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). To report violations, get in touch with engineers@permanent.org.
 
 The version of NodeJS used for development is specified in `.node-version` located at the project root.
+
+Be sure to include updates to the [changelog](CHANGELOG.md) as part of any contribution.
 
 ## Security
 
