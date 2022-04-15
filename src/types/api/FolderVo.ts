@@ -1,3 +1,16 @@
-// This is a placeholder interface which will ultimately be populated
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface FolderVo {}
+export interface FolderVo {
+  // These fields map to those defined in the base library ArchiveVO
+  // https://github.com/PermanentOrg/back-end/blob/main/api/core/folder/vo/folder.vo.php
+  folderId: number;
+  archiveId: number;
+  displayName: string;
+  displayDT: string;
+
+}
+
+export const defaultFolderVo: FolderVo = {
+  folderId: 0,
+  archiveId: 0,
+  displayName: '',
+  displayDT: '',
+};
