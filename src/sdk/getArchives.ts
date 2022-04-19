@@ -3,10 +3,10 @@ import type {
   ArchiveVo,
 } from '../types';
 import { getAllArchiveVos } from '../api';
-import { convertArchiveVosToArchives } from '../utils';
+import { archiveVoToArchive } from '../utils';
 
-export function getArchives(authentication: string): Archive[] {
-  const archiveVos = getAllArchiveVos(authentication);
-  const archives = convertArchiveVosToArchives(archiveVos);
+export async function getArchives(authentication: string): Promise<Archive[]> {
+  const archiveVos = await getAllArchiveVos(authentication);
+  const archives = archiveVos.map(archiveVoToArchive);
   return archives;
 }

@@ -46,6 +46,7 @@
     "@tsconfig/esm": "^1.0.0",
     "@tsconfig/node14": "^1.0.1",
     "@types/jest": "^27.4.0",
+    "@types/node-fetch": "^2.6.1",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "eslint": "^8.7.0",
@@ -58,6 +59,6 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "node-fetch": "^3.2.0"
+    "node-fetch": "^2.6.7"
   }
 }
