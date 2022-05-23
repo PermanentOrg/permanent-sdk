@@ -6,6 +6,7 @@
   "main": "dist/cjs/index.js",
   "scripts": {
     "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --fix --ext .ts",
     "build": "npm run build:node && npm run build:browser",
     "build:node": "tsc -p tsconfig.node.json",
     "build:browser": "tsc -p tsconfig.browser.json",
