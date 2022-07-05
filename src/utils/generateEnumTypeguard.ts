@@ -1,3 +1,5 @@
+import { RecordType, Status } from '../types';
+
 // This is a modified version of code written by StackOverflow user @jcalz
 // https://stackoverflow.com/a/58278753/159522
 export const generateEnumTypeguard = <GenericEnum>(genericEnum: GenericEnum) =>
@@ -6,3 +8,6 @@ export const generateEnumTypeguard = <GenericEnum>(genericEnum: GenericEnum) =>
     const validTokens = Object.values(genericEnum);
     return validTokens.includes(token);
   };
+
+export const isRecordType = generateEnumTypeguard(RecordType);
+export const isStatus = generateEnumTypeguard(Status);

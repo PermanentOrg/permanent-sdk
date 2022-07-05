@@ -16,5 +16,3 @@ export enum RecordType {
   Unknown = 'type.record.unknown',
   Video = 'type.record.video',
 }
-
-
