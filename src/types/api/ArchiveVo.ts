@@ -75,6 +75,5 @@ export const defaultArchiveVo: ArchiveVo = {
   company: '',
   description: '',
   createdDT: '',
-  updateDT: '',
-  status: '',
+  updatedDT: '',
 };

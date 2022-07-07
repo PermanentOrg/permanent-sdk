@@ -1,4 +1,6 @@
-export interface RecordVo {
+import type { BaseVo } from './BaseVo';
+
+export interface RecordVo extends BaseVo {
   // These fields map to those defined in the base library ArchiveVO
   // https://github.com/PermanentOrg/back-end/blob/main/api/core/record/vo/record.vo.php
   recordId: number;
@@ -7,8 +9,6 @@ export interface RecordVo {
   displayName: string;
   uploadFileName: string;
   displayDT: string;
-  createdDT: string;
-  updatedDT: string;
 }
 
 export const defaultRecordVo: RecordVo = {
