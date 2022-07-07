@@ -6,6 +6,8 @@ export interface Record {
   displayDate: Date;
   type: RecordType;
   name: string;
+  fileUrl: string;
+  downloadUrl: string;
   readonly status: Status;
   readonly createdAt: Date;
   readonly updatedAt: Date;

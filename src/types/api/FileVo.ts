@@ -8,3 +8,13 @@ export interface FileVo extends BaseVo {
   fileUrl: string;
   downloadUrl: string;
 }
+
+export const defaultFileVo: FileVo = {
+  fileId: 0,
+  size: 0,
+  format: '',
+  fileUrl: '',
+  downloadUrl:'',
+  createdDT: '',
+  updatedDT: '',
+};
