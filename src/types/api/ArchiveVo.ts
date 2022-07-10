@@ -1,3 +1,5 @@
+import type { JSONSchemaType } from 'ajv';
+import { ajv } from '../../utils/ajv';
 import type { BaseVo } from './BaseVo';
 
 export interface ArchiveVo extends BaseVo {
@@ -13,3 +15,29 @@ export const defaultArchiveVo: ArchiveVo = {
   createdDT: '',
   updatedDT: '',
 };
+
+export const archiveVoSchema: JSONSchemaType<ArchiveVo> = {
+  type: 'object',
+  properties: {
+    archiveId: {
+      type: 'integer',
+    },
+    fullName: {
+      type: 'string',
+    },
+    createdDT: {
+      type: 'string',
+    },
+    updatedDT: {
+      type: 'string',
+    },
+  },
+  required: [
+    'archiveId',
+    'fullName',
+    'createdDT',
+    'updatedDT',
+  ],
+};
+
+export const isArchiveVo = ajv.compile(archiveVoSchema);
