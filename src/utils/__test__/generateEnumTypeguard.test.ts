@@ -1,4 +1,4 @@
-import { generateEnumTypeguard } from '../';
+import { generateEnumTypeguard } from '..';
 
 enum TestControlEnum {
   OtherEnumValue = 'otherValue',

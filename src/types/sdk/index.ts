@@ -9,4 +9,3 @@ export * from './RecordType';
 export * from './Status';
 export * from './Thumbnail';
 export * from './ThumbnailStatus';
-

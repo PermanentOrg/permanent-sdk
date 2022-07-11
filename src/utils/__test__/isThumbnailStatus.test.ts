@@ -1,5 +1,5 @@
 import { ThumbnailStatus } from '../../types';
-import { isThumbnailStatus } from '../';
+import { isThumbnailStatus } from '..';
 
 describe('isThumbnailStatus', () => {
   it('should detect thumbnail status values', () => {

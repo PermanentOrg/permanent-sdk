@@ -2,16 +2,16 @@ import type {
   RecordVo,
   Record,
 } from '../types';
-
 import { RecordType, Status } from '../types';
 import { isRecordType, isStatus } from './generateEnumTypeguard';
 
+const recordTypeToRecordType = (recordType: string): RecordType => (
+  isRecordType(recordType) ? recordType : RecordType.Unknown
+);
 
-const recordTypeToRecordType = (recordType: string): RecordType =>
-  isRecordType(recordType) ? recordType : RecordType.Unknown;
-
-const recordStatusToStatus = (status: string): Status =>
-  isStatus(status) ? status : Status.Undefined;
+const recordStatusToStatus = (status: string): Status => (
+  isStatus(status) ? status : Status.Undefined
+);
 
 export const recordVoToRecord = (recordVo: RecordVo): Record => {
   const createdAt = new Date(recordVo.createdDT);

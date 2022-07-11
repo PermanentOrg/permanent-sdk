@@ -6,8 +6,9 @@ import type {
 import { ThumbnailStatus } from '../types';
 import { isThumbnailStatus } from './isThumbnailStatus';
 
-const statusCodeToThumbnailStatus = (statusCode: string): ThumbnailStatus =>
-  isThumbnailStatus(statusCode) ? statusCode : ThumbnailStatus.Unknown;
+const statusCodeToThumbnailStatus = (statusCode: string): ThumbnailStatus => (
+  isThumbnailStatus(statusCode) ? statusCode : ThumbnailStatus.Unknown
+);
 
 export const archiveVoToThumbnails = (archiveVo: ArchiveVo): Thumbnail[] => {
   const status = statusCodeToThumbnailStatus(archiveVo.thumbStatus);
@@ -30,8 +31,8 @@ export const archiveVoToThumbnails = (archiveVo: ArchiveVo): Thumbnail[] => {
       resolution: 2000,
       url: archiveVo.thumbURL2000,
     },
-  ].filter(thumbnail => thumbnail.url !== '')
-    .map(thumbnail => ({
+  ].filter((thumbnail) => thumbnail.url !== '')
+    .map((thumbnail) => ({
       ...thumbnail,
       status,
       createdAt,

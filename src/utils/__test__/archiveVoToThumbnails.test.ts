@@ -7,7 +7,7 @@ import {
 } from '../../types';
 import {
   archiveVoToThumbnails,
-} from '../';
+} from '..';
 
 describe('archiveVoToThumbnails', () => {
   it('should convert all thumbnails if present', () => {

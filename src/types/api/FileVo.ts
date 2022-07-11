@@ -1,4 +1,5 @@
 import type { BaseVo } from './BaseVo';
+
 export interface FileVo extends BaseVo {
   // These fields map to those defined in the base library FileVO
   // https://github.com/PermanentOrg/back-end/blob/main/api/core/file/vo/file.vo.php
@@ -14,7 +15,7 @@ export const defaultFileVo: FileVo = {
   size: 0,
   format: '',
   fileUrl: '',
-  downloadUrl:'',
+  downloadUrl: '',
   createdDT: '',
   updatedDT: '',
 };

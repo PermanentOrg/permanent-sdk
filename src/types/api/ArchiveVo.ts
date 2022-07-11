@@ -46,7 +46,7 @@ export const defaultArchiveVo: ArchiveVo = {
   archiveId: 0,
   publicDT: '',
   archiveNbr: 0,
-  'public': false,
+  public: false,
   view: '',
   viewProperty: '',
   thumbArchiveNbr: '',
