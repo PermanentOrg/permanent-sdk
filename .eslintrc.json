@@ -1,7 +1,7 @@
 {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-      "project": "./tsconfig.dev.json"
+      "project": "./tsconfig.json"
     },
     "plugins": [
       "@typescript-eslint",
@@ -10,14 +10,22 @@
     ],
     "extends": [
       "plugin:@typescript-eslint/all",
+      "airbnb-base",
       "airbnb-typescript/base"
     ],
     "rules": {
       "import/prefer-default-export": "off",
       "import/no-default-export":  "error",
-      "@typescript-eslint/prefer-readonly-parameter-types": "off",
-      "sort-exports/sort-exports": [2, { "sortDir": "asc" }]
+      "@typescript-eslint/prefer-readonly-parameter-types": "off"
     },
+    "overrides": [
+      {
+        "files": [ "**/index.ts" ],
+        "rules": {
+          "sort-exports/sort-exports": ["error", { "sortDir": "asc" }]
+        }
+      }
+    ],
     "env": {
       "es6": true,
       "node": true,

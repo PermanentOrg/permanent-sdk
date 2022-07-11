@@ -2,12 +2,13 @@
 module.exports = {
   globals: {
     "ts-jest": {
-      tsconfig: 'tsconfig.dev.json',
+      tsconfig: 'tsconfig.json',
     },
   },
   preset: 'ts-jest',
   testEnvironment: 'node',
   testPathIgnorePatterns: ["<rootDir>/lib/"],
+  collectCoverageFrom: ["src/**/*.ts"],
   silent: true,
   passWithNoTests: true,
 };

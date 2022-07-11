@@ -4,7 +4,7 @@ import type {
 } from '../types';
 
 export const folderVoToFolder = (folderVo: FolderVo): Folder => {
-  const createdAt = new Date(folderVo.createdDT); 
+  const createdAt = new Date(folderVo.createdDT);
   const updatedAt = new Date(folderVo.updatedDT);
   const displayDate = new Date(folderVo.displayDT);
   return {
