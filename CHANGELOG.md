@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.0.0] - 2022-03-21
+## [0.1.0] - 2022-07-14
 ### Added
-- A placeholder project / release with no completed functionality.
+- The `getArchives` function, which will get a list of archives associated with the authorized account.
+- The `Archive` type.
+- The `ClientConfig` type which allows an sdk user to specify their credentials and other configuration settings.
 
-[Unreleased]: https://github.com/permanentorg/permanent-sdk/base/compare/@tvkitchen/base-constants@v0.0.0...HEAD
-[0.0.0]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.0.0
+[Unreleased]: https://github.com/permanentorg/permanent-sdk/base/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.1.0
