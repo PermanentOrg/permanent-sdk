@@ -2,8 +2,12 @@ import type {
   RecordVo,
   Record,
 } from '../types';
-import { RecordType, Status } from '../types';
-import { isRecordType, isStatus } from './generateEnumTypeguard';
+import {
+  RecordType,
+  Status,
+  isRecordType,
+  isStatus,
+} from '../types';
 
 const recordTypeToRecordType = (recordType: string): RecordType => (
   isRecordType(recordType) ? recordType : RecordType.Unknown
