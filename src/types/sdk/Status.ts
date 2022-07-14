@@ -1,3 +1,5 @@
+import { generateEnumTypeguard } from '../../utils';
+
 // These types are defined in the permanent backend:
 // https://github.com/PermanentOrg/back-end/blob/main/library/definition/perm.constants.php
 export enum Status {
@@ -11,3 +13,5 @@ export enum Status {
   Pending = 'status.generic.pending',
   Undefined = 'status.generic.undefined',
 }
+
+export const isStatus = generateEnumTypeguard(Status);
