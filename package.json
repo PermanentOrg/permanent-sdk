@@ -56,10 +56,12 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-sort-exports": "^0.6.0",
     "jest": "^27.4.7",
+    "nock": "^13.2.8",
     "ts-jest": "^27.1.3",
     "typescript": "^4.5.4"
   },
   "dependencies": {
+    "ajv": "^8.11.0",
     "node-fetch": "^2.6.7"
   }
 }
