@@ -1,3 +1,5 @@
+import { generateEnumTypeguard } from '../../utils';
+
 // These types are defined in the permanent backend:
 // https://github.com/PermanentOrg/back-end/blob/main/library/definition/perm.constants.php
 export enum RecordType {
@@ -16,3 +18,5 @@ export enum RecordType {
   Unknown = 'type.record.unknown',
   Video = 'type.record.video',
 }
+
+export const isRecordType = generateEnumTypeguard(RecordType);
