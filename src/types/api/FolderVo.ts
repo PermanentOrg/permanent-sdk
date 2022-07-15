@@ -1,3 +1,5 @@
+import type { JSONSchemaType } from 'ajv';
+import { ajv } from '../../utils/ajv';
 import type { BaseVo } from './BaseVo';
 
 export interface FolderVo extends BaseVo {
@@ -15,3 +17,33 @@ export const defaultFolderVo: FolderVo = {
   createdDT: '',
   updatedDT: '',
 };
+
+export const folderVoSchema: JSONSchemaType<FolderVo> = {
+  type: 'object',
+  properties: {
+    folderId: {
+      type: 'integer',
+    },
+    displayName: {
+      type: 'string',
+    },
+    displayDT: {
+      type: 'string',
+    },
+    createdDT: {
+      type: 'string',
+    },
+    updatedDT: {
+      type: 'string',
+    },
+  },
+  required: [
+    'folderId',
+    'displayName',
+    'displayDT',
+    'createdDT',
+    'updatedDT',
+  ],
+};
+
+export const isFolderVo = ajv.compile(folderVoSchema);

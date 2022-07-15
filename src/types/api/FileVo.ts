@@ -1,3 +1,5 @@
+import type { JSONSchemaType } from 'ajv';
+import { ajv } from '../../utils/ajv';
 import type { BaseVo } from './BaseVo';
 
 export interface FileVo extends BaseVo {
@@ -19,3 +21,41 @@ export const defaultFileVo: FileVo = {
   createdDT: '',
   updatedDT: '',
 };
+
+export const fileVoSchema: JSONSchemaType<FileVo> = {
+  type: 'object',
+  properties: {
+    fileId: {
+      type: 'integer',
+    },
+    size: {
+      type: 'integer',
+    },
+    format: {
+      type: 'string',
+    },
+    fileUrl: {
+      type: 'string',
+    },
+    downloadUrl: {
+      type: 'string',
+    },
+    createdDT: {
+      type: 'string',
+    },
+    updatedDT: {
+      type: 'string',
+    },
+  },
+  required: [
+    'fileId',
+    'size',
+    'format',
+    'fileUrl',
+    'downloadUrl',
+    'createdDT',
+    'updatedDT',
+  ],
+};
+
+export const isFileVo = ajv.compile(fileVoSchema);
