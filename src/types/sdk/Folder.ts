@@ -1,4 +1,4 @@
-import type { Item } from './Item';
+import type { Record } from './Record';
 
 export interface Folder {
   id: number;
@@ -6,7 +6,7 @@ export interface Folder {
   size: number;
   displayDate: Date;
   readonly folders: Folder[];
-  readonly items: Item[];
+  readonly records: Record[];
   readonly createdAt: Date;
   readonly updatedAt: Date;
 }
