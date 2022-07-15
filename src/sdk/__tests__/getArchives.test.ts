@@ -7,7 +7,7 @@ describe('getArchives', () => {
       .get('/api/archive/getAllArchives')
       .replyWithFile(
         200,
-        `${__dirname}/replies/getArchives/multipleArchives.json`,
+        `${__dirname}/fixtures/getArchives/multipleArchives.json`,
         {
           'Content-Type': 'application/json',
         },
