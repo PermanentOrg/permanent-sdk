@@ -1,4 +1,4 @@
-import { generateEnumTypeguard } from '../../utils';
+import { generateEnumTypeguard } from '../../utils/generateEnumTypeguard';
 
 // These types are defined in the permanent backend:
 // https://github.com/PermanentOrg/back-end/blob/main/library/definition/perm.constants.php
