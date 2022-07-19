@@ -7,7 +7,7 @@ module.exports = {
   },
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testPathIgnorePatterns: ["<rootDir>/lib/"],
+  testPathIgnorePatterns: ["<rootDir>/dist/"],
   collectCoverageFrom: ["src/**/*.ts"],
   silent: true,
   passWithNoTests: true,

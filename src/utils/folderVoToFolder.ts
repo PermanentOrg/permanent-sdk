@@ -15,6 +15,6 @@ export const folderVoToFolder = (folderVo: FolderVo): Folder => {
     updatedAt,
     displayDate,
     folders: [],
-    items: [],
+    records: [],
   };
 };
