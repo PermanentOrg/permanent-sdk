@@ -1,20 +1,49 @@
+import { ValidationError } from '../errors';
+import {
+  isFolderVo,
+  isFolderVoArray,
+  isRecordVo,
+  isRecordVoArray,
+} from '../types';
 import type {
   FolderVo,
   Folder,
+  RecordVo,
 } from '../types';
+import { recordVoToRecord } from './recordVoToRecord';
+import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 
-export const folderVoToFolder = (folderVo: FolderVo): Folder => {
-  const createdAt = new Date(folderVo.createdDT);
-  const updatedAt = new Date(folderVo.updatedDT);
-  const displayDate = new Date(folderVo.displayDT);
-  return {
-    id: folderVo.folderId,
-    name: folderVo.displayName,
-    size: 0,
-    createdAt,
-    updatedAt,
-    displayDate,
-    folders: [],
-    records: [],
-  };
+const extractFolderVos = (items: unknown[]): FolderVo[] => {
+  const folderVos = items.filter((item) => isFolderVo(item));
+  if (isFolderVoArray(folderVos)) {
+    return folderVos;
+  }
+
+  throw new ValidationError(
+    'FolderVos were improperly parsed',
+    isFolderVoArray.errors,
+  );
 };
+
+const extractRecordVos = (items: unknown[]): RecordVo[] => {
+  const recordVos = items.filter((item) => isRecordVo(item));
+  if (isRecordVoArray(recordVos)) {
+    return recordVos;
+  }
+
+  throw new ValidationError(
+    'RecordVos were improperly parsed',
+    isRecordVoArray.errors,
+  );
+};
+
+export const folderVoToFolder = (folderVo: FolderVo): Folder => ({
+  id: folderVo.folderId,
+  name: folderVo.displayName,
+  size: 0,
+  createdAt: new Date(formatTimestampAsUtc(folderVo.createdDT)),
+  updatedAt: new Date(formatTimestampAsUtc(folderVo.updatedDT)),
+  displayDate: new Date(formatTimestampAsUtc(folderVo.displayDT)),
+  folders: extractFolderVos(folderVo.ChildItemVOs).map(folderVoToFolder),
+  records: extractRecordVos(folderVo.ChildItemVOs).map(recordVoToRecord),
+});
