@@ -28,9 +28,9 @@ const parseArchiveVoArray = (value: unknown): ArchiveVo[] => {
   );
 };
 
-export async function getAllArchiveVos(
+export const getAllArchiveVos = async (
   clientConfiguration: ClientConfiguration,
-): Promise<ArchiveVo[]> {
+): Promise<ArchiveVo[]> => {
   const response = await makePermanentApiCall(
     clientConfiguration,
     '/archive/getAllArchives',
@@ -38,4 +38,4 @@ export async function getAllArchiveVos(
   );
   const archiveVos = parseArchiveVoArray(await response.json());
   return archiveVos;
-}
+};

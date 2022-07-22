@@ -5,8 +5,8 @@ import type {
 import { getAllArchiveVos } from '../api';
 import { archiveVoToArchive } from '../utils';
 
-export async function getArchives(clientConfiguration: ClientConfiguration): Promise<Archive[]> {
+export const getArchives = async (clientConfiguration: ClientConfiguration): Promise<Archive[]> => {
   const archiveVos = await getAllArchiveVos(clientConfiguration);
   const archives = archiveVos.map(archiveVoToArchive);
   return archives;
-}
+};
