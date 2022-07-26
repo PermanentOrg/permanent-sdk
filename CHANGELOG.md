@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - The `getArchiveFolders` function, which will return an array of child Folders associated with an archive.
+- The `getFolder` function, which will return a folder associated with an archive.
 
 ## [0.1.0] - 2022-07-14
 ### Added
