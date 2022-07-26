@@ -3,7 +3,6 @@ import { ajv } from '../../utils/ajv';
 import type { BaseVo } from './BaseVo';
 import type { FileVo } from './FileVo';
 import {
-  defaultFileVo,
   fileVoSchema,
 } from './FileVo';
 
@@ -13,7 +12,7 @@ export interface RecordVo extends BaseVo {
   recordId: number;
   type: string;
   status: string;
-  file: FileVo;
+  fileVos?: FileVo[];
   displayName: string;
   uploadFileName: string;
   displayDT: string;
@@ -23,7 +22,7 @@ export const defaultRecordVo: RecordVo = {
   recordId: 0,
   type: '',
   status: '',
-  file: defaultFileVo,
+  fileVos: [],
   displayName: '',
   uploadFileName: '',
   displayDT: '',
@@ -43,7 +42,11 @@ export const recordVoSchema: JSONSchemaType<RecordVo> = {
     status: {
       type: 'string',
     },
-    file: fileVoSchema,
+    fileVos: {
+      type: 'array',
+      items: fileVoSchema,
+      nullable: true,
+    },
     displayName: {
       type: 'string',
     },
@@ -64,7 +67,6 @@ export const recordVoSchema: JSONSchemaType<RecordVo> = {
     'recordId',
     'type',
     'status',
-    'file',
     'displayName',
     'uploadFileName',
     'displayDT',
