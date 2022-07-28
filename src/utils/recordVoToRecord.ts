@@ -8,6 +8,7 @@ import {
   isRecordType,
   isStatus,
 } from '../types';
+import { fileVoToFile } from './fileVoToFile';
 
 const recordTypeToRecordType = (recordType: string): RecordType => (
   isRecordType(recordType) ? recordType : RecordType.Unknown
@@ -23,13 +24,13 @@ export const recordVoToRecord = (recordVo: RecordVo): Record => {
   const displayDate = new Date(recordVo.displayDT);
   const type = recordTypeToRecordType(recordVo.type);
   const status = recordStatusToStatus(recordVo.status);
+  const files = (recordVo.fileVos ?? []).map((fileVo) => fileVoToFile(fileVo));
   return {
     id: recordVo.recordId,
     name: recordVo.displayName,
     type,
     status,
-    fileUrl: recordVo.file.fileUrl,
-    downloadUrl: recordVo.file.downloadUrl,
+    files,
     createdAt,
     updatedAt,
     displayDate,
