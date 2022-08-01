@@ -9,6 +9,7 @@ import {
   isStatus,
 } from '../types';
 import { fileVoToFile } from './fileVoToFile';
+import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 
 const recordTypeToRecordType = (recordType: string): RecordType => (
   isRecordType(recordType) ? recordType : RecordType.Unknown
@@ -19,9 +20,9 @@ const recordStatusToStatus = (status: string): Status => (
 );
 
 export const recordVoToRecord = (recordVo: RecordVo): Record => {
-  const createdAt = new Date(recordVo.createdDT);
-  const updatedAt = new Date(recordVo.updatedDT);
-  const displayDate = new Date(recordVo.displayDT);
+  const createdAt = new Date(formatTimestampAsUtc(recordVo.createdDT));
+  const updatedAt = new Date(formatTimestampAsUtc(recordVo.updatedDT));
+  const displayDate = new Date(formatTimestampAsUtc(recordVo.displayDT));
   const type = recordTypeToRecordType(recordVo.type);
   const status = recordStatusToStatus(recordVo.status);
   const files = (recordVo.fileVos ?? []).map((fileVo) => fileVoToFile(fileVo));
