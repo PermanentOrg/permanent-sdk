@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Fixed
 - Record timestamps are now correctly recognized as UTC.
+- The `getFolder` function now actually exists.
 
 ## [0.2.0] - 2022-07-28
 ### Added

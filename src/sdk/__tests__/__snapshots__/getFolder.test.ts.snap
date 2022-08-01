@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFolder should return a Folder 1`] = `
+Object {
+  "createdAt": 2022-07-19T14:00:45.000Z,
+  "displayDate": 2022-06-01T18:44:43.000Z,
+  "folders": Array [
+    Object {
+      "createdAt": 2022-07-19T15:26:40.000Z,
+      "displayDate": 2022-07-19T15:26:40.000Z,
+      "folders": Array [],
+      "id": 7458,
+      "name": "Internal folder",
+      "records": Array [],
+      "size": 0,
+      "updatedAt": 2022-07-19T15:27:06.000Z,
+    },
+  ],
+  "id": 7457,
+  "name": "testing",
+  "records": Array [
+    Object {
+      "createdAt": 2022-07-19T15:26:31.000Z,
+      "displayDate": 2022-06-01T18:44:43.000Z,
+      "files": Array [],
+      "id": 512,
+      "name": "face-in-clouds",
+      "status": "status.generic.ok",
+      "type": "type.record.image",
+      "updatedAt": 2022-07-19T15:30:23.000Z,
+    },
+  ],
+  "size": 0,
+  "updatedAt": 2022-07-19T15:30:22.000Z,
+}
+`;
