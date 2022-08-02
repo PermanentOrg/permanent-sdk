@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - `Records` now have `fileName` which has the full filename associated with a record.
+- The `getRecord` function, which will return a record associated with an archive.
 
 ## [0.2.1] - 2022-08-01
 ### Fixed
