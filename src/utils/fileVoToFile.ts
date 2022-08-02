@@ -1,3 +1,4 @@
+import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 import type {
   File,
   FileVo,
@@ -14,9 +15,10 @@ const toDerivativeType = (input: string): DerivativeType => (
 export const fileVoToFile = (fileVo: FileVo): File => ({
   id: fileVo.fileId,
   derivativeType: toDerivativeType(fileVo.format),
-  fileUrl: fileVo.fileUrl,
-  downloadUrl: fileVo.downloadUrl,
-  checksum: fileVo.checksum,
-  createdAt: new Date(fileVo.createdDT),
-  updatedAt: new Date(fileVo.updatedDT),
+  fileUrl: fileVo.fileURL,
+  downloadUrl: fileVo.downloadURL,
+  checksum: fileVo.md5Checksum,
+  size: fileVo.size,
+  createdAt: new Date(formatTimestampAsUtc(fileVo.createdDT)),
+  updatedAt: new Date(formatTimestampAsUtc(fileVo.updatedDT)),
 });

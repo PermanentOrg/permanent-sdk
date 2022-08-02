@@ -6,6 +6,7 @@ export interface File {
   fileUrl: string;
   downloadUrl: string;
   checksum: string;
+  size: number;
   readonly createdAt: Date;
   readonly updatedAt: Date;
 }
