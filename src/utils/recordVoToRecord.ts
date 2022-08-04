@@ -28,7 +28,8 @@ export const recordVoToRecord = (recordVo: RecordVo): Record => {
   const files = (recordVo.FileVOs ?? []).map((fileVo) => fileVoToFile(fileVo));
   return {
     id: recordVo.recordId,
-    name: recordVo.displayName,
+    displayName: recordVo.displayName,
+    fileName: recordVo.downloadName,
     type,
     status,
     files,

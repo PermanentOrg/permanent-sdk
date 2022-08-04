@@ -6,7 +6,8 @@ export interface Record {
   id: number;
   displayDate: Date;
   type: RecordType;
-  name: string;
+  displayName: string;
+  fileName: string;
   files: File[];
   readonly status: Status;
   readonly createdAt: Date;

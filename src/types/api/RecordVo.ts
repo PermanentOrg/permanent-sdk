@@ -15,6 +15,7 @@ export interface RecordVo extends BaseVo {
   FileVOs?: FileVo[];
   displayName: string;
   uploadFileName: string;
+  downloadName: string;
   displayDT: string;
 }
 
@@ -25,6 +26,7 @@ export const defaultRecordVo: RecordVo = {
   FileVOs: [],
   displayName: '',
   uploadFileName: '',
+  downloadName: '',
   displayDT: '',
   createdDT: '',
   updatedDT: '',
@@ -53,6 +55,9 @@ export const recordVoSchema: JSONSchemaType<RecordVo> = {
     uploadFileName: {
       type: 'string',
     },
+    downloadName: {
+      type: 'string',
+    },
     displayDT: {
       type: 'string',
     },
@@ -69,6 +74,7 @@ export const recordVoSchema: JSONSchemaType<RecordVo> = {
     'status',
     'displayName',
     'uploadFileName',
+    'downloadName',
     'displayDT',
     'createdDT',
     'updatedDT',
