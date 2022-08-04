@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getRecord should return a Record 1`] = `
+Object {
+  "createdAt": 2022-07-19T15:26:31.000Z,
+  "displayDate": 2022-06-01T18:44:43.000Z,
+  "displayName": "face-in-clouds",
+  "fileName": "face-in-clouds.gif",
+  "files": Array [
+    Object {
+      "checksum": "3d05ff3d66c90ac4b37f1db1ad86f657",
+      "createdAt": 2022-07-19T15:26:31.000Z,
+      "derivativeType": "file.format.original",
+      "downloadUrl": "https://localcdn.permanent.org/_slifty/532?t=1659992721&response-content-disposition=attachment%3B+filename%3Dface-in-clouds.gif&Expires=1659992721&Signature=Y9zIEWDt4Qo7i4a257Nwiog30Y~wd1OaIf14FYYT8zAgOSW0x-HPw8Z7HIzmpez8h4OykpMixrYn5YY9ee9wyYf8-~TBFvhd1p1C2InfcQdvrAOYI-~vQWJNsYXSmWE6rfYmN6FYpJE3ToIcSIxD5KwbRuu8IeUy6XbUTZfsxzvA1zGWlzWri8dvezukHyJMx3VedmxOEXgLsX788uh4neqVe9Pmyup-xUZoQd2ng28YG1ruo5oenFUyG6r9ypo1MXv8ZgIAGUGfhvNkTCDHYna4v9-iOZLmzb96DgSliGxFUVBKlInXwkrlVVeB9uuq9Os3-S-Xh8QisGVHeqnZxg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "fileUrl": "https://localcdn.permanent.org/_slifty/532?t=1659992721&Expires=1659992721&Signature=Iv7bicm9FLOgc8u-mJFNg8tqo7fvuWuBtOm78XRN5ctDgcJvfuzPPSUYI54hUg014HMbOVMeenJJ4jiaM306rFaIwzI2AsvcQf4TvvBefISMH-nK0QlYOij27R~gkzptyC7syxqrduWCAKBSDUnEwwIMne3YCcNhyfIzVeNamYpYkkEpKlnPx1ODI7e8A5MZFWeVfhxqnRF-Fh~Otd3JvWiiNu4-YH8oeNGY3X415btWWy-Sz04pwBc3HWnZVfHp-b-J3B6-bQJtdAH4pZe95W44aq9LhK034D-3f8wKKVXyumaC9OslKh6yrIXk7FNnpyxCZXsC8TKgv49EZTfMng__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "id": 532,
+      "size": 349535,
+      "updatedAt": 2022-08-01T21:05:21.000Z,
+    },
+    Object {
+      "checksum": "545af5fb5d5eb3f305cb9fbc66f804ea",
+      "createdAt": 2022-07-19T15:30:21.000Z,
+      "derivativeType": "file.format.converted",
+      "downloadUrl": "https://localcdn.permanent.org/_slifty/533?t=1659992721&response-content-disposition=attachment%3B+filename%3Dface-in-clouds.gif&Expires=1659992721&Signature=duePDIZkFI13EROr3c1FtmgpGpzrjLDIbo4wlQDL5olP1Jh0sbB-EPg4xwLzhhS2v7C0Ptg-xwuLDNJQDEQTDD8wi80S8vYUWCSKss2jfpogXHPLpd7irU06YV5uwEBSujF9T7dI~dlfQo~iK1oxWHHLYjliacXWxqNNsZCV-sndVkGtt4AicBROc85Vu6w7YYSmy3vwT7W7FAOGPgyhQ677fFefCvsXFgVJC52pi0dQ3IqQhahHiCdcSYwio3-V2Ncjb6NSg-pshehaQyaDecH9VAPdaIbGgcS1iCv~NGq440c-kXgM7su5-4MPd-TvDRjE6ZAgYxd8Go6tEXjrzg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "fileUrl": "https://localcdn.permanent.org/_slifty/533?t=1659992721&Expires=1659992721&Signature=jiXtX3urYGktkuuFEhtVHpozOyd6bTTp50VhuUJ~ZROceYpMVWpR1-WT5C0DegJTBffi9sRJ110zOrQX~dm~LXXlCYmodWpAHx5HL5G07AHkRWFlg6pvMWvlmkqXCpiI1fzVuY4W3DhojLn0-GRx4voSl3So8cEmJPtHXvPpAjSOMv-pI2rPaZ86BY9LeMtbf5-cpkaiTR8B9BFCIkadcDd6i-xi-1p98cRuvk0yi6laGH5kw9iZ0T37PV26jCceMlRc~VUliJMB7X3OgZF70jMhEESBS0ThwVjLzjEuCyXQ2lx~o8zYXzS8mVjS7ZbwDu7~o0BiYWUO~SZZ~r-69A__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "id": 533,
+      "size": 137990,
+      "updatedAt": 2022-08-01T21:05:21.000Z,
+    },
+  ],
+  "id": 512,
+  "status": "status.generic.ok",
+  "type": "type.record.image",
+  "updatedAt": 2022-08-02T19:00:38.000Z,
+}
+`;

@@ -22,9 +22,10 @@ Object {
     Object {
       "createdAt": 2022-07-19T15:26:31.000Z,
       "displayDate": 2022-06-01T18:44:43.000Z,
+      "displayName": "face-in-clouds",
+      "fileName": "face-in-clouds.gif",
       "files": Array [],
       "id": 512,
-      "name": "face-in-clouds",
       "status": "status.generic.ok",
       "type": "type.record.image",
       "updatedAt": 2022-07-19T15:30:23.000Z,

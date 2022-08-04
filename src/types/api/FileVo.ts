@@ -8,18 +8,18 @@ export interface FileVo extends BaseVo {
   fileId: number;
   size: number;
   format: string;
-  checksum: string;
-  fileUrl: string;
-  downloadUrl: string;
+  md5Checksum: string;
+  fileURL: string;
+  downloadURL: string;
 }
 
 export const defaultFileVo: FileVo = {
   fileId: 0,
   size: 0,
   format: '',
-  checksum: '',
-  fileUrl: '',
-  downloadUrl: '',
+  md5Checksum: '',
+  fileURL: '',
+  downloadURL: '',
   createdDT: '',
   updatedDT: '',
 };
@@ -36,13 +36,13 @@ export const fileVoSchema: JSONSchemaType<FileVo> = {
     format: {
       type: 'string',
     },
-    checksum: {
+    md5Checksum: {
       type: 'string',
     },
-    fileUrl: {
+    fileURL: {
       type: 'string',
     },
-    downloadUrl: {
+    downloadURL: {
       type: 'string',
     },
     createdDT: {
@@ -56,9 +56,9 @@ export const fileVoSchema: JSONSchemaType<FileVo> = {
     'fileId',
     'size',
     'format',
-    'checksum',
-    'fileUrl',
-    'downloadUrl',
+    'md5Checksum',
+    'fileURL',
+    'downloadURL',
     'createdDT',
     'updatedDT',
   ],
