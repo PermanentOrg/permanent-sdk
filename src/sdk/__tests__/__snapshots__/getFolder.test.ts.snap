@@ -4,10 +4,12 @@ exports[`getFolder should return a Folder 1`] = `
 Object {
   "createdAt": 2022-07-19T14:00:45.000Z,
   "displayDate": 2022-06-01T18:44:43.000Z,
+  "fileSystemCompatibleName": "testing",
   "folders": Array [
     Object {
       "createdAt": 2022-07-19T15:26:40.000Z,
       "displayDate": 2022-07-19T15:26:40.000Z,
+      "fileSystemCompatibleName": "Internal folder",
       "folders": Array [],
       "id": 7458,
       "name": "Internal folder",
@@ -23,7 +25,7 @@ Object {
       "createdAt": 2022-07-19T15:26:31.000Z,
       "displayDate": 2022-06-01T18:44:43.000Z,
       "displayName": "face-in-clouds",
-      "fileName": "face-in-clouds.gif",
+      "fileSystemCompatibleName": "face-in-clouds.gif",
       "files": Array [],
       "id": 512,
       "status": "status.generic.ok",

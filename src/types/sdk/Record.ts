@@ -7,8 +7,8 @@ export interface Record {
   displayDate: Date;
   type: RecordType;
   displayName: string;
-  fileName: string;
   files: File[];
+  readonly fileSystemCompatibleName: string;
   readonly status: Status;
   readonly createdAt: Date;
   readonly updatedAt: Date;

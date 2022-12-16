@@ -3,11 +3,11 @@
   "archiveNbr": "0001-0001",
   "archiveId": 1,
   "displayName": "Archive Root",
-  "downloadName": null,
-  "downloadNameOk": 0,
-  "displayDT": "2022-06-23T18:33:43",
+  "downloadName": "Archive Root",
+  "downloadNameOk": true,
+  "displayDT": "2022-12-16T15:45:08",
   "displayEndDT": null,
-  "derivedDT": "2022-06-23T18:33:43",
+  "derivedDT": "2022-12-16T15:45:08",
   "derivedEndDT": null,
   "note": null,
   "description": null,
@@ -21,11 +21,11 @@
   "imageRatio": "1.00",
   "type": "type.folder.root.root",
   "thumbStatus": "status.generic.ok",
-  "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1656614024&Expires=1656614024&Signature=KNV8U-CkAIEh1Su99NqYkxxp2vJjv3rx3XomtsvCJH-yYiFp-pe2xtOxwPU~D6iFaHpccWDQC~kmF4dlUOfSPyEHeDPm70Duid7l9toWHVnT9ID~mOwhBN6XTgWw42K37RHGSep8T6bKmtWKv0WLDJ8REVXFmcRO7X8AC~q5b0zTn~q1~x6MIvprFBsIAT3FAM0mm1e-IuR3dM4HR9VJvoqzYjDqa88wWfBkn6YvPlPRnrboYLkYqXdy61hHwShvUnW4TsrbL55WCwL0ca9kDo40XF8WYkRFap8g6drd-sFtvN9LPvfG9virS52v0A5-bw07PcuHMm-u2VVkz3bpww__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-  "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1656614024&Expires=1656614024&Signature=KNV8U-CkAIEh1Su99NqYkxxp2vJjv3rx3XomtsvCJH-yYiFp-pe2xtOxwPU~D6iFaHpccWDQC~kmF4dlUOfSPyEHeDPm70Duid7l9toWHVnT9ID~mOwhBN6XTgWw42K37RHGSep8T6bKmtWKv0WLDJ8REVXFmcRO7X8AC~q5b0zTn~q1~x6MIvprFBsIAT3FAM0mm1e-IuR3dM4HR9VJvoqzYjDqa88wWfBkn6YvPlPRnrboYLkYqXdy61hHwShvUnW4TsrbL55WCwL0ca9kDo40XF8WYkRFap8g6drd-sFtvN9LPvfG9virS52v0A5-bw07PcuHMm-u2VVkz3bpww__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-  "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1656614024&Expires=1656614024&Signature=KNV8U-CkAIEh1Su99NqYkxxp2vJjv3rx3XomtsvCJH-yYiFp-pe2xtOxwPU~D6iFaHpccWDQC~kmF4dlUOfSPyEHeDPm70Duid7l9toWHVnT9ID~mOwhBN6XTgWw42K37RHGSep8T6bKmtWKv0WLDJ8REVXFmcRO7X8AC~q5b0zTn~q1~x6MIvprFBsIAT3FAM0mm1e-IuR3dM4HR9VJvoqzYjDqa88wWfBkn6YvPlPRnrboYLkYqXdy61hHwShvUnW4TsrbL55WCwL0ca9kDo40XF8WYkRFap8g6drd-sFtvN9LPvfG9virS52v0A5-bw07PcuHMm-u2VVkz3bpww__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-  "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1656614024&Expires=1656614024&Signature=KNV8U-CkAIEh1Su99NqYkxxp2vJjv3rx3XomtsvCJH-yYiFp-pe2xtOxwPU~D6iFaHpccWDQC~kmF4dlUOfSPyEHeDPm70Duid7l9toWHVnT9ID~mOwhBN6XTgWw42K37RHGSep8T6bKmtWKv0WLDJ8REVXFmcRO7X8AC~q5b0zTn~q1~x6MIvprFBsIAT3FAM0mm1e-IuR3dM4HR9VJvoqzYjDqa88wWfBkn6YvPlPRnrboYLkYqXdy61hHwShvUnW4TsrbL55WCwL0ca9kDo40XF8WYkRFap8g6drd-sFtvN9LPvfG9virS52v0A5-bw07PcuHMm-u2VVkz3bpww__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-  "thumbDT": "2022-06-30T18:33:44",
+  "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1686926709&Expires=1686926709&Signature=eFODdrMXyIsnROXKCDcVUTEjlAmmw99-KcvJW-YCyJ9xbH32gNLKFmCxwzWuA2oHRAxvi-qUcx9Wluq3FxZKDRMWzj~IRruGjsfJ3YpsLI854dajtew~mnNBSQOu9Bpy9dFKizuoTfW0UF8ZebqhVa6UHRaNuTl0zHQh0eqTG0HNzkKih4p-fvk2MnplRCsCAcdg5OYhXTeguhVBGfVFq8KC0VY34jWJ3GMIwCh~u1uFEauD2nhCfrAWVgIx6v5HSZqeg5rFcErNHMGAmOPI2UJyBZScZRFZ43ZQWjRelRrtJ~EKxj6l584-xJhw5c64oN9vTXeXZXR1JCE3VzuAoA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+  "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1686926709&Expires=1686926709&Signature=eFODdrMXyIsnROXKCDcVUTEjlAmmw99-KcvJW-YCyJ9xbH32gNLKFmCxwzWuA2oHRAxvi-qUcx9Wluq3FxZKDRMWzj~IRruGjsfJ3YpsLI854dajtew~mnNBSQOu9Bpy9dFKizuoTfW0UF8ZebqhVa6UHRaNuTl0zHQh0eqTG0HNzkKih4p-fvk2MnplRCsCAcdg5OYhXTeguhVBGfVFq8KC0VY34jWJ3GMIwCh~u1uFEauD2nhCfrAWVgIx6v5HSZqeg5rFcErNHMGAmOPI2UJyBZScZRFZ43ZQWjRelRrtJ~EKxj6l584-xJhw5c64oN9vTXeXZXR1JCE3VzuAoA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+  "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1686926709&Expires=1686926709&Signature=eFODdrMXyIsnROXKCDcVUTEjlAmmw99-KcvJW-YCyJ9xbH32gNLKFmCxwzWuA2oHRAxvi-qUcx9Wluq3FxZKDRMWzj~IRruGjsfJ3YpsLI854dajtew~mnNBSQOu9Bpy9dFKizuoTfW0UF8ZebqhVa6UHRaNuTl0zHQh0eqTG0HNzkKih4p-fvk2MnplRCsCAcdg5OYhXTeguhVBGfVFq8KC0VY34jWJ3GMIwCh~u1uFEauD2nhCfrAWVgIx6v5HSZqeg5rFcErNHMGAmOPI2UJyBZScZRFZ43ZQWjRelRrtJ~EKxj6l584-xJhw5c64oN9vTXeXZXR1JCE3VzuAoA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+  "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0001.thumb.w200?t=1686926709&Expires=1686926709&Signature=eFODdrMXyIsnROXKCDcVUTEjlAmmw99-KcvJW-YCyJ9xbH32gNLKFmCxwzWuA2oHRAxvi-qUcx9Wluq3FxZKDRMWzj~IRruGjsfJ3YpsLI854dajtew~mnNBSQOu9Bpy9dFKizuoTfW0UF8ZebqhVa6UHRaNuTl0zHQh0eqTG0HNzkKih4p-fvk2MnplRCsCAcdg5OYhXTeguhVBGfVFq8KC0VY34jWJ3GMIwCh~u1uFEauD2nhCfrAWVgIx6v5HSZqeg5rFcErNHMGAmOPI2UJyBZScZRFZ43ZQWjRelRrtJ~EKxj6l584-xJhw5c64oN9vTXeXZXR1JCE3VzuAoA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+  "thumbDT": "2023-06-16T15:45:09",
   "status": "status.generic.ok",
   "publicDT": null,
   "parentFolderId": null,
@@ -44,27 +44,41 @@
       "type": "type.folder_link.root.root",
       "status": "status.generic.ok",
       "shareDT": null,
-      "createdDT": "2022-06-23T18:33:43",
-      "updatedDT": "2022-06-23T18:33:43"
+      "createdDT": "2022-12-16T15:45:08",
+      "updatedDT": "2022-12-16T15:45:08"
     }
   ],
   "accessRole": "access.role.owner",
   "position": 1,
   "shareDT": null,
   "pathAsFolder_linkId": null,
-  "pathAsText": [],
+  "pathAsText": [
+
+  ],
   "folder_linkId": 1,
   "parentFolder_linkId": null,
-  "ParentFolderVOs": [],
+  "ParentFolderVOs": [
+
+  ],
   "parentArchiveNbr": null,
   "parentDisplayName": null,
-  "pathAsArchiveNbr": [],
-  "ChildFolderVOs": [],
-  "RecordVOs": [],
+  "pathAsArchiveNbr": [
+
+  ],
+  "ChildFolderVOs": [
+
+  ],
+  "RecordVOs": [
+
+  ],
   "LocnVO": null,
   "TimezoneVO": null,
-  "TagVOs": [],
-  "SharedArchiveVOs": [],
+  "TagVOs": [
+
+  ],
+  "SharedArchiveVOs": [
+
+  ],
   "FolderSizeVO": null,
   "ChildItemVOs": [
     {
@@ -72,9 +86,9 @@
       "archiveNbr": "0001-0002",
       "archiveId": 1,
       "displayName": "Apps",
-      "downloadName": null,
+      "downloadName": "Apps",
       "downloadNameOk": null,
-      "displayDT": "2022-06-23T18:33:44",
+      "displayDT": "2022-12-16T15:45:10",
       "displayEndDT": null,
       "derivedDT": null,
       "derivedEndDT": null,
@@ -90,11 +104,11 @@
       "imageRatio": "1.00",
       "type": "type.folder.root.app",
       "thumbStatus": "status.generic.ok",
-      "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w200?t=1658757301&Expires=1658757301&Signature=Jy2QA3~15jJWRuYtDGO3cr4hPsyzfVLLwpdw75xpudzrtG7R4bWH6Edv4ibpKIgnLEz2E95snRiJ5bt5i-xL-ra4d7FAlyLY~lo8JaACJ9JXCSeaa6wpXoUpMddtlhgq24d5utPK1Rrs4mbz3N2hvGnvFyAc24ls13JQUoG9fSkosQhF5dEjIgtG-sbB9rSxUd4kqNbExsiO~HYuP2oE0SZBp-9hp9c71B6ITb2ZRnz9TOc6VVVA8pACJ8I6D0Y-~HouzKejZZQA2SKTTOJIjremnMWYko2GdLIOo6E3Y3WTBNKZfiCNRrH4tFz75pph3DfUMf~0Ve9vQQskUUP9nQ__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w500?t=1658757301&Expires=1658757301&Signature=C6Fhc3rlhvrn86rmk7ZPxt5iqfRNIko41n2ESsygGBsasCPG3ralD1564sY8nvC-zAH8U2Tg2eNbNbQnpJoqltZBeqtMw0zF1cYAnX4ZjgmQ99ZipmaU5qbjwT1NjwzV8SNo4DwWq~I1soykt1quOS0GRR44qIh1IjyEPzOFdQzBGl833O9HYMZiAM~wKyYj33GFQkPsb-Annb6ruhoMaNzHhGViZKauafzGNhaClVkSiSs4EVPkePABOokTBYWwi~HXLY0elndjATLQrY65WfxP5fAdf8FoEAHTt1sN5Q9ZrO-aAa342KZiME4xOTEFAsBXlna16GQGL7RRZQngCQ__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w1000?t=1658757301&Expires=1658757301&Signature=GMUf2mPdAiWVkmxcl8iaoaobW8BiFifAtkXtBXeUobv9uXZS7flJzugCWnIWD8Vu9cRCaEAQOnCEptH-bQGx~CkGBOFzPscdaGfOXgSd4y0pJ3BgsC2fL9qflk9ImIYAa-qL13d1o5jIW~bEy-zDfWIZi0pXbKOu0AWKz7V2ALum06Oze7GRVk5mga6F7ZoLUKw0Xr7bWn4y10qIK588-IZgD3StAMmN753XgUcwF~mYD29UccetAJXKyesacQZ03Bu~jh-i9U9DnCdc~6ae48L6JHHsX2O01wRc8hh0tqnsMx5JiSgZ5U1vf5701pGInVMFiN2ao7mxTdV6tjmwig__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w2000?t=1658757301&Expires=1658757301&Signature=h5h~KZ27vPS~ueBV6ZnEdI8H5JKlzl69MiXcaBldhEUb5G7YX1lMRucgCeXiyQOZbSvcz2bCet-hw~b83QS8Kis2xfJaXA~nPxx3jjYkE6wE5vya-BSCtzHS~7mCCnehh8rUwJF6QSLloYpt~vXnIsBVKKQacRXudIKJBoi7pEazPlBAUeHz2XKdATlSG2WjYdeFSAKZMuj7Gsxe6zXsAdlLWIZX7G6oivSkYEMn7hEQoNJwyIb2OK~d434~R6UMy6fzh5Wb5EN8gaZK9z4o~xS387eUISeb5h6r-pMQxakKphO3bEB5JGdVfB5awahejcbv8bFJdGM2d8u3vZlXwQ__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbDT": "2022-07-25T13:55:01",
+      "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w200?t=1686926710&Expires=1686926710&Signature=Q9fSp~pEalhYehcnQuL-1LB8YCwpnZrc7Vx66~U5HpcLthPNaoimUP3X4AsCQILBFk07woq3oUws-EUbUuxJovdsFPNbsUZzz64zIv-kO4Ck2nlgCnEtLyNkfhajf5VvTFaymTzpNVN1oMyOQNMwg~NEvL18sqJkPjTWh4NkF6Ace9wAhjK5d23q2v4Onxbfm50uDHojyWisI-2PNG4~65f7ZGGTIp9vE3wZGvUcXn8KJR2FUCP6hnaq33EiMhkJxzHAWIKNrKsd08HVXnH3EID3ry1EdbbBnucYebDbCk8kZQj4u1n~PI5pBql1YmVK-QCwtPpeyf8-2AE-VbXCMw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w200?t=1686926710&Expires=1686926710&Signature=Q9fSp~pEalhYehcnQuL-1LB8YCwpnZrc7Vx66~U5HpcLthPNaoimUP3X4AsCQILBFk07woq3oUws-EUbUuxJovdsFPNbsUZzz64zIv-kO4Ck2nlgCnEtLyNkfhajf5VvTFaymTzpNVN1oMyOQNMwg~NEvL18sqJkPjTWh4NkF6Ace9wAhjK5d23q2v4Onxbfm50uDHojyWisI-2PNG4~65f7ZGGTIp9vE3wZGvUcXn8KJR2FUCP6hnaq33EiMhkJxzHAWIKNrKsd08HVXnH3EID3ry1EdbbBnucYebDbCk8kZQj4u1n~PI5pBql1YmVK-QCwtPpeyf8-2AE-VbXCMw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w200?t=1686926710&Expires=1686926710&Signature=Q9fSp~pEalhYehcnQuL-1LB8YCwpnZrc7Vx66~U5HpcLthPNaoimUP3X4AsCQILBFk07woq3oUws-EUbUuxJovdsFPNbsUZzz64zIv-kO4Ck2nlgCnEtLyNkfhajf5VvTFaymTzpNVN1oMyOQNMwg~NEvL18sqJkPjTWh4NkF6Ace9wAhjK5d23q2v4Onxbfm50uDHojyWisI-2PNG4~65f7ZGGTIp9vE3wZGvUcXn8KJR2FUCP6hnaq33EiMhkJxzHAWIKNrKsd08HVXnH3EID3ry1EdbbBnucYebDbCk8kZQj4u1n~PI5pBql1YmVK-QCwtPpeyf8-2AE-VbXCMw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0002.thumb.w200?t=1686926710&Expires=1686926710&Signature=Q9fSp~pEalhYehcnQuL-1LB8YCwpnZrc7Vx66~U5HpcLthPNaoimUP3X4AsCQILBFk07woq3oUws-EUbUuxJovdsFPNbsUZzz64zIv-kO4Ck2nlgCnEtLyNkfhajf5VvTFaymTzpNVN1oMyOQNMwg~NEvL18sqJkPjTWh4NkF6Ace9wAhjK5d23q2v4Onxbfm50uDHojyWisI-2PNG4~65f7ZGGTIp9vE3wZGvUcXn8KJR2FUCP6hnaq33EiMhkJxzHAWIKNrKsd08HVXnH3EID3ry1EdbbBnucYebDbCk8kZQj4u1n~PI5pBql1YmVK-QCwtPpeyf8-2AE-VbXCMw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbDT": "2023-06-16T15:45:10",
       "status": "status.generic.ok",
       "publicDT": null,
       "parentFolderId": 1,
@@ -113,23 +127,33 @@
           "type": "type.folder_link.root.app",
           "status": "status.generic.ok",
           "shareDT": null,
-          "createdDT": "2022-06-23T18:33:44",
-          "updatedDT": "2022-06-23T18:33:44"
+          "createdDT": "2022-12-16T15:45:10",
+          "updatedDT": "2022-12-16T15:45:10"
         }
       ],
       "accessRole": "access.role.owner",
       "position": 1,
       "shareDT": null,
       "pathAsFolder_linkId": null,
-      "pathAsText": [],
+      "pathAsText": [
+
+      ],
       "folder_linkId": 2,
       "parentFolder_linkId": 1,
-      "ParentFolderVOs": [],
+      "ParentFolderVOs": [
+
+      ],
       "parentArchiveNbr": null,
       "parentDisplayName": null,
-      "pathAsArchiveNbr": [],
-      "ChildFolderVOs": [],
-      "RecordVOs": [],
+      "pathAsArchiveNbr": [
+
+      ],
+      "ChildFolderVOs": [
+
+      ],
+      "RecordVOs": [
+
+      ],
       "LocnVO": null,
       "TimezoneVO": {
         "timeZoneId": 88,
@@ -145,14 +169,22 @@
         "country": null,
         "status": "status.generic.ok",
         "type": "type.folder.root.app",
-        "createdDT": "2022-06-23T18:33:44",
-        "updatedDT": "2022-07-18T13:55:01"
+        "createdDT": "2022-12-16T15:45:10",
+        "updatedDT": "2022-12-16T15:45:11"
       },
-      "TagVOs": [],
-      "SharedArchiveVOs": [],
+      "TagVOs": [
+
+      ],
+      "SharedArchiveVOs": [
+
+      ],
       "FolderSizeVO": null,
-      "ChildItemVOs": [],
-      "ShareVOs": [],
+      "ChildItemVOs": [
+
+      ],
+      "ShareVOs": [
+
+      ],
       "AccessVO": null,
       "AccessVOs": null,
       "archiveArchiveNbr": null,
@@ -160,17 +192,17 @@
       "posStart": null,
       "posLimit": null,
       "searchScore": null,
-      "createdDT": "2022-06-23T18:33:44",
-      "updatedDT": "2022-07-18T13:55:01"
+      "createdDT": "2022-12-16T15:45:10",
+      "updatedDT": "2022-12-16T15:45:11"
     },
     {
       "folderId": 3,
       "archiveNbr": "0001-0003",
       "archiveId": 1,
       "displayName": "My Files",
-      "downloadName": null,
+      "downloadName": "My Files",
       "downloadNameOk": null,
-      "displayDT": "2022-06-23T18:33:45",
+      "displayDT": "2022-12-16T15:45:10",
       "displayEndDT": null,
       "derivedDT": null,
       "derivedEndDT": null,
@@ -186,11 +218,11 @@
       "imageRatio": "1.00",
       "type": "type.folder.root.private",
       "thumbStatus": "status.generic.ok",
-      "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w200?t=1658757301&Expires=1658757301&Signature=iuYVX53dTLZWiHzY0uf086aVRTgIAMc2vanubwHP0K-AzfwiNtyfGMQzUHl0RVPpZxNqc8S1xw~Gl2wrelBb3sdqDGUExe8GrDoMv7H-vceLJcJFhP0yTsRy7qpNLY~Y5MvyZhqX69shV2AroPXUdBVIk07C4TO9A4hYKsxfirFmwMuFhT~OtJ4h-B1eBXc7t5bhw74ME49PJHUPyATEkQGTSTZfK3CWmn04q~x96tKBqXsHsMPRBiy0RiiUNYtLjR68kthlfHuExH4y0rUK04s7G7F9kgy4V7LVR-u7Ru5DkIh-HbAh-ghYJ-YJ58c2Edc38Gz~YQfU5GYfKLK-cw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w500?t=1658757301&Expires=1658757301&Signature=Krm5hY5AydF-2x~P0S5L46BXKUR18P-ZjKXP7x3qAT-YkGSnWk1OYh4YxIxh2ZaQHqIxYUfcUrWZCwFrwKKvYPFQqSd6b34BXhNuceCWfIr-zsCkJn7f8ut~49PzVoQVntp6CU4Lrx1w4jKZv3FJmVg2W7NBqYjWG2~ka~7Z~mSQtAUAlEfKJQfrVP-saHdeF1nv71yjmKCwIhLPlU3uqDE-77L9Hh0SxQDn6-GizWYQRwE37P1Db~wrdNC1UejMlR8XtLytmXL7lT~r--BZ-B6V7u14pl~83VyFv5tgjgFvPaJTU0PU5QP5NMTxTRQ-eLKij7GRH2dURtib55AUYg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w1000?t=1658757301&Expires=1658757301&Signature=EA-kXtuxcig3uLItImQIeVunBgxM4DsdUibYZSKztOH7gQ38MYiaKwoq1bZ9ElZprPVbc0PeyePyYIZaCDaGmN1DcBJOGN6~ZNB8cd-jDVpiVUfH957bfHRH4p3uXizl5bCYxwdrP4AWKA0A9pr29kyOBjpgJqmUyjjYVB5u9fUO-R8KpCfdGh3y~vpowtfcquOc5CizGzBZXu468a0ra9DNVwxdIg-4Iqj~e1PMXMVl1y2eVLbqG6CdYT2e1fEQM~8qWSCehIjqtb6XG-3hxpi1n78~a4OS6T-kmyofXxTYbC5wTitJhCN9WO6X~DuGmC5dS3jZf5S16xbmrWo3AQ__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w2000?t=1658757301&Expires=1658757301&Signature=VEewP~ImYlcQ8hSiiVoOmPRFd~Aw3qQ-AyVyLpgdWlpQ2IFkSNDyVEb8KpRIkblZZ4al8SeQqF1gM7eayE4fp4m4-5i3B0iCCJ4wgQW9Ky9j177qARvwE5Gtv4idKN9Fnp-trI5nMYbgEArlJkey4CRHvJe7nL8KtI7AxENAgJqErxvd4xE24YTISMSmHCk6GGuynKDYevvHogwIYmNmvuRz0vdwuc6G20pGaJr6WHaA7LIuzdIgWs1G5a-jGwDlxMvefYzoHXCBmDgkHIrQW3HEjddxDn0gHZQZ10d9NSUpWHITKyNnTgv2gov3P1tR9dPlZFGpuNobmVVX5QzVMQ__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbDT": "2022-07-25T13:55:01",
+      "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w200?t=1686926711&Expires=1686926711&Signature=NCjb5Q2cGrOIQRyxrfM-HFpsbLOFdt22yU1MZbPu0DbsvHhNi5dstYfYlEdnQXQ6RErN1utwmri~rl9-rV92ebRBYJB~gvLQ2SGmJTB9J5SoCK-~6PabtdXcL6Rnf~Th5q0WdKXp4T9GtXC67lyumhS3Seu7UAIH0XWjxLd941Y9bfc-Z3wQhXSG4wS3wbnFTSBjDSWQCdTQKSHU8bJcIaA2cAA5W2~TtEqUADV7diGhNU3urFyRgIhJcp6Yy0l5VdxTF7BdAOKlludFO53aj3CVkqY9k~esl2bW1ZkAZ-6mh1f8EvykE3fi61YJaz3m-I224GfaO6uAWcI95TDi3A__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w200?t=1686926711&Expires=1686926711&Signature=NCjb5Q2cGrOIQRyxrfM-HFpsbLOFdt22yU1MZbPu0DbsvHhNi5dstYfYlEdnQXQ6RErN1utwmri~rl9-rV92ebRBYJB~gvLQ2SGmJTB9J5SoCK-~6PabtdXcL6Rnf~Th5q0WdKXp4T9GtXC67lyumhS3Seu7UAIH0XWjxLd941Y9bfc-Z3wQhXSG4wS3wbnFTSBjDSWQCdTQKSHU8bJcIaA2cAA5W2~TtEqUADV7diGhNU3urFyRgIhJcp6Yy0l5VdxTF7BdAOKlludFO53aj3CVkqY9k~esl2bW1ZkAZ-6mh1f8EvykE3fi61YJaz3m-I224GfaO6uAWcI95TDi3A__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w200?t=1686926711&Expires=1686926711&Signature=NCjb5Q2cGrOIQRyxrfM-HFpsbLOFdt22yU1MZbPu0DbsvHhNi5dstYfYlEdnQXQ6RErN1utwmri~rl9-rV92ebRBYJB~gvLQ2SGmJTB9J5SoCK-~6PabtdXcL6Rnf~Th5q0WdKXp4T9GtXC67lyumhS3Seu7UAIH0XWjxLd941Y9bfc-Z3wQhXSG4wS3wbnFTSBjDSWQCdTQKSHU8bJcIaA2cAA5W2~TtEqUADV7diGhNU3urFyRgIhJcp6Yy0l5VdxTF7BdAOKlludFO53aj3CVkqY9k~esl2bW1ZkAZ-6mh1f8EvykE3fi61YJaz3m-I224GfaO6uAWcI95TDi3A__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0003.thumb.w200?t=1686926711&Expires=1686926711&Signature=NCjb5Q2cGrOIQRyxrfM-HFpsbLOFdt22yU1MZbPu0DbsvHhNi5dstYfYlEdnQXQ6RErN1utwmri~rl9-rV92ebRBYJB~gvLQ2SGmJTB9J5SoCK-~6PabtdXcL6Rnf~Th5q0WdKXp4T9GtXC67lyumhS3Seu7UAIH0XWjxLd941Y9bfc-Z3wQhXSG4wS3wbnFTSBjDSWQCdTQKSHU8bJcIaA2cAA5W2~TtEqUADV7diGhNU3urFyRgIhJcp6Yy0l5VdxTF7BdAOKlludFO53aj3CVkqY9k~esl2bW1ZkAZ-6mh1f8EvykE3fi61YJaz3m-I224GfaO6uAWcI95TDi3A__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbDT": "2023-06-16T15:45:11",
       "status": "status.generic.ok",
       "publicDT": null,
       "parentFolderId": 1,
@@ -209,23 +241,33 @@
           "type": "type.folder_link.root.private",
           "status": "status.generic.ok",
           "shareDT": null,
-          "createdDT": "2022-06-23T18:33:45",
-          "updatedDT": "2022-06-23T18:33:45"
+          "createdDT": "2022-12-16T15:45:11",
+          "updatedDT": "2022-12-16T15:45:11"
         }
       ],
       "accessRole": "access.role.owner",
       "position": 1,
       "shareDT": null,
       "pathAsFolder_linkId": null,
-      "pathAsText": [],
+      "pathAsText": [
+
+      ],
       "folder_linkId": 3,
       "parentFolder_linkId": 1,
-      "ParentFolderVOs": [],
+      "ParentFolderVOs": [
+
+      ],
       "parentArchiveNbr": null,
       "parentDisplayName": null,
-      "pathAsArchiveNbr": [],
-      "ChildFolderVOs": [],
-      "RecordVOs": [],
+      "pathAsArchiveNbr": [
+
+      ],
+      "ChildFolderVOs": [
+
+      ],
+      "RecordVOs": [
+
+      ],
       "LocnVO": null,
       "TimezoneVO": {
         "timeZoneId": 88,
@@ -241,14 +283,22 @@
         "country": null,
         "status": "status.generic.ok",
         "type": "type.folder.root.private",
-        "createdDT": "2022-06-23T18:33:45",
-        "updatedDT": "2022-07-18T13:55:01"
+        "createdDT": "2022-12-16T15:45:10",
+        "updatedDT": "2022-12-16T16:15:13"
       },
-      "TagVOs": [],
-      "SharedArchiveVOs": [],
+      "TagVOs": [
+
+      ],
+      "SharedArchiveVOs": [
+
+      ],
       "FolderSizeVO": null,
-      "ChildItemVOs": [],
-      "ShareVOs": [],
+      "ChildItemVOs": [
+
+      ],
+      "ShareVOs": [
+
+      ],
       "AccessVO": null,
       "AccessVOs": null,
       "archiveArchiveNbr": null,
@@ -256,17 +306,17 @@
       "posStart": null,
       "posLimit": null,
       "searchScore": null,
-      "createdDT": "2022-06-23T18:33:45",
-      "updatedDT": "2022-07-18T13:55:01"
+      "createdDT": "2022-12-16T15:45:10",
+      "updatedDT": "2022-12-16T16:15:13"
     },
     {
       "folderId": 4,
       "archiveNbr": "0001-0004",
       "archiveId": 1,
       "displayName": "Public",
-      "downloadName": null,
+      "downloadName": "Public",
       "downloadNameOk": null,
-      "displayDT": "2022-06-23T18:33:46",
+      "displayDT": "2022-12-16T15:45:11",
       "displayEndDT": null,
       "derivedDT": null,
       "derivedEndDT": null,
@@ -282,13 +332,13 @@
       "imageRatio": "1.00",
       "type": "type.folder.root.public",
       "thumbStatus": "status.generic.ok",
-      "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1687545227&Expires=1687545227&Signature=UQXdLZ7n3u-afI5e91~4Ahw9ET56SB-5rM7Gq-dCkdPfMDao79F0im0f23hyf~34in2IviIX2RoPPIo65FKw5MKZSOB~pMrE-ov55uD5boGk1U4PL4W-ObV2VlZECaUJye-RXXuGbdY5E0fcG7lFukzsHd9cSpFIR9lPQVLZ4lzFUN3vxWATowWJic7oz4GpUP6MxFGa2QySwMYWYohMLgafwajzeVhD6jiq6kgE~Y01i-MNhLCweUh2TWQfpznQteZUdcwmV7jwvBFz6jPJQEYieEb7Cryv7ju9Mob53OJqy5r90~XSPlgndCreD6x3CNdS7qVOqii5-wTYcBVvYw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1687545227&Expires=1687545227&Signature=UQXdLZ7n3u-afI5e91~4Ahw9ET56SB-5rM7Gq-dCkdPfMDao79F0im0f23hyf~34in2IviIX2RoPPIo65FKw5MKZSOB~pMrE-ov55uD5boGk1U4PL4W-ObV2VlZECaUJye-RXXuGbdY5E0fcG7lFukzsHd9cSpFIR9lPQVLZ4lzFUN3vxWATowWJic7oz4GpUP6MxFGa2QySwMYWYohMLgafwajzeVhD6jiq6kgE~Y01i-MNhLCweUh2TWQfpznQteZUdcwmV7jwvBFz6jPJQEYieEb7Cryv7ju9Mob53OJqy5r90~XSPlgndCreD6x3CNdS7qVOqii5-wTYcBVvYw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1687545227&Expires=1687545227&Signature=UQXdLZ7n3u-afI5e91~4Ahw9ET56SB-5rM7Gq-dCkdPfMDao79F0im0f23hyf~34in2IviIX2RoPPIo65FKw5MKZSOB~pMrE-ov55uD5boGk1U4PL4W-ObV2VlZECaUJye-RXXuGbdY5E0fcG7lFukzsHd9cSpFIR9lPQVLZ4lzFUN3vxWATowWJic7oz4GpUP6MxFGa2QySwMYWYohMLgafwajzeVhD6jiq6kgE~Y01i-MNhLCweUh2TWQfpznQteZUdcwmV7jwvBFz6jPJQEYieEb7Cryv7ju9Mob53OJqy5r90~XSPlgndCreD6x3CNdS7qVOqii5-wTYcBVvYw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1687545227&Expires=1687545227&Signature=UQXdLZ7n3u-afI5e91~4Ahw9ET56SB-5rM7Gq-dCkdPfMDao79F0im0f23hyf~34in2IviIX2RoPPIo65FKw5MKZSOB~pMrE-ov55uD5boGk1U4PL4W-ObV2VlZECaUJye-RXXuGbdY5E0fcG7lFukzsHd9cSpFIR9lPQVLZ4lzFUN3vxWATowWJic7oz4GpUP6MxFGa2QySwMYWYohMLgafwajzeVhD6jiq6kgE~Y01i-MNhLCweUh2TWQfpznQteZUdcwmV7jwvBFz6jPJQEYieEb7Cryv7ju9Mob53OJqy5r90~XSPlgndCreD6x3CNdS7qVOqii5-wTYcBVvYw__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-      "thumbDT": "2023-06-23T18:33:47",
+      "thumbURL200": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1702741512&Expires=1702741512&Signature=Hemsa9vnAJuExBXJwpbFOIb9RRKS3CL7j0gTwLYBnE8FRpwNlAuqvqKl4DnrK~Z7SyBHTkoDxT8JjbzQ3aDtftQW0VoKBAcbRdM9yXRBc2DxOTq-cSe-78UOefJjtktQIdPME0m054dJz-QfaGHdWnNuhINiDYCQequz9Kp4m1R1U6hUkOs1y-z0TN4HlKb~E6R2xJuE-TSKrgCUCw5JFGkDHAqccBl~xbLDdcy9swZ95k4MA5c-Hg-mYutLplIUCoW1PhV1bnvnNshu-j5AVZ3~Y0F8cdfn4vmciwoUdvEUT8YmnVz4A7sOWYoUDnGE7Ml1kCPf0oQFBn-ieHMUDg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL500": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1702741512&Expires=1702741512&Signature=Hemsa9vnAJuExBXJwpbFOIb9RRKS3CL7j0gTwLYBnE8FRpwNlAuqvqKl4DnrK~Z7SyBHTkoDxT8JjbzQ3aDtftQW0VoKBAcbRdM9yXRBc2DxOTq-cSe-78UOefJjtktQIdPME0m054dJz-QfaGHdWnNuhINiDYCQequz9Kp4m1R1U6hUkOs1y-z0TN4HlKb~E6R2xJuE-TSKrgCUCw5JFGkDHAqccBl~xbLDdcy9swZ95k4MA5c-Hg-mYutLplIUCoW1PhV1bnvnNshu-j5AVZ3~Y0F8cdfn4vmciwoUdvEUT8YmnVz4A7sOWYoUDnGE7Ml1kCPf0oQFBn-ieHMUDg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL1000": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1702741512&Expires=1702741512&Signature=Hemsa9vnAJuExBXJwpbFOIb9RRKS3CL7j0gTwLYBnE8FRpwNlAuqvqKl4DnrK~Z7SyBHTkoDxT8JjbzQ3aDtftQW0VoKBAcbRdM9yXRBc2DxOTq-cSe-78UOefJjtktQIdPME0m054dJz-QfaGHdWnNuhINiDYCQequz9Kp4m1R1U6hUkOs1y-z0TN4HlKb~E6R2xJuE-TSKrgCUCw5JFGkDHAqccBl~xbLDdcy9swZ95k4MA5c-Hg-mYutLplIUCoW1PhV1bnvnNshu-j5AVZ3~Y0F8cdfn4vmciwoUdvEUT8YmnVz4A7sOWYoUDnGE7Ml1kCPf0oQFBn-ieHMUDg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbURL2000": "https://localcdn.permanent.org/_slifty/0001-0004.thumb.w200?t=1702741512&Expires=1702741512&Signature=Hemsa9vnAJuExBXJwpbFOIb9RRKS3CL7j0gTwLYBnE8FRpwNlAuqvqKl4DnrK~Z7SyBHTkoDxT8JjbzQ3aDtftQW0VoKBAcbRdM9yXRBc2DxOTq-cSe-78UOefJjtktQIdPME0m054dJz-QfaGHdWnNuhINiDYCQequz9Kp4m1R1U6hUkOs1y-z0TN4HlKb~E6R2xJuE-TSKrgCUCw5JFGkDHAqccBl~xbLDdcy9swZ95k4MA5c-Hg-mYutLplIUCoW1PhV1bnvnNshu-j5AVZ3~Y0F8cdfn4vmciwoUdvEUT8YmnVz4A7sOWYoUDnGE7Ml1kCPf0oQFBn-ieHMUDg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+      "thumbDT": "2023-12-16T15:45:12",
       "status": "status.generic.ok",
-      "publicDT": "2022-06-22T00:00:00",
+      "publicDT": "2022-12-15T00:00:00",
       "parentFolderId": 1,
       "folder_linkType": "type.folder_link.root.public",
       "FolderLinkVOs": [
@@ -305,23 +355,33 @@
           "type": "type.folder_link.root.public",
           "status": "status.generic.ok",
           "shareDT": null,
-          "createdDT": "2022-06-23T18:33:46",
-          "updatedDT": "2022-06-23T18:33:46"
+          "createdDT": "2022-12-16T15:45:11",
+          "updatedDT": "2022-12-16T15:45:11"
         }
       ],
       "accessRole": "access.role.owner",
       "position": 1,
       "shareDT": null,
       "pathAsFolder_linkId": null,
-      "pathAsText": [],
+      "pathAsText": [
+
+      ],
       "folder_linkId": 4,
       "parentFolder_linkId": 1,
-      "ParentFolderVOs": [],
+      "ParentFolderVOs": [
+
+      ],
       "parentArchiveNbr": null,
       "parentDisplayName": null,
-      "pathAsArchiveNbr": [],
-      "ChildFolderVOs": [],
-      "RecordVOs": [],
+      "pathAsArchiveNbr": [
+
+      ],
+      "ChildFolderVOs": [
+
+      ],
+      "RecordVOs": [
+
+      ],
       "LocnVO": null,
       "TimezoneVO": {
         "timeZoneId": 88,
@@ -337,14 +397,22 @@
         "country": null,
         "status": "status.generic.ok",
         "type": "type.folder.root.public",
-        "createdDT": "2022-06-23T18:33:46",
-        "updatedDT": "2022-06-23T18:33:48"
+        "createdDT": "2022-12-16T15:45:11",
+        "updatedDT": "2022-12-16T15:45:13"
       },
-      "TagVOs": [],
-      "SharedArchiveVOs": [],
+      "TagVOs": [
+
+      ],
+      "SharedArchiveVOs": [
+
+      ],
       "FolderSizeVO": null,
-      "ChildItemVOs": [],
-      "ShareVOs": [],
+      "ChildItemVOs": [
+
+      ],
+      "ShareVOs": [
+
+      ],
       "AccessVO": null,
       "AccessVOs": null,
       "archiveArchiveNbr": null,
@@ -352,11 +420,13 @@
       "posStart": null,
       "posLimit": null,
       "searchScore": null,
-      "createdDT": "2022-06-23T18:33:46",
-      "updatedDT": "2022-06-23T18:33:48"
+      "createdDT": "2022-12-16T15:45:11",
+      "updatedDT": "2022-12-16T15:45:13"
     }
   ],
-  "ShareVOs": [],
+  "ShareVOs": [
+
+  ],
   "AccessVO": null,
   "AccessVOs": null,
   "archiveArchiveNbr": null,
@@ -364,6 +434,6 @@
   "posStart": null,
   "posLimit": null,
   "searchScore": null,
-  "createdDT": "2022-06-23T18:33:43",
-  "updatedDT": "2022-06-23T18:33:45"
+  "createdDT": "2022-12-16T15:45:08",
+  "updatedDT": "2022-12-16T15:45:10"
 }
