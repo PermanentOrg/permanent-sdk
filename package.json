@@ -1,6 +1,6 @@
 {
   "name": "@permanentorg/sdk",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Functional Node.js SDK for Permanent.org",
   "module": "dist/esm/index.js",
   "main": "dist/cjs/index.js",
@@ -30,6 +30,10 @@
       "name": "Daniel Schultz",
       "email": "slifty@gmail.com",
       "url": "https://slifty.com"
+    },
+    {
+      "name": "Fon E. Noel",
+      "url": "https://github.com/fenn-cs"
     }
   ],
   "license": "MIT",
