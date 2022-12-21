@@ -40,6 +40,7 @@ const extractRecordVos = (items: unknown[]): RecordVo[] => {
 export const folderVoToFolder = (folderVo: FolderVo): Folder => ({
   id: folderVo.folderId,
   name: folderVo.displayName,
+  fileSystemCompatibleName: folderVo.downloadName,
   size: 0,
   createdAt: new Date(formatTimestampAsUtc(folderVo.createdDT)),
   updatedAt: new Date(formatTimestampAsUtc(folderVo.updatedDT)),

@@ -29,7 +29,7 @@ export const recordVoToRecord = (recordVo: RecordVo): Record => {
   return {
     id: recordVo.recordId,
     displayName: recordVo.displayName,
-    fileName: recordVo.downloadName,
+    fileSystemCompatibleName: recordVo.downloadName,
     type,
     status,
     files,

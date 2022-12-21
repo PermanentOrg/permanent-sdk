@@ -5,7 +5,7 @@ Object {
   "createdAt": 2022-07-19T15:26:31.000Z,
   "displayDate": 2022-06-01T18:44:43.000Z,
   "displayName": "face-in-clouds",
-  "fileName": "face-in-clouds.gif",
+  "fileSystemCompatibleName": "face-in-clouds.gif",
   "files": Array [
     Object {
       "checksum": "3d05ff3d66c90ac4b37f1db1ad86f657",
