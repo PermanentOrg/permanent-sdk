@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `Folders` now have a `fileSystemCompatibleName`.
+- The `createFolder` function now exists.
+
+### Changed
+- The `Record.fileName` attribute has been renamed to `Record.fileSystemCompatibleName`
+
 ## [0.3.0] - 2022-08-04
 ### Added
 - `Records` now have `fileName` which has the full filename associated with a record.
