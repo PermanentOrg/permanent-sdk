@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createFolder should create a folder 1`] = `
+Object {
+  "createdAt": 2022-12-15T17:04:32.000Z,
+  "displayDate": 2022-12-15T17:04:31.000Z,
+  "fileSystemCompatibleName": "testFolder (2)",
+  "folders": Array [],
+  "id": 7,
+  "name": "testFolder",
+  "records": Array [],
+  "size": 0,
+  "updatedAt": 2022-12-15T17:04:32.000Z,
+}
+`;
