@@ -1,7 +1,7 @@
 import nock from 'nock';
-import { getRecord } from '..';
+import { getArchiveRecord } from '..';
 
-describe('getRecord', () => {
+describe('getArchiveRecord', () => {
   it('should return a Record', async () => {
     nock('https://permanent.local')
       .get('/api/record/get')
@@ -17,7 +17,7 @@ describe('getRecord', () => {
         },
       );
 
-    const folder = await getRecord(
+    const folder = await getArchiveRecord(
       {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',

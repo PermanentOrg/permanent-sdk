@@ -1,18 +1,18 @@
 import type {
-  Record,
+  ArchiveRecord,
   ClientConfiguration,
 } from '../types';
 import { getRecordVo } from '../api';
-import { recordVoToRecord } from '../utils';
+import { recordVoToArchiveRecord } from '../utils';
 
-export const getRecord = async (
+export const getArchiveRecord = async (
   clientConfiguration: ClientConfiguration,
-  recordId: number,
+  archiveRecordId: number,
   archiveId: number,
-): Promise<Record> => recordVoToRecord(
+): Promise<ArchiveRecord> => recordVoToArchiveRecord(
   await getRecordVo(
     clientConfiguration,
-    recordId,
+    archiveRecordId,
     archiveId,
   ),
 );
