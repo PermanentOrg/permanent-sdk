@@ -31,5 +31,6 @@ export const getRecordVo = async (
     `/record/get?${queryParams.toString()}`,
     { method: 'GET' },
   );
-  return parseRecordVo(await response.json());
+  const responseText = await response.text();
+  return parseRecordVo(JSON.parse(responseText));
 };

@@ -31,5 +31,6 @@ export const getFolderVo = async (
     `/folder/getWithChildren?${queryParams.toString()}`,
     { method: 'GET' },
   );
-  return parseFolderVo(await response.json());
+  const responseText = await response.json()
+  return parseFolderVo(JSON.parse(responseText));
 };

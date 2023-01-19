@@ -34,5 +34,6 @@ export const createFolderVo = async (
       body,
     },
   );
-  return parseFolderVo(await response.json());
+  const responseText = await response.text()
+  return parseFolderVo(JSON.parse(responseText));
 };

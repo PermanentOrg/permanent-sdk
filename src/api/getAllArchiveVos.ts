@@ -36,6 +36,7 @@ export const getAllArchiveVos = async (
     '/archive/getAllArchives',
     { method: 'GET' },
   );
-  const archiveVos = parseArchiveVoArray(await response.json());
+  const responseText = await response.text();
+  const archiveVos = parseArchiveVoArray(JSON.parse(responseText));
   return archiveVos;
 };
