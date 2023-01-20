@@ -15,6 +15,7 @@ const toDerivativeType = (input: string): DerivativeType => (
 export const fileVoToFile = (fileVo: FileVo): File => ({
   id: fileVo.fileId,
   derivativeType: toDerivativeType(fileVo.format),
+  contentType: fileVo.contentType ?? '',
   fileUrl: fileVo.fileURL ?? '',
   downloadUrl: fileVo.downloadURL ?? '',
   checksum: fileVo.md5Checksum ?? '',
