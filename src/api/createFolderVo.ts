@@ -1,21 +1,13 @@
-import { ValidationError } from '../errors';
 import { isFolderVo } from '../types';
-import { makePermanentApiCall } from '../utils';
+import {
+  makePermanentApiCall,
+  typedJsonParse,
+} from '../utils';
 import type {
   ClientConfiguration,
   FolderVo,
   Folder,
 } from '../types';
-
-const parseFolderVo = (value: unknown): FolderVo => {
-  if (isFolderVo(value)) {
-    return value;
-  }
-  throw new ValidationError(
-    'Invalid server response format',
-    isFolderVo.errors,
-  );
-};
 
 export const createFolderVo = async (
   clientConfiguration: ClientConfiguration,
@@ -34,6 +26,6 @@ export const createFolderVo = async (
       body,
     },
   );
-  const responseText = await response.text()
-  return parseFolderVo(JSON.parse(responseText));
+  const responseText = await response.text();
+  return typedJsonParse(responseText, isFolderVo);
 };
