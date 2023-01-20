@@ -1,11 +1,11 @@
 import type { Status } from './Status';
-import type { RecordType } from './RecordType';
+import type { ArchiveRecordType } from './ArchiveRecordType';
 import type { File } from './File';
 
-export interface Record {
+export interface ArchiveRecord {
   id: number;
   displayDate: Date;
-  type: RecordType;
+  type: ArchiveRecordType;
   displayName: string;
   files: File[];
   readonly fileSystemCompatibleName: string;

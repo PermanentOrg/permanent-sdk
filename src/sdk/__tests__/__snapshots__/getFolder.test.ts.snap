@@ -2,25 +2,7 @@
 
 exports[`getFolder should return a Folder 1`] = `
 Object {
-  "createdAt": 2022-07-19T14:00:45.000Z,
-  "displayDate": 2022-06-01T18:44:43.000Z,
-  "fileSystemCompatibleName": "testing",
-  "folders": Array [
-    Object {
-      "createdAt": 2022-07-19T15:26:40.000Z,
-      "displayDate": 2022-07-19T15:26:40.000Z,
-      "fileSystemCompatibleName": "Internal folder",
-      "folders": Array [],
-      "id": 7458,
-      "name": "Internal folder",
-      "records": Array [],
-      "size": 0,
-      "updatedAt": 2022-07-19T15:27:06.000Z,
-    },
-  ],
-  "id": 7457,
-  "name": "testing",
-  "records": Array [
+  "archiveRecords": Array [
     Object {
       "createdAt": 2022-07-19T15:26:31.000Z,
       "displayDate": 2022-06-01T18:44:43.000Z,
@@ -33,6 +15,24 @@ Object {
       "updatedAt": 2022-07-19T15:30:23.000Z,
     },
   ],
+  "createdAt": 2022-07-19T14:00:45.000Z,
+  "displayDate": 2022-06-01T18:44:43.000Z,
+  "fileSystemCompatibleName": "testing",
+  "folders": Array [
+    Object {
+      "archiveRecords": Array [],
+      "createdAt": 2022-07-19T15:26:40.000Z,
+      "displayDate": 2022-07-19T15:26:40.000Z,
+      "fileSystemCompatibleName": "Internal folder",
+      "folders": Array [],
+      "id": 7458,
+      "name": "Internal folder",
+      "size": 0,
+      "updatedAt": 2022-07-19T15:27:06.000Z,
+    },
+  ],
+  "id": 7457,
+  "name": "testing",
   "size": 0,
   "updatedAt": 2022-07-19T15:30:22.000Z,
 }

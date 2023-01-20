@@ -10,7 +10,7 @@ import type {
   Folder,
   RecordVo,
 } from '../types';
-import { recordVoToRecord } from './recordVoToRecord';
+import { recordVoToArchiveRecord } from './recordVoToArchiveRecord';
 import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 
 const extractFolderVos = (items: unknown[]): FolderVo[] => {
@@ -46,5 +46,5 @@ export const folderVoToFolder = (folderVo: FolderVo): Folder => ({
   updatedAt: new Date(formatTimestampAsUtc(folderVo.updatedDT)),
   displayDate: new Date(formatTimestampAsUtc(folderVo.displayDT)),
   folders: extractFolderVos(folderVo.ChildItemVOs).map(folderVoToFolder),
-  records: extractRecordVos(folderVo.ChildItemVOs).map(recordVoToRecord),
+  archiveRecords: extractRecordVos(folderVo.ChildItemVOs).map(recordVoToArchiveRecord),
 });

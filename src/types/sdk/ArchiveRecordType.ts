@@ -2,7 +2,7 @@ import { generateEnumTypeguard } from '../../utils/generateEnumTypeguard';
 
 // These types are defined in the permanent backend:
 // https://github.com/PermanentOrg/back-end/blob/main/library/definition/perm.constants.php
-export enum RecordType {
+export enum ArchiveRecordType {
   Archive = 'type.record.archive',
   Audio = 'type.record.audio',
   Document = 'type.record.document',
@@ -19,4 +19,4 @@ export enum RecordType {
   Video = 'type.record.video',
 }
 
-export const isRecordType = generateEnumTypeguard(RecordType);
+export const isArchiveRecordType = generateEnumTypeguard(ArchiveRecordType);

@@ -1,4 +1,4 @@
-import type { Record } from './Record';
+import type { ArchiveRecord } from './ArchiveRecord';
 
 export interface Folder {
   id: number;
@@ -7,7 +7,7 @@ export interface Folder {
   displayDate: Date;
   readonly fileSystemCompatibleName: string;
   readonly folders: Folder[];
-  readonly records: Record[];
+  readonly archiveRecords: ArchiveRecord[];
   readonly createdAt: Date;
   readonly updatedAt: Date;
 }
