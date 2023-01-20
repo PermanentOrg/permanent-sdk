@@ -9,13 +9,6 @@ export interface ArchiveVo extends BaseVo {
   fullName: string;
 }
 
-export const defaultArchiveVo: ArchiveVo = {
-  archiveId: 0,
-  fullName: '',
-  createdDT: '',
-  updatedDT: '',
-};
-
 export const archiveVoSchema: JSONSchemaType<ArchiveVo> = {
   type: 'object',
   properties: {

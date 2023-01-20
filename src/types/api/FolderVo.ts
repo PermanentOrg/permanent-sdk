@@ -14,16 +14,6 @@ export interface FolderVo extends BaseVo {
   displayDT: string;
 }
 
-export const defaultFolderVo: FolderVo = {
-  folderId: 0,
-  ChildItemVOs: [],
-  displayName: '',
-  downloadName: '',
-  displayDT: '',
-  createdDT: '',
-  updatedDT: '',
-};
-
 export const folderVoSchema: JSONSchemaType<FolderVo> = {
   type: 'object',
   properties: {
