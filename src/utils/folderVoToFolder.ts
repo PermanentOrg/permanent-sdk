@@ -44,7 +44,9 @@ export const folderVoToFolder = (folderVo: FolderVo): Folder => ({
   size: 0,
   createdAt: new Date(formatTimestampAsUtc(folderVo.createdDT)),
   updatedAt: new Date(formatTimestampAsUtc(folderVo.updatedDT)),
-  displayDate: new Date(formatTimestampAsUtc(folderVo.displayDT)),
+  displayDate: folderVo.displayDT !== undefined
+    ? new Date(formatTimestampAsUtc(folderVo.displayDT))
+    : undefined,
   folders: extractFolderVos(folderVo.ChildItemVOs).map(folderVoToFolder),
   archiveRecords: extractRecordVos(folderVo.ChildItemVOs).map(recordVoToArchiveRecord),
 });

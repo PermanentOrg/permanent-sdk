@@ -11,7 +11,7 @@ export interface FolderVo extends BaseVo {
   ChildItemVOs: (FolderVo | RecordVo)[];
   displayName: string;
   downloadName: string;
-  displayDT: string;
+  displayDT?: string;
 }
 
 export const folderVoSchema: JSONSchemaType<FolderVo> = {
@@ -39,6 +39,7 @@ export const folderVoSchema: JSONSchemaType<FolderVo> = {
     },
     displayDT: {
       type: 'string',
+      nullable: true,
     },
     createdDT: {
       type: 'string',
@@ -52,7 +53,6 @@ export const folderVoSchema: JSONSchemaType<FolderVo> = {
     'ChildItemVOs',
     'displayName',
     'downloadName',
-    'displayDT',
     'createdDT',
     'updatedDT',
   ],
