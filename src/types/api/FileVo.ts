@@ -13,17 +13,6 @@ export interface FileVo extends BaseVo {
   downloadURL: string;
 }
 
-export const defaultFileVo: FileVo = {
-  fileId: 0,
-  size: 0,
-  format: '',
-  md5Checksum: '',
-  fileURL: '',
-  downloadURL: '',
-  createdDT: '',
-  updatedDT: '',
-};
-
 export const fileVoSchema: JSONSchemaType<FileVo> = {
   type: 'object',
   properties: {

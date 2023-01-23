@@ -19,19 +19,6 @@ export interface RecordVo extends BaseVo {
   displayDT: string;
 }
 
-export const defaultRecordVo: RecordVo = {
-  recordId: 0,
-  type: '',
-  status: '',
-  FileVOs: [],
-  displayName: '',
-  uploadFileName: '',
-  downloadName: '',
-  displayDT: '',
-  createdDT: '',
-  updatedDT: '',
-};
-
 export const recordVoSchema: JSONSchemaType<RecordVo> = {
   type: 'object',
   properties: {

@@ -5,12 +5,16 @@ import type { ErrorObject } from 'ajv';
 export class ValidationError extends Error {
   public errors?: ErrorObject[] | null;
 
+  public input?: unknown;
+
   public constructor(
     message?: string,
     errors?: ErrorObject[] | null,
+    input?: unknown,
   ) {
     super(message);
     this.name = this.constructor.name;
     this.errors = errors;
+    this.input = input;
   }
 }
