@@ -1,9 +1,6 @@
-import { ValidationError } from '../errors';
 import {
   isFolderVo,
-  isFolderVoArray,
   isRecordVo,
-  isRecordVoArray,
 } from '../types';
 import type {
   FolderVo,
@@ -13,29 +10,17 @@ import type {
 import { recordVoToArchiveRecord } from './recordVoToArchiveRecord';
 import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 
-const extractFolderVos = (items: unknown[]): FolderVo[] => {
-  const folderVos = items.filter((item) => isFolderVo(item));
-  if (isFolderVoArray(folderVos)) {
-    return folderVos;
-  }
+const extractFolderVos = (items: unknown[]): FolderVo[] => (
+  items.filter<FolderVo>(
+    (item): item is FolderVo => isFolderVo(item),
+  )
+);
 
-  throw new ValidationError(
-    'FolderVos were improperly parsed',
-    isFolderVoArray.errors,
-  );
-};
-
-const extractRecordVos = (items: unknown[]): RecordVo[] => {
-  const recordVos = items.filter((item) => isRecordVo(item));
-  if (isRecordVoArray(recordVos)) {
-    return recordVos;
-  }
-
-  throw new ValidationError(
-    'RecordVos were improperly parsed',
-    isRecordVoArray.errors,
-  );
-};
+const extractRecordVos = (items: unknown[]): RecordVo[] => (
+  items.filter<RecordVo>(
+    (item): item is RecordVo => isRecordVo(item),
+  )
+);
 
 export const folderVoToFolder = (folderVo: FolderVo): Folder => ({
   id: folderVo.folderId,

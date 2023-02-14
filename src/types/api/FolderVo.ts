@@ -59,10 +59,3 @@ export const folderVoSchema: JSONSchemaType<FolderVo> = {
 };
 
 export const isFolderVo = ajv.compile(folderVoSchema);
-
-export const folderVoArraySchema: JSONSchemaType<FolderVo[]> = {
-  type: 'array',
-  items: folderVoSchema,
-};
-
-export const isFolderVoArray = ajv.compile(folderVoArraySchema);
