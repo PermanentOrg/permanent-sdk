@@ -1,3 +1,4 @@
+export * from './createArchiveRecord';
 export * from './createFolder';
 export * from './getArchiveFolders';
 export * from './getArchiveRecord';

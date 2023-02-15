@@ -69,10 +69,3 @@ export const recordVoSchema: JSONSchemaType<RecordVo> = {
 };
 
 export const isRecordVo = ajv.compile(recordVoSchema);
-
-export const recordVoArraySchema: JSONSchemaType<RecordVo[]> = {
-  type: 'array',
-  items: recordVoSchema,
-};
-
-export const isRecordVoArray = ajv.compile(recordVoArraySchema);

@@ -6,9 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- The `createArchiveRecord` function now exists.
+
 ### Changed
 - `Record` has been renamed to `ArchiveRecord`.
 - `RecordType` has been renamed to `ArchiveRecordType`.
+- `File` now has a `contentType` field which corresponds to a MIME type.
 
 ## [0.4.0] - 2022-12-21
 ### Added

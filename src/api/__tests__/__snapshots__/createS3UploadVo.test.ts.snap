@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createS3UploadVo should create a presigned post 1`] = `
+Object {
+  "destinationUrl": "https://permanent-local.s3.amazonaws.com/_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63",
+  "presignedPost": Object {
+    "fields": Object {
+      "Key": "_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63",
+      "Policy": "123456789=",
+      "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+      "X-Amz-Credential": "12345678/20230123/us-west-2/s3/aws4_request",
+      "X-Amz-Date": "20230123T210239Z",
+      "X-Amz-Signature": "1234567890",
+      "bucket": "permanent-local",
+    },
+    "url": "https://s3.us-west-2.amazonaws.com/permanent-local",
+  },
+}
+`;

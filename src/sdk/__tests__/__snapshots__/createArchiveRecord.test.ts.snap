@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createArchiveRecord should create an ArchiveRecord  1`] = `
+Object {
+  "createdAt": 2023-01-23T21:02:40.000Z,
+  "displayDate": 2023-01-23T21:02:40.000Z,
+  "displayName": "test",
+  "fileSystemCompatibleName": "test (1).txt",
+  "files": Array [],
+  "id": 5,
+  "status": "status.generic.undefined",
+  "type": "type.record.document",
+  "updatedAt": 2023-01-23T21:02:40.000Z,
+}
+`;

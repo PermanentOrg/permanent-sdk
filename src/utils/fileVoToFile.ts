@@ -15,9 +15,10 @@ const toDerivativeType = (input: string): DerivativeType => (
 export const fileVoToFile = (fileVo: FileVo): File => ({
   id: fileVo.fileId,
   derivativeType: toDerivativeType(fileVo.format),
-  fileUrl: fileVo.fileURL,
-  downloadUrl: fileVo.downloadURL,
-  checksum: fileVo.md5Checksum,
+  contentType: fileVo.contentType ?? '',
+  fileUrl: fileVo.fileURL ?? '',
+  downloadUrl: fileVo.downloadURL ?? '',
+  checksum: fileVo.md5Checksum ?? '',
   size: fileVo.size,
   createdAt: new Date(formatTimestampAsUtc(fileVo.createdDT)),
   updatedAt: new Date(formatTimestampAsUtc(fileVo.updatedDT)),
