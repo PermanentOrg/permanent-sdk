@@ -19,7 +19,7 @@ describe('createFolder', () => {
         },
       );
 
-    const folderVo = await createFolder(
+    const folder = await createFolder(
       {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
@@ -32,6 +32,6 @@ describe('createFolder', () => {
       },
     );
 
-    expect(folderVo).toMatchSnapshot();
+    expect(folder).toMatchSnapshot();
   });
 });
