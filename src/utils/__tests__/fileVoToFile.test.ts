@@ -2,7 +2,7 @@ import { DerivativeType } from '../../types';
 import { fileVoToFile } from '..';
 
 describe('fileVoToFile', () => {
-  it('should properly populate a File based on FileVo data will null fields', () => {
+  it('should properly populate a File based on FileVo data with undefined fields', () => {
     const fileVo = {
       fileId: 71,
       size: 1337,
@@ -11,6 +11,32 @@ describe('fileVoToFile', () => {
       md5Checksum: undefined,
       fileURL: undefined,
       downloadURL: undefined,
+      createdDT: '2022-08-10T14:59:03.853Z',
+      updatedDT: '2022-09-10T14:59:03.853Z',
+    };
+    const file = fileVoToFile(fileVo);
+    expect(file).toEqual({
+      id: 71,
+      size: 1337,
+      contentType: '',
+      derivativeType: DerivativeType.Original,
+      fileUrl: '',
+      downloadUrl: '',
+      checksum: '',
+      createdAt: new Date('2022-08-10T14:59:03.853Z'),
+      updatedAt: new Date('2022-09-10T14:59:03.853Z'),
+    });
+  });
+
+  it('should properly populate a File based on FileVo data with null fields', () => {
+    const fileVo = {
+      fileId: 71,
+      size: 1337,
+      format: 'file.format.original',
+      contentType: null,
+      md5Checksum: null,
+      fileURL: null,
+      downloadURL: null,
       createdDT: '2022-08-10T14:59:03.853Z',
       updatedDT: '2022-09-10T14:59:03.853Z',
     };

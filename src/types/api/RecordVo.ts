@@ -12,7 +12,7 @@ export interface RecordVo extends BaseVo {
   recordId: number;
   type: string;
   status: string;
-  FileVOs?: FileVo[];
+  FileVOs?: FileVo[] | null;
   displayName: string;
   uploadFileName: string;
   downloadName: string;
