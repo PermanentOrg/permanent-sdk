@@ -30,6 +30,33 @@ describe('getFolderVo', () => {
     expect(folderVo).toMatchSnapshot();
   });
 
+  it('should return the folder VO when displayDateDT is null', async () => {
+    nock('https://permanent.local')
+      .get('/api/folder/getWithChildren')
+      .query({
+        folderId: 7457,
+        archiveId: 1,
+      })
+      .replyWithFile(
+        200,
+        `${__dirname}/fixtures/getFolderVo/folderWithNullDisplayDt.json`,
+        {
+          'Content-Type': 'application/json',
+        },
+      );
+
+    const folderVo = await getFolderVo(
+      {
+        bearerToken: '12345',
+        baseUrl: 'https://permanent.local/api',
+      },
+      7457,
+      1,
+    );
+
+    expect(folderVo).toMatchSnapshot();
+  });
+
   it('should error when provided an invalid response', async () => {
     nock('https://permanent.local')
       .get('/api/folder/getWithChildren')

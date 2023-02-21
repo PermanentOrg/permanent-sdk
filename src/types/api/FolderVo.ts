@@ -11,7 +11,7 @@ export interface FolderVo extends BaseVo {
   ChildItemVOs: (FolderVo | RecordVo)[];
   displayName: string;
   downloadName: string;
-  displayDT?: string;
+  displayDT?: string | null;
 }
 
 export const folderVoSchema: JSONSchemaType<FolderVo> = {

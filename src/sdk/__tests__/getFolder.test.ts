@@ -28,4 +28,31 @@ describe('getFolder', () => {
 
     expect(folder).toMatchSnapshot();
   });
+
+  it('should return a Folder when DisplayDT is null', async () => {
+    nock('https://permanent.local')
+      .get('/api/folder/getWithChildren')
+      .query({
+        folderId: 7457,
+        archiveId: 1,
+      })
+      .replyWithFile(
+        200,
+        `${__dirname}/fixtures/getFolder/folderWithNullDisplayDt.json`,
+        {
+          'Content-Type': 'application/json',
+        },
+      );
+
+    const folder = await getFolder(
+      {
+        bearerToken: '12345',
+        baseUrl: 'https://permanent.local/api',
+      },
+      7457,
+      1,
+    );
+
+    expect(folder).toMatchSnapshot();
+  });
 });
