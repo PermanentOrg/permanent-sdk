@@ -6,6 +6,7 @@ export interface ArchiveVo extends BaseVo {
   // These fields map to those defined in the base library ArchiveVO
   // https://github.com/PermanentOrg/back-end/blob/main/library/base/vo/base.archive.vo.php
   archiveId: number;
+  archiveNbr: string;
   fullName: string;
 }
 
@@ -14,6 +15,9 @@ export const archiveVoSchema: JSONSchemaType<ArchiveVo> = {
   properties: {
     archiveId: {
       type: 'integer',
+    },
+    archiveNbr: {
+      type: 'string',
     },
     fullName: {
       type: 'string',
@@ -27,6 +31,7 @@ export const archiveVoSchema: JSONSchemaType<ArchiveVo> = {
   },
   required: [
     'archiveId',
+    'archiveNbr',
     'fullName',
     'createdDT',
     'updatedDT',

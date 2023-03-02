@@ -6,12 +6,14 @@ Array [
     "createdAt": 2022-06-23T18:33:43.000Z,
     "id": 1,
     "name": "dan",
+    "slug": "0001-0000",
     "updatedAt": 2022-06-23T18:33:57.000Z,
   },
   Object {
     "createdAt": 2022-06-23T18:34:25.000Z,
     "id": 20,
     "name": "another test account",
+    "slug": "000k-0000",
     "updatedAt": 2022-06-23T19:38:01.000Z,
   },
 ]
