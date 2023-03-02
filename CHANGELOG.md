@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.5.2] - 2023-03-02
 ### Added
 - `Archive` now has a [`slug`](https://developer.mozilla.org/en-US/docs/Glossary/Slug) field.
 
@@ -53,7 +55,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The `Archive` type.
 - The `ClientConfig` type which allows an sdk user to specify their credentials and other configuration settings.
 
-[Unreleased]: https://github.com/permanentorg/permanent-sdk/base/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/permanentorg/permanent-sdk/base/compare/v0.5.2...HEAD
+[0.5.2]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.5.2
+[0.5.1]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.5.1
+[0.5.0]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.5.0
 [0.4.0]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.4.0
 [0.3.0]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.3.0
 [0.2.1]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.2.1
