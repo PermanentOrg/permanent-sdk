@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - the `deleteFolder` function now exists.
+- the `deleteArchiveRecord` function now exists.
 
 ## [0.5.2] - 2023-03-02
 ### Added

@@ -2,6 +2,7 @@ export * from './createFolderVo';
 export * from './createRecordVo';
 export * from './createS3UploadVo';
 export * from './deleteFolderVo';
+export * from './deleteRecordVo';
 export * from './getAllArchiveVos';
 export * from './getArchiveRootFolderVo';
 export * from './getFolderVo';
