@@ -5,5 +5,6 @@ export * from './deleteFolderVo';
 export * from './deleteRecordVo';
 export * from './getAllArchiveVos';
 export * from './getArchiveRootFolderVo';
+export * from './getAuthenticatedAccountVo';
 export * from './getFolderVo';
 export * from './getRecordVo';

@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - the `deleteFolder` function now exists.
 - the `deleteArchiveRecord` function now exists.
+- the `getAuthenticatedAccount` function now exists.
+- The `Account` type now exists.
 
 ## [0.5.2] - 2023-03-02
 ### Added

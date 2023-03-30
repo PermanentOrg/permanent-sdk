@@ -1,3 +1,4 @@
+export * from './accountVoToAccount';
 export * from './archiveVoToArchive';
 export * from './executePresignedPost';
 export * from './fileVoToFile';

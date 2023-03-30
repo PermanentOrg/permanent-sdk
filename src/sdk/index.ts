@@ -5,4 +5,5 @@ export * from './deleteFolder';
 export * from './getArchiveFolders';
 export * from './getArchiveRecord';
 export * from './getArchives';
+export * from './getAuthenticatedAccount';
 export * from './getFolder';
