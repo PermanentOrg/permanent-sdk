@@ -1,3 +1,4 @@
+export * from './AccountVo';
 export * from './ArchiveVo';
 export * from './BaseVo';
 export * from './FileVo';

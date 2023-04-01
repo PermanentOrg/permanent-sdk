@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getAuthenticatedAccount should return an Account 1`] = `
+Object {
+  "createdAt": 2023-03-09T17:33:09.000Z,
+  "id": 2,
+  "isSftpDeletionEnabled": false,
+  "updatedAt": 2023-03-09T17:33:13.000Z,
+}
+`;

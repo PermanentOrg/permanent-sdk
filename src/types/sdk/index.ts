@@ -1,4 +1,5 @@
 export * from './AccessRole';
+export * from './Account';
 export * from './Archive';
 export * from './ArchiveRecord';
 export * from './ArchiveRecordType';
