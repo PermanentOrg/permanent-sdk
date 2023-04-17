@@ -58,7 +58,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-sort-exports": "^0.6.0",
+    "eslint-plugin-sort-exports": "^0.8.0",
     "jest": "^27.4.7",
     "nock": "^13.2.8",
     "ts-jest": "^27.1.3",
