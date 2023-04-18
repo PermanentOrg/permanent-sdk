@@ -6,6 +6,7 @@ export interface AccountVo extends BaseVo {
   // These fields map to those defined in the base library ArchiveVO
   // https://github.com/PermanentOrg/back-end/blob/main/library/base/vo/base.account.vo.php
   accountId: number;
+  allowSftpDeletion: boolean;
 }
 
 export const accountVoSchema: JSONSchemaType<AccountVo> = {
@@ -13,6 +14,9 @@ export const accountVoSchema: JSONSchemaType<AccountVo> = {
   properties: {
     accountId: {
       type: 'integer',
+    },
+    allowSftpDeletion: {
+      type: 'boolean',
     },
     createdDT: {
       type: 'string',
@@ -25,6 +29,7 @@ export const accountVoSchema: JSONSchemaType<AccountVo> = {
     'accountId',
     'createdDT',
     'updatedDT',
+    'allowSftpDeletion',
   ],
 };
 
