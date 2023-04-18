@@ -18,6 +18,7 @@
     "emailStatus": "status.auth.unverified",
     "phoneStatus": "status.auth.none",
     "notificationPreferences": "{\"textPreference\": {\"apps\": {\"confirmations\": 1}, \"share\": {\"requests\": 1, \"activities\": 1, \"confirmations\": 1}, \"account\": {\"confirmations\": 1, \"recommendations\": 1}, \"archive\": {\"requests\": 1, \"confirmations\": 1}, \"relationships\": {\"requests\": 1, \"confirmations\": 1}}, \"emailPreference\": {\"apps\": {\"confirmations\": 1}, \"share\": {\"requests\": 1, \"activities\": 1, \"confirmations\": 1}, \"account\": {\"confirmations\": 1, \"recommendations\": 1}, \"archive\": {\"requests\": 1, \"confirmations\": 1}, \"relationships\": {\"requests\": 1, \"confirmations\": 1}}, \"inAppPreference\": {\"apps\": {\"confirmations\": 1}, \"share\": {\"requests\": 1, \"activities\": 1, \"confirmations\": 1}, \"account\": {\"confirmations\": 1, \"recommendations\": 1}, \"archive\": {\"requests\": 1, \"confirmations\": 1}, \"relationships\": {\"requests\": 1, \"confirmations\": 1}}}",
+    "allowSftpDeletion": false,
     "agreed": null,
     "optIn": null,
     "emailArray": null,
