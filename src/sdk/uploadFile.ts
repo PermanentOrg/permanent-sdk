@@ -1,3 +1,4 @@
+import type { Readable } from 'stream';
 import type {
   ArchiveRecord,
   File,
@@ -5,27 +6,36 @@ import type {
   Folder,
 } from '../types';
 import {
-  createRecordVo,
+  createS3UploadVo,
 } from '../api';
 import {
-  recordVoToArchiveRecord,
+  executePresignedPost,
 } from '../utils';
 
-export const createArchiveRecord = async (
+export const uploadFile = async (
   clientConfiguration: ClientConfiguration,
-  s3Url: string,
+  fileData: Buffer | Readable,
   file: Pick<File, 'contentType' | 'size'>,
   item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>,
   parentFolder: Pick<Folder, 'id'>,
-): Promise<ArchiveRecord> => {
-  const recordVo = await createRecordVo(
+): Promise<string> => {
+  const s3UploadVo = await createS3UploadVo(
     clientConfiguration,
-    s3Url,
     item.displayName,
     parentFolder.id,
     item.fileSystemCompatibleName,
     file.contentType,
     file.size,
   );
-  return recordVoToArchiveRecord(recordVo);
+
+  await executePresignedPost(
+    s3UploadVo.presignedPost.url,
+    {
+      ...s3UploadVo.presignedPost.fields,
+      'Content-Type': file.contentType,
+    },
+    fileData,
+    file.size,
+  );
+  return s3UploadVo.destinationUrl;
 };
