@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createArchiveRecord should create an ArchiveRecord  1`] = `
+exports[`createArchiveRecord should create an ArchiveRecord 1`] = `
 Object {
   "createdAt": 2023-01-23T21:02:40.000Z,
   "displayDate": 2023-01-23T21:02:40.000Z,
