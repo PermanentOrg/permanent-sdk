@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.6.0] - 2023-05-18
 ## Changed
 - The `createArchiveRecord` function no longer uploads files, clients must use the new `uploadFile` function for this.
 
@@ -71,7 +73,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The `Archive` type.
 - The `ClientConfig` type which allows an sdk user to specify their credentials and other configuration settings.
 
-[Unreleased]: https://github.com/permanentorg/permanent-sdk/base/compare/v0.5.3...HEAD
+[Unreleased]: https://github.com/permanentorg/permanent-sdk/base/compare/v0.6.0...HEAD
+[0.5.3]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.6.0
+[0.5.4]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.5.4
 [0.5.3]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.5.3
 [0.5.2]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.5.2
 [0.5.1]: https://github.com/permanentorg/permanent-sdk/base/releases/tag/v0.5.1
