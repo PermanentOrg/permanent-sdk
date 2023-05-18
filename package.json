@@ -49,7 +49,7 @@
   "homepage": "https://github.com/PermanentOrg/permanent-sdk#readme",
   "devDependencies": {
     "@tsconfig/esm": "^1.0.0",
-    "@tsconfig/node14": "^1.0.1",
+    "@tsconfig/node16": "^1.0.4",
     "@types/jest": "^27.4.0",
     "@types/node-fetch": "^2.6.1",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
