@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getAllArchiveVos should return an array of archive VOs 1`] = `
-Array [
-  Object {
-    "ChildFolderVOs": Array [],
-    "FolderSizeVOs": Array [],
-    "ItemVOs": Array [],
-    "RecordVOs": Array [],
+[
+  {
+    "ChildFolderVOs": [],
+    "FolderSizeVOs": [],
+    "ItemVOs": [],
+    "RecordVOs": [],
     "accessRole": "access.role.owner",
     "allowPublicDownload": 1,
     "archiveId": 1,
@@ -40,11 +40,11 @@ Array [
     "view": null,
     "viewProperty": null,
   },
-  Object {
-    "ChildFolderVOs": Array [],
-    "FolderSizeVOs": Array [],
-    "ItemVOs": Array [],
-    "RecordVOs": Array [],
+  {
+    "ChildFolderVOs": [],
+    "FolderSizeVOs": [],
+    "ItemVOs": [],
+    "RecordVOs": [],
     "accessRole": "access.role.owner",
     "allowPublicDownload": 1,
     "archiveId": 20,

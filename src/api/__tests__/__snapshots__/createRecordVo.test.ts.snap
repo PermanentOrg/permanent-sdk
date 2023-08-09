@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`createRecordVo should create a record 1`] = `
-Object {
+{
   "AccessVO": null,
-  "ArchiveVOs": Array [],
+  "ArchiveVOs": [],
   "FileVOs": null,
-  "FolderLinkVOs": Array [
-    Object {
+  "FolderLinkVOs": [
+    {
       "accessRole": "access.role.owner",
       "archiveId": 2,
       "createdDT": "2023-01-23T21:02:40",
@@ -26,9 +26,9 @@ Object {
   "LocnVO": null,
   "ParentFolderVOs": null,
   "RecordExifVO": null,
-  "ShareVOs": Array [],
-  "TagVOs": Array [],
-  "TextDataVOs": Array [],
+  "ShareVOs": [],
+  "TagVOs": [],
+  "TextDataVOs": [],
   "TimezoneVO": null,
   "accessRole": "access.role.owner",
   "archiveArchiveNbr": null,

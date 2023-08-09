@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getFolderVo should return the folder VO when displayDateDT is null 1`] = `
-Object {
+{
   "AccessVO": null,
   "AccessVOs": null,
-  "ChildFolderVOs": Array [
-    Object {
+  "ChildFolderVOs": [
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:10",
@@ -30,12 +30,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -75,9 +75,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -101,13 +101,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -126,12 +126,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -171,9 +171,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -197,13 +197,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -222,12 +222,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -267,9 +267,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -294,14 +294,14 @@ Object {
       "viewProperty": null,
     },
   ],
-  "ChildItemVOs": Array [
-    Object {
+  "ChildItemVOs": [
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:10",
@@ -320,12 +320,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -365,9 +365,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -391,13 +391,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -416,12 +416,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -461,9 +461,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -487,13 +487,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -512,12 +512,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -557,9 +557,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -584,8 +584,8 @@ Object {
       "viewProperty": null,
     },
   ],
-  "FolderLinkVOs": Array [
-    Object {
+  "FolderLinkVOs": [
+    {
       "accessRole": "access.role.owner",
       "archiveId": 1,
       "createdDT": "2022-12-16T15:45:08",
@@ -602,7 +602,7 @@ Object {
       "updatedDT": "2022-12-16T15:45:08",
     },
   ],
-  "FolderSizeVO": Object {
+  "FolderSizeVO": {
     "allAudioCountDeep": 0,
     "allAudioCountShallow": 0,
     "allDocumentCountDeep": 0,
@@ -654,12 +654,12 @@ Object {
     "updatedDT": "2022-12-16T16:29:22",
   },
   "LocnVO": null,
-  "ParentFolderVOs": Array [],
-  "RecordVOs": Array [],
-  "ShareVOs": Array [],
-  "SharedArchiveVOs": Array [],
-  "TagVOs": Array [],
-  "TimezoneVO": Object {
+  "ParentFolderVOs": [],
+  "RecordVOs": [],
+  "ShareVOs": [],
+  "SharedArchiveVOs": [],
+  "TagVOs": [],
+  "TimezoneVO": {
     "country": "United States",
     "countryCode": "US",
     "createdDT": "2017-05-26T00:00:00",
@@ -699,9 +699,9 @@ Object {
   "parentDisplayName": null,
   "parentFolderId": null,
   "parentFolder_linkId": null,
-  "pathAsArchiveNbr": Array [],
+  "pathAsArchiveNbr": [],
   "pathAsFolder_linkId": null,
-  "pathAsText": Array [],
+  "pathAsText": [],
   "posLimit": null,
   "posStart": null,
   "position": 1,
@@ -728,17 +728,17 @@ Object {
 `;
 
 exports[`getFolderVo should return the root folder VO 1`] = `
-Object {
+{
   "AccessVO": null,
   "AccessVOs": null,
-  "ChildFolderVOs": Array [
-    Object {
+  "ChildFolderVOs": [
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:10",
@@ -757,12 +757,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -802,9 +802,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -828,13 +828,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -853,12 +853,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -898,9 +898,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -924,13 +924,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -949,12 +949,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -994,9 +994,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -1021,14 +1021,14 @@ Object {
       "viewProperty": null,
     },
   ],
-  "ChildItemVOs": Array [
-    Object {
+  "ChildItemVOs": [
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:10",
@@ -1047,12 +1047,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -1092,9 +1092,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -1118,13 +1118,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -1143,12 +1143,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -1188,9 +1188,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -1214,13 +1214,13 @@ Object {
       "view": "folder.view.grid",
       "viewProperty": null,
     },
-    Object {
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-12-16T15:45:11",
@@ -1239,12 +1239,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -1284,9 +1284,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 1,
       "parentFolder_linkId": 1,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -1311,8 +1311,8 @@ Object {
       "viewProperty": null,
     },
   ],
-  "FolderLinkVOs": Array [
-    Object {
+  "FolderLinkVOs": [
+    {
       "accessRole": "access.role.owner",
       "archiveId": 1,
       "createdDT": "2022-12-16T15:45:08",
@@ -1329,7 +1329,7 @@ Object {
       "updatedDT": "2022-12-16T15:45:08",
     },
   ],
-  "FolderSizeVO": Object {
+  "FolderSizeVO": {
     "allAudioCountDeep": 0,
     "allAudioCountShallow": 0,
     "allDocumentCountDeep": 0,
@@ -1381,12 +1381,12 @@ Object {
     "updatedDT": "2022-12-16T16:29:22",
   },
   "LocnVO": null,
-  "ParentFolderVOs": Array [],
-  "RecordVOs": Array [],
-  "ShareVOs": Array [],
-  "SharedArchiveVOs": Array [],
-  "TagVOs": Array [],
-  "TimezoneVO": Object {
+  "ParentFolderVOs": [],
+  "RecordVOs": [],
+  "ShareVOs": [],
+  "SharedArchiveVOs": [],
+  "TagVOs": [],
+  "TimezoneVO": {
     "country": "United States",
     "countryCode": "US",
     "createdDT": "2017-05-26T00:00:00",
@@ -1426,9 +1426,9 @@ Object {
   "parentDisplayName": null,
   "parentFolderId": null,
   "parentFolder_linkId": null,
-  "pathAsArchiveNbr": Array [],
+  "pathAsArchiveNbr": [],
   "pathAsFolder_linkId": null,
-  "pathAsText": Array [],
+  "pathAsText": [],
   "posLimit": null,
   "posStart": null,
   "position": 1,

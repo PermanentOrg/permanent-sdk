@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getAuthenticatedAccountVo should return the account VO 1`] = `
-Object {
+{
   "accessRole": null,
   "accountId": 2,
   "address": null,
@@ -23,7 +23,7 @@ Object {
   "fullName": "Blarg Blarg",
   "inviteCode": null,
   "keepLoggedIn": null,
-  "notificationPreferences": "{\\"textPreference\\": {\\"apps\\": {\\"confirmations\\": 1}, \\"share\\": {\\"requests\\": 1, \\"activities\\": 1, \\"confirmations\\": 1}, \\"account\\": {\\"confirmations\\": 1, \\"recommendations\\": 1}, \\"archive\\": {\\"requests\\": 1, \\"confirmations\\": 1}, \\"relationships\\": {\\"requests\\": 1, \\"confirmations\\": 1}}, \\"emailPreference\\": {\\"apps\\": {\\"confirmations\\": 1}, \\"share\\": {\\"requests\\": 1, \\"activities\\": 1, \\"confirmations\\": 1}, \\"account\\": {\\"confirmations\\": 1, \\"recommendations\\": 1}, \\"archive\\": {\\"requests\\": 1, \\"confirmations\\": 1}, \\"relationships\\": {\\"requests\\": 1, \\"confirmations\\": 1}}, \\"inAppPreference\\": {\\"apps\\": {\\"confirmations\\": 1}, \\"share\\": {\\"requests\\": 1, \\"activities\\": 1, \\"confirmations\\": 1}, \\"account\\": {\\"confirmations\\": 1, \\"recommendations\\": 1}, \\"archive\\": {\\"requests\\": 1, \\"confirmations\\": 1}, \\"relationships\\": {\\"requests\\": 1, \\"confirmations\\": 1}}}",
+  "notificationPreferences": "{"textPreference": {"apps": {"confirmations": 1}, "share": {"requests": 1, "activities": 1, "confirmations": 1}, "account": {"confirmations": 1, "recommendations": 1}, "archive": {"requests": 1, "confirmations": 1}, "relationships": {"requests": 1, "confirmations": 1}}, "emailPreference": {"apps": {"confirmations": 1}, "share": {"requests": 1, "activities": 1, "confirmations": 1}, "account": {"confirmations": 1, "recommendations": 1}, "archive": {"requests": 1, "confirmations": 1}, "relationships": {"requests": 1, "confirmations": 1}}, "inAppPreference": {"apps": {"confirmations": 1}, "share": {"requests": 1, "activities": 1, "confirmations": 1}, "account": {"confirmations": 1, "recommendations": 1}, "archive": {"requests": 1, "confirmations": 1}, "relationships": {"requests": 1, "confirmations": 1}}}",
   "optIn": null,
   "phoneStatus": "status.auth.none",
   "primaryEmail": "blarg@permanent.org",

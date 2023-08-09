@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getRecordVo should return the record VO 1`] = `
-Object {
+{
   "AccessVO": null,
-  "ArchiveVOs": Array [],
-  "FileVOs": Array [
-    Object {
+  "ArchiveVOs": [],
+  "FileVOs": [
+    {
       "archiveId": 1,
       "cloud1": "permanent-local",
       "cloud2": "permanent-local",
@@ -30,7 +30,7 @@ Object {
       "urlDT": "2022-08-08T21:05:21",
       "width": 1920,
     },
-    Object {
+    {
       "archiveId": 1,
       "cloud1": "permanent-local",
       "cloud2": "permanent-local",
@@ -56,8 +56,8 @@ Object {
       "width": 1920,
     },
   ],
-  "FolderLinkVOs": Array [
-    Object {
+  "FolderLinkVOs": [
+    {
       "accessRole": "access.role.owner",
       "archiveId": 1,
       "createdDT": "2022-07-19T15:26:31",
@@ -75,14 +75,14 @@ Object {
     },
   ],
   "LocnVO": null,
-  "ParentFolderVOs": Array [
-    Object {
+  "ParentFolderVOs": [
+    {
       "AccessVO": null,
       "AccessVOs": null,
-      "ChildFolderVOs": Array [],
-      "ChildItemVOs": Array [],
-      "FolderLinkVOs": Array [
-        Object {
+      "ChildFolderVOs": [],
+      "ChildItemVOs": [],
+      "FolderLinkVOs": [
+        {
           "accessRole": "access.role.owner",
           "archiveId": 1,
           "createdDT": "2022-07-19T14:00:45",
@@ -101,12 +101,12 @@ Object {
       ],
       "FolderSizeVO": null,
       "LocnVO": null,
-      "ParentFolderVOs": Array [],
-      "RecordVOs": Array [],
-      "ShareVOs": Array [],
-      "SharedArchiveVOs": Array [],
-      "TagVOs": Array [],
-      "TimezoneVO": Object {
+      "ParentFolderVOs": [],
+      "RecordVOs": [],
+      "ShareVOs": [],
+      "SharedArchiveVOs": [],
+      "TagVOs": [],
+      "TimezoneVO": {
         "country": "United States",
         "countryCode": "US",
         "createdDT": "2017-05-26T00:00:00",
@@ -146,9 +146,9 @@ Object {
       "parentDisplayName": null,
       "parentFolderId": 3,
       "parentFolder_linkId": 3,
-      "pathAsArchiveNbr": Array [],
+      "pathAsArchiveNbr": [],
       "pathAsFolder_linkId": null,
-      "pathAsText": Array [],
+      "pathAsText": [],
       "posLimit": null,
       "posStart": null,
       "position": 1,
@@ -174,10 +174,10 @@ Object {
     },
   ],
   "RecordExifVO": null,
-  "ShareVOs": Array [],
-  "TagVOs": Array [],
-  "TextDataVOs": Array [],
-  "TimezoneVO": Object {
+  "ShareVOs": [],
+  "TagVOs": [],
+  "TextDataVOs": [],
+  "TimezoneVO": {
     "country": "United States",
     "countryCode": "US",
     "createdDT": "2017-05-26T00:00:00",
