@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getArchives should return an array of archives 1`] = `
-Array [
-  Object {
+[
+  {
     "createdAt": 2022-06-23T18:33:43.000Z,
     "id": 1,
     "name": "dan",
     "slug": "0001-0000",
     "updatedAt": 2022-06-23T18:33:57.000Z,
   },
-  Object {
+  {
     "createdAt": 2022-06-23T18:34:25.000Z,
     "id": 20,
     "name": "another test account",

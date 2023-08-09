@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getFolder should return a Folder 1`] = `
-Object {
-  "archiveRecords": Array [
-    Object {
+{
+  "archiveRecords": [
+    {
       "createdAt": 2022-07-19T15:26:31.000Z,
       "displayDate": 2022-06-01T18:44:43.000Z,
       "displayName": "face-in-clouds",
       "fileSystemCompatibleName": "face-in-clouds.gif",
-      "files": Array [],
+      "files": [],
       "id": 512,
       "status": "status.generic.ok",
       "type": "type.record.image",
@@ -18,13 +18,13 @@ Object {
   "createdAt": 2022-07-19T14:00:45.000Z,
   "displayDate": 2022-06-01T18:44:43.000Z,
   "fileSystemCompatibleName": "testing",
-  "folders": Array [
-    Object {
-      "archiveRecords": Array [],
+  "folders": [
+    {
+      "archiveRecords": [],
       "createdAt": 2022-07-19T15:26:40.000Z,
       "displayDate": 2022-07-19T15:26:40.000Z,
       "fileSystemCompatibleName": "Internal folder",
-      "folders": Array [],
+      "folders": [],
       "id": 7458,
       "name": "Internal folder",
       "size": 0,
@@ -39,14 +39,14 @@ Object {
 `;
 
 exports[`getFolder should return a Folder when DisplayDT is null 1`] = `
-Object {
-  "archiveRecords": Array [
-    Object {
+{
+  "archiveRecords": [
+    {
       "createdAt": 2022-07-19T15:26:31.000Z,
       "displayDate": 2022-06-01T18:44:43.000Z,
       "displayName": "face-in-clouds",
       "fileSystemCompatibleName": "face-in-clouds.gif",
-      "files": Array [],
+      "files": [],
       "id": 512,
       "status": "status.generic.ok",
       "type": "type.record.image",
@@ -56,13 +56,13 @@ Object {
   "createdAt": 2022-07-19T14:00:45.000Z,
   "displayDate": undefined,
   "fileSystemCompatibleName": "testing",
-  "folders": Array [
-    Object {
-      "archiveRecords": Array [],
+  "folders": [
+    {
+      "archiveRecords": [],
       "createdAt": 2022-07-19T15:26:40.000Z,
       "displayDate": 2022-07-19T15:26:40.000Z,
       "fileSystemCompatibleName": "Internal folder",
-      "folders": Array [],
+      "folders": [],
       "id": 7458,
       "name": "Internal folder",
       "size": 0,

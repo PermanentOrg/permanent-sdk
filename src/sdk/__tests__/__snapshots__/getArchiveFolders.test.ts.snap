@@ -1,35 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getArchiveFolders should return an array of folders 1`] = `
-Array [
-  Object {
-    "archiveRecords": Array [],
+[
+  {
+    "archiveRecords": [],
     "createdAt": 2022-12-16T15:45:10.000Z,
     "displayDate": 2022-12-16T15:45:10.000Z,
     "fileSystemCompatibleName": "Apps",
-    "folders": Array [],
+    "folders": [],
     "id": 2,
     "name": "Apps",
     "size": 0,
     "updatedAt": 2022-12-16T15:45:11.000Z,
   },
-  Object {
-    "archiveRecords": Array [],
+  {
+    "archiveRecords": [],
     "createdAt": 2022-12-16T15:45:10.000Z,
     "displayDate": 2022-12-16T15:45:10.000Z,
     "fileSystemCompatibleName": "My Files",
-    "folders": Array [],
+    "folders": [],
     "id": 3,
     "name": "My Files",
     "size": 0,
     "updatedAt": 2022-12-16T16:15:13.000Z,
   },
-  Object {
-    "archiveRecords": Array [],
+  {
+    "archiveRecords": [],
     "createdAt": 2022-12-16T15:45:11.000Z,
     "displayDate": 2022-12-16T15:45:11.000Z,
     "fileSystemCompatibleName": "Public",
-    "folders": Array [],
+    "folders": [],
     "id": 4,
     "name": "Public",
     "size": 0,
