@@ -51,7 +51,7 @@
     "@tsconfig/esm": "^1.0.0",
     "@tsconfig/node18": "^18.2.0",
     "@types/jest": "^29.5.3",
-    "@types/node": "^18.17.4",
+    "@types/node": "^20.4.9",
     "@types/node-fetch": "^2.6.1",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
