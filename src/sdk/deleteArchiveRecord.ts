@@ -1,7 +1,7 @@
+import { deleteRecordVo } from '../api';
 import type {
   ClientConfiguration,
 } from '../types';
-import { deleteRecordVo } from '../api';
 
 export const deleteArchiveRecord = async (
   clientConfiguration: ClientConfiguration,

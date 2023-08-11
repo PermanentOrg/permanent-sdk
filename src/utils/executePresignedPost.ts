@@ -1,5 +1,5 @@
-import fetch from 'node-fetch';
 import FormData from 'form-data';
+import fetch from 'node-fetch';
 import type { Readable } from 'stream';
 import type { Response } from 'node-fetch';
 

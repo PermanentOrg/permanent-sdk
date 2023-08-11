@@ -1,9 +1,9 @@
+import { getAuthenticatedAccountVo } from '../api';
+import { accountVoToAccount } from '../utils';
 import type {
   Account,
   ClientConfiguration,
 } from '../types';
-import { getAuthenticatedAccountVo } from '../api';
-import { accountVoToAccount } from '../utils';
 
 export const getAuthenticatedAccount = async (
   clientConfiguration: ClientConfiguration,

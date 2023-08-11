@@ -1,10 +1,10 @@
-import type { JSONSchemaType } from 'ajv';
 import { ajv } from '../utils/ajv';
 import { archiveVoSchema } from '../types';
 import {
   makePermanentApiCall,
   typedJsonParse,
 } from '../utils';
+import type { JSONSchemaType } from 'ajv';
 import type {
   ArchiveVo,
   ClientConfiguration,

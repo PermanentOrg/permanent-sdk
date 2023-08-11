@@ -1,5 +1,5 @@
-import type { ValidateFunction } from 'ajv';
 import { ValidationError } from '../errors';
+import type { ValidateFunction } from 'ajv';
 
 export const typedJsonParse = <T>(
   jsonString: string,

@@ -1,7 +1,7 @@
+import { deleteFolderVo } from '../api';
 import type {
   ClientConfiguration,
 } from '../types';
-import { deleteFolderVo } from '../api';
 
 export const deleteFolder = async (
   clientConfiguration: ClientConfiguration,

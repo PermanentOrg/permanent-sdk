@@ -1,15 +1,15 @@
-import type {
-  ArchiveRecord,
-  File,
-  ClientConfiguration,
-  Folder,
-} from '../types';
 import {
   createRecordVo,
 } from '../api';
 import {
   recordVoToArchiveRecord,
 } from '../utils';
+import type {
+  ArchiveRecord,
+  File,
+  ClientConfiguration,
+  Folder,
+} from '../types';
 
 export const createArchiveRecord = async (
   clientConfiguration: ClientConfiguration,

@@ -1,6 +1,6 @@
-import nock from 'nock';
 import fs from 'fs';
 import { URL } from 'url';
+import nock from 'nock';
 import { uploadFile } from '..';
 import { bodyContainsMultipartFormFields } from '../../test/utils';
 

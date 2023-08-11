@@ -1,11 +1,11 @@
+import {
+  DerivativeType,
+  isDerivativeType,
+} from '../types';
 import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 import type {
   File,
   FileVo,
-} from '../types';
-import {
-  DerivativeType,
-  isDerivativeType,
 } from '../types';
 
 const toDerivativeType = (input: string): DerivativeType => (

@@ -1,9 +1,9 @@
+import { getArchiveRootFolderVo } from '../api';
+import { folderVoToFolder } from '../utils';
 import type {
   ClientConfiguration,
   Folder,
 } from '../types';
-import { getArchiveRootFolderVo } from '../api';
-import { folderVoToFolder } from '../utils';
 
 export const getArchiveFolders = async (
   clientConfiguration: ClientConfiguration,

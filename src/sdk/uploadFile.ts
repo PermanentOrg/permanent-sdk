@@ -1,3 +1,9 @@
+import {
+  createS3UploadVo,
+} from '../api';
+import {
+  executePresignedPost,
+} from '../utils';
 import type { Readable } from 'stream';
 import type {
   ArchiveRecord,
@@ -5,12 +11,6 @@ import type {
   ClientConfiguration,
   Folder,
 } from '../types';
-import {
-  createS3UploadVo,
-} from '../api';
-import {
-  executePresignedPost,
-} from '../utils';
 
 export const uploadFile = async (
   clientConfiguration: ClientConfiguration,

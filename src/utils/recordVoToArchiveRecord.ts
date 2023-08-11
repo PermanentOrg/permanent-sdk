@@ -1,7 +1,3 @@
-import type {
-  RecordVo,
-  ArchiveRecord,
-} from '../types';
 import {
   ArchiveRecordType,
   Status,
@@ -10,6 +6,10 @@ import {
 } from '../types';
 import { fileVoToFile } from './fileVoToFile';
 import { formatTimestampAsUtc } from './formatTimestampAsUtc';
+import type {
+  RecordVo,
+  ArchiveRecord,
+} from '../types';
 
 const recordVoTypeToArchiveRecordType = (recordType: string): ArchiveRecordType => (
   isArchiveRecordType(recordType) ? recordType : ArchiveRecordType.Unknown

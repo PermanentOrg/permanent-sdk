@@ -2,13 +2,13 @@ import {
   isFolderVo,
   isRecordVo,
 } from '../types';
+import { recordVoToArchiveRecord } from './recordVoToArchiveRecord';
+import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 import type {
   FolderVo,
   Folder,
   RecordVo,
 } from '../types';
-import { recordVoToArchiveRecord } from './recordVoToArchiveRecord';
-import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 
 const extractFolderVos = (items: unknown[]): FolderVo[] => (
   items.filter<FolderVo>(
