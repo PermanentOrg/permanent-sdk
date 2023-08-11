@@ -1,5 +1,5 @@
-import nock from 'nock';
 import fs from 'fs';
+import nock from 'nock';
 import { createArchiveRecord } from '..';
 
 describe('createArchiveRecord', () => {

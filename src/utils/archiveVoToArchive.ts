@@ -1,8 +1,8 @@
+import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 import type {
   ArchiveVo,
   Archive,
 } from '../types';
-import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 
 export const archiveVoToArchive = (archiveVo: ArchiveVo): Archive => ({
   id: archiveVo.archiveId,

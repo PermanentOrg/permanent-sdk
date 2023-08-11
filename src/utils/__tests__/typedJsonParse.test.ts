@@ -1,7 +1,7 @@
-import type { JSONSchemaType } from 'ajv';
 import { ValidationError } from '../../errors';
 import { ajv } from '../ajv';
 import { typedJsonParse } from '..';
+import type { JSONSchemaType } from 'ajv';
 
 interface Target {
   foo: string;

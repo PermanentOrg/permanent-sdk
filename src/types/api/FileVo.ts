@@ -1,5 +1,5 @@
-import type { JSONSchemaType } from 'ajv';
 import { ajv } from '../../utils/ajv';
+import type { JSONSchemaType } from 'ajv';
 import type { BaseVo } from './BaseVo';
 
 export interface FileVo extends BaseVo {

@@ -1,6 +1,6 @@
-import type { JSONSchemaType } from 'ajv';
 import { ajv } from '../../utils/ajv';
 import { recordVoSchema } from './RecordVo';
+import type { JSONSchemaType } from 'ajv';
 import type { BaseVo } from './BaseVo';
 import type { RecordVo } from './RecordVo';
 

@@ -1,10 +1,10 @@
-import type { JSONSchemaType } from 'ajv';
 import { ajv } from '../../utils/ajv';
-import type { BaseVo } from './BaseVo';
-import type { FileVo } from './FileVo';
 import {
   fileVoSchema,
 } from './FileVo';
+import type { JSONSchemaType } from 'ajv';
+import type { BaseVo } from './BaseVo';
+import type { FileVo } from './FileVo';
 
 export interface RecordVo extends BaseVo {
   // These fields map to those defined in the base library ArchiveVO

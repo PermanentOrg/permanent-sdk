@@ -1,7 +1,7 @@
+import { ajv } from '../../utils/ajv';
+import { presignedPostSchema } from './PresignedPost';
 import type { JSONSchemaType } from 'ajv';
 import type { PresignedPost } from './PresignedPost';
-import { presignedPostSchema } from './PresignedPost';
-import { ajv } from '../../utils/ajv';
 
 export interface S3UploadVo {
   destinationUrl: string;

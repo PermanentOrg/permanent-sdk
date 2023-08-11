@@ -1,5 +1,5 @@
-import type { JSONSchemaType } from 'ajv';
 import { ajv } from '../../utils/ajv';
+import type { JSONSchemaType } from 'ajv';
 
 // The `presignedPost` type definition is ultimately driven by the AWS S3 type definitions
 // and come from our upload service:

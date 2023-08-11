@@ -1,9 +1,9 @@
+import { getFolderVo } from '../api';
+import { folderVoToFolder } from '../utils';
 import type {
   Folder,
   ClientConfiguration,
 } from '../types';
-import { getFolderVo } from '../api';
-import { folderVoToFolder } from '../utils';
 
 export const getFolder = async (
   clientConfiguration: ClientConfiguration,
