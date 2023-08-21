@@ -1,40 +1,37 @@
 import nock from 'nock';
 import { deleteArchiveRecord } from '..';
+import { HttpResponseError } from '../../errors';
 
 describe('deleteArchiveRecord', () => {
-  it('should return true when a record is deleted', async () => {
+  it('should not throw on successful deletion', async () => {
     nock('https://permanent.local')
       .delete(
         '/api/record/delete?recordId=1',
       )
       .reply(200);
 
-    const result = await deleteArchiveRecord(
+    await expect(deleteArchiveRecord(
       {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
       1,
-    );
-
-    expect(result).toBe(true);
+    )).resolves.not.toThrow();
   });
 
-  it('should return false when a record is not deleted', async () => {
+  it('should throw an error when receiving a 500 response', async () => {
     nock('https://permanent.local')
       .delete(
         '/api/record/delete?recordId=1',
       )
       .reply(500);
 
-    const result = await deleteArchiveRecord(
+    await expect(deleteArchiveRecord(
       {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
       1,
-    );
-
-    expect(result).toBe(false);
+    )).rejects.toThrow(HttpResponseError);
   });
 });

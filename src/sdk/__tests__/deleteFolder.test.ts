@@ -1,40 +1,37 @@
 import nock from 'nock';
 import { deleteFolder } from '..';
+import { HttpResponseError } from '../../errors/HttpResponseError';
 
 describe('deleteFolder', () => {
-  it('should return true when a folder is deleted', async () => {
+  it('should not throw when a folder is deleted', async () => {
     nock('https://permanent.local')
       .delete(
         '/api/folder/delete?folderId=1',
       )
       .reply(200);
 
-    const result = await deleteFolder(
+    await expect(deleteFolder(
       {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
       1,
-    );
-
-    expect(result).toBe(true);
+    )).resolves.not.toThrow();
   });
 
-  it('should return false when a folder is not deleted', async () => {
+  it('should throw an error when receiving a 500 response', async () => {
     nock('https://permanent.local')
       .delete(
         '/api/folder/delete?folderId=1',
       )
       .reply(500);
 
-    const result = await deleteFolder(
+    await expect(deleteFolder(
       {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
       1,
-    );
-
-    expect(result).toBe(false);
+    )).rejects.toThrow(HttpResponseError);
   });
 });
