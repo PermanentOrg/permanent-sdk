@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import { HttpResponseError } from '../errors';
 import type {
   RequestInit,
   Response,
@@ -38,5 +39,11 @@ export const makePermanentApiCall = async (
       headers,
     },
   );
+  if (!response.ok) {
+    throw new HttpResponseError(
+      response.status,
+      await response.text(),
+    );
+  }
   return response;
 };

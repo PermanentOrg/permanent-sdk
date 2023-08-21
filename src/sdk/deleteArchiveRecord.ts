@@ -6,7 +6,7 @@ import type {
 export const deleteArchiveRecord = async (
   clientConfiguration: ClientConfiguration,
   archiveRecordId: number,
-): Promise<boolean> => deleteRecordVo(
+): Promise<void> => deleteRecordVo(
   clientConfiguration,
   archiveRecordId,
 );

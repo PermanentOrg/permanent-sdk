@@ -6,7 +6,7 @@ import type {
 export const deleteFolder = async (
   clientConfiguration: ClientConfiguration,
   folderId: number,
-): Promise<boolean> => deleteFolderVo(
+): Promise<void> => deleteFolderVo(
   clientConfiguration,
   folderId,
 );
