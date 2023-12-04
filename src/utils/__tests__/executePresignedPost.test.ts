@@ -23,10 +23,12 @@ describe('executePresignedPost', () => {
       .reply(200, 'it worked');
 
     const response = await executePresignedPost(
-      'https://example.com/path',
-      bodyFields,
-      dataBuffer,
-      dataBuffer.length,
+      {
+        url: 'https://example.com/path',
+        bodyFields,
+        fileData: dataBuffer,
+        fileSize: dataBuffer.length,
+      },
     );
     const responseBody = await response.text();
 

@@ -24,10 +24,12 @@ export const createShareLink = async (
 ): Promise<ShareLink> => {
   const shareLinkVo = await createShareLinkVo(
     clientConfiguration,
-    params.fileSystemItem.fileSystemId,
-    params.maxUses,
-    params.showPreview,
-    params.defaultAccessRole,
+    {
+      folderLinkId: params.fileSystemItem.fileSystemId,
+      maxUses: params.maxUses,
+      previewToggle: params.showPreview,
+      defaultAccessRole: params.defaultAccessRole,
+    },
   );
   return shareLinkVoToShareLink(shareLinkVo);
 };

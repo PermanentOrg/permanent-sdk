@@ -25,21 +25,25 @@ export const uploadFile = async (
 ): Promise<string> => {
   const s3UploadVo = await createS3UploadVo(
     clientConfiguration,
-    params.item.displayName,
-    params.parentFolder.id,
-    params.item.fileSystemCompatibleName,
-    params.file.contentType,
-    params.file.size,
+    {
+      displayName: params.item.displayName,
+      parentFolderId: params.parentFolder.id,
+      uploadFileName: params.item.fileSystemCompatibleName,
+      fileType: params.file.contentType,
+      size: params.file.size,
+    },
   );
 
   await executePresignedPost(
-    s3UploadVo.presignedPost.url,
     {
-      ...s3UploadVo.presignedPost.fields,
-      'Content-Type': params.file.contentType,
+      url: s3UploadVo.presignedPost.url,
+      bodyFields: {
+        ...s3UploadVo.presignedPost.fields,
+        'Content-Type': params.file.contentType,
+      },
+      fileData: params.fileData,
+      fileSize: params.file.size,
     },
-    params.fileData,
-    params.file.size,
   );
   return s3UploadVo.destinationUrl;
 };

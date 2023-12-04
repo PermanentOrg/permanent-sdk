@@ -29,12 +29,14 @@ describe('createRecordVo', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      'exampleUrl',
-      'testFile',
-      1,
-      'testFile.txt',
-      'text/plain',
-      12,
+      {
+        s3Url: 'exampleUrl',
+        displayName: 'testFile',
+        parentFolderId: 1,
+        uploadFileName: 'testFile.txt',
+        fileType: 'text/plain',
+        size: 12,
+      },
     );
 
     expect(recordVo).toMatchSnapshot();
@@ -66,12 +68,14 @@ describe('createRecordVo', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      'exampleUrl',
-      'testFile',
-      1,
-      'testFile.txt',
-      'text/plain',
-      12,
+      {
+        s3Url: 'exampleUrl',
+        displayName: 'testFile',
+        parentFolderId: 1,
+        uploadFileName: 'testFile.txt',
+        fileType: 'text/plain',
+        size: 12,
+      },
     )).rejects.toBeInstanceOf(ValidationError);
   });
 });

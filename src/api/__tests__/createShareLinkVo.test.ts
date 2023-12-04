@@ -24,10 +24,12 @@ describe('createShareLink', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      8306,
-      0,
-      false,
-      'access.role.viewer',
+      {
+        folderLinkId: 8306,
+        maxUses: 0,
+        previewToggle: false,
+        defaultAccessRole: 'access.role.viewer',
+      },
     );
 
     expect(shareLinkVo).toMatchSnapshot();

@@ -24,12 +24,14 @@ export const createArchiveRecord = async (
 ): Promise<ArchiveRecord> => {
   const recordVo = await createRecordVo(
     clientConfiguration,
-    params.s3Url,
-    params.item.displayName,
-    params.parentFolder.id,
-    params.item.fileSystemCompatibleName,
-    params.file.contentType,
-    params.file.size,
+    {
+      s3Url: params.s3Url,
+      displayName: params.item.displayName,
+      parentFolderId: params.parentFolder.id,
+      uploadFileName: params.item.fileSystemCompatibleName,
+      fileType: params.file.contentType,
+      size: params.file.size,
+    },
   );
   return recordVoToArchiveRecord(recordVo);
 };

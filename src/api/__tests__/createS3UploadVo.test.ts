@@ -28,11 +28,13 @@ describe('createS3UploadVo', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      'testFile.txt',
-      1,
-      'testFile',
-      'text/plain',
-      12,
+      {
+        displayName: 'testFile.txt',
+        parentFolderId: 1,
+        uploadFileName: 'testFile',
+        fileType: 'text/plain',
+        size: 12,
+      },
     );
 
     expect(s3UploadVo).toMatchSnapshot();
@@ -63,11 +65,13 @@ describe('createS3UploadVo', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      'testFile.txt',
-      1,
-      'testFile',
-      'text/plain',
-      12,
+      {
+        displayName: 'testFile.txt',
+        parentFolderId: 1,
+        uploadFileName: 'testFile',
+        fileType: 'text/plain',
+        size: 12,
+      },
     )).rejects.toBeInstanceOf(ValidationError);
   });
 });
