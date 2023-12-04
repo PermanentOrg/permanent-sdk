@@ -8,21 +8,19 @@ import type {
   S3UploadVo,
 } from '../types';
 
+export interface CreateS3UploadVoRequest {
+  displayName: string;
+  parentFolderId: number;
+  uploadFileName: string;
+  fileType: string;
+  size: number;
+}
+
 export const createS3UploadVo = async (
   clientConfiguration: ClientConfiguration,
-  displayName: string,
-  parentFolderId: number,
-  uploadFileName: string,
-  fileType: string,
-  size: number,
+  request: CreateS3UploadVoRequest,
 ): Promise<S3UploadVo> => {
-  const body = JSON.stringify({
-    displayName,
-    parentFolderId,
-    uploadFileName,
-    fileType,
-    size,
-  });
+  const body = JSON.stringify(request);
   const response = await makePermanentApiCall(
     clientConfiguration,
     '/record/getPresignedUrl',
