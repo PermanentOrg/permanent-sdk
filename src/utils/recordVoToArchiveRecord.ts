@@ -28,6 +28,7 @@ export const recordVoToArchiveRecord = (recordVo: RecordVo): ArchiveRecord => {
   const files = (recordVo.FileVOs ?? []).map((fileVo) => fileVoToFile(fileVo));
   return {
     id: recordVo.recordId,
+    fileSystemId: recordVo.folder_linkId,
     displayName: recordVo.displayName,
     fileSystemCompatibleName: recordVo.downloadName,
     type,

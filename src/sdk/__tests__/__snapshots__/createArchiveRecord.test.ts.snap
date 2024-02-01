@@ -6,6 +6,7 @@ exports[`createArchiveRecord should create an ArchiveRecord 1`] = `
   "displayDate": 2023-01-23T21:02:40.000Z,
   "displayName": "test",
   "fileSystemCompatibleName": "test (1).txt",
+  "fileSystemId": 14,
   "files": [],
   "id": 5,
   "status": "status.generic.undefined",

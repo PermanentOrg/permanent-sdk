@@ -2,6 +2,7 @@ import type { ArchiveRecord } from './ArchiveRecord';
 
 export interface Folder {
   id: number;
+  fileSystemId: number;
   name: string;
   size: number;
   displayDate?: Date;

@@ -24,6 +24,7 @@ const extractRecordVos = (items: unknown[]): RecordVo[] => (
 
 export const folderVoToFolder = (folderVo: FolderVo): Folder => ({
   id: folderVo.folderId,
+  fileSystemId: folderVo.folder_linkId,
   name: folderVo.displayName,
   fileSystemCompatibleName: folderVo.downloadName,
   size: 0,

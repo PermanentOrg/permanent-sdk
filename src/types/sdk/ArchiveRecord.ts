@@ -4,6 +4,7 @@ import type { File } from './File';
 
 export interface ArchiveRecord {
   id: number;
+  fileSystemId: number;
   displayDate: Date;
   type: ArchiveRecordType;
   displayName: string;

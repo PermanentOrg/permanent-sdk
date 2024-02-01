@@ -8,6 +8,7 @@ export interface FolderVo extends BaseVo {
   // These fields map to those defined in the base library FolderVO
   // https://github.com/PermanentOrg/back-end/blob/main/api/core/folder/vo/folder.vo.php
   folderId: number;
+  folder_linkId: number;
   ChildItemVOs: (FolderVo | RecordVo)[];
   displayName: string;
   downloadName: string;
@@ -18,6 +19,9 @@ export const folderVoSchema: JSONSchemaType<FolderVo> = {
   type: 'object',
   properties: {
     folderId: {
+      type: 'integer',
+    },
+    folder_linkId: {
       type: 'integer',
     },
     ChildItemVOs: {
@@ -50,6 +54,7 @@ export const folderVoSchema: JSONSchemaType<FolderVo> = {
   },
   required: [
     'folderId',
+    'folder_linkId',
     'ChildItemVOs',
     'displayName',
     'downloadName',

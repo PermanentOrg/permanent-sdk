@@ -10,6 +10,7 @@ export interface RecordVo extends BaseVo {
   // These fields map to those defined in the base library ArchiveVO
   // https://github.com/PermanentOrg/back-end/blob/main/api/core/record/vo/record.vo.php
   recordId: number;
+  folder_linkId: number;
   type: string;
   status: string;
   FileVOs?: FileVo[] | null;
@@ -23,6 +24,9 @@ export const recordVoSchema: JSONSchemaType<RecordVo> = {
   type: 'object',
   properties: {
     recordId: {
+      type: 'integer',
+    },
+    folder_linkId: {
       type: 'integer',
     },
     type: {
@@ -57,6 +61,7 @@ export const recordVoSchema: JSONSchemaType<RecordVo> = {
   },
   required: [
     'recordId',
+    'folder_linkId',
     'type',
     'status',
     'displayName',
