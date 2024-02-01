@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createShareLink should create a share link 1`] = `
+{
+  "autoApproveToggle": null,
+  "byAccountId": 1770,
+  "byArchiveId": 1765,
+  "createdDT": "2024-01-31T23:41:54",
+  "defaultAccessRole": "access.role.viewer",
+  "expiresDT": null,
+  "folder_linkId": 8306,
+  "maxUses": 0,
+  "previewToggle": 0,
+  "shareUrl": "https://local.permanent.org/share/b6b457c4c869d05bb8977ea4be6e66d3957442ce7dcc5892354faf084557a805",
+  "shareby_urlId": 173,
+  "status": "status.generic.ok",
+  "updatedDT": "2024-01-31T23:41:54",
+  "urlToken": "b6b457c4c869d05bb8977ea4be6e66d3957442ce7dcc5892354faf084557a805",
+  "uses": 0,
+}
+`;

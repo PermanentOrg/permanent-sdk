@@ -6,5 +6,7 @@ export * from './ArchiveRecordType';
 export * from './ClientConfiguration';
 export * from './DerivativeType';
 export * from './File';
+export * from './FileSystemItem';
 export * from './Folder';
+export * from './ShareLink';
 export * from './Status';

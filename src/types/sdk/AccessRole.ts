@@ -1,3 +1,5 @@
+import { generateEnumTypeguard } from '../../utils/generateEnumTypeguard';
+
 // These roles are defined in the permanent backend:
 // https://github.com/PermanentOrg/back-end/blob/main/library/definition/perm.constants.php
 export enum AccessRole {
@@ -9,3 +11,5 @@ export enum AccessRole {
   Owner = 'access.role.owner',
   Viewer = 'access.role.viewer',
 }
+
+export const isAccessRole = generateEnumTypeguard(AccessRole);

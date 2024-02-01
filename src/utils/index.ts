@@ -7,4 +7,5 @@ export * from './formatTimestampAsUtc';
 export * from './generateEnumTypeguard';
 export * from './makePermanentApiCall';
 export * from './recordVoToArchiveRecord';
+export * from './shareLinkVoToShareLink';
 export * from './typedJsonParse';

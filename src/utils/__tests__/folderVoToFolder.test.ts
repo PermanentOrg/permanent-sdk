@@ -4,6 +4,7 @@ describe('folderVoToFolder', () => {
   it('should properly populate a Folder based on FolderVo data with undefined fields', () => {
     const folderVo = {
       folderId: 42,
+      folder_linkId: 42,
       ChildItemVOs: [],
       displayName: 'Hello!',
       downloadName: 'Hello! (1)',
@@ -14,6 +15,7 @@ describe('folderVoToFolder', () => {
     const folder = folderVoToFolder(folderVo);
     expect(folder).toEqual({
       id: 42,
+      fileSystemId: 42,
       archiveRecords: [],
       folders: [],
       name: 'Hello!',
@@ -28,6 +30,7 @@ describe('folderVoToFolder', () => {
   it('should properly populate a Folder based on FolderVo data with null fields', () => {
     const folderVo = {
       folderId: 42,
+      folder_linkId: 42,
       ChildItemVOs: [],
       displayName: 'Hello!',
       downloadName: 'Hello! (1)',
@@ -38,6 +41,7 @@ describe('folderVoToFolder', () => {
     const folder = folderVoToFolder(folderVo);
     expect(folder).toEqual({
       id: 42,
+      fileSystemId: 42,
       archiveRecords: [],
       folders: [],
       name: 'Hello!',
