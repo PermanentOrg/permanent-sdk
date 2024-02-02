@@ -1,0 +1,22 @@
+{
+  "shareby_urlId": 203,
+  "folder_linkId": 8306,
+  "status": "status.generic.ok",
+  "urlToken": "4fe0ce05ecd16d64d7fd223e66e279ea8d692d300c4ae61b0a5ed39530ff87fc",
+  "shareUrl": "https://local.permanent.org/share/4fe0ce05ecd16d64d7fd223e66e279ea8d692d300c4ae61b0a5ed39530ff87fc",
+  "uses": 0,
+  "maxUses": 0,
+  "autoApproveToggle": 0,
+  "previewToggle": 0,
+  "defaultAccessRole": "access.role.editor",
+  "expiresDT": null,
+  "byAccountId": 1770,
+  "byArchiveId": 1765,
+  "createdDT": "2024-02-02T19:05:25",
+  "updatedDT": "2024-02-02T19:05:53",
+  "FolderVO": null,
+  "RecordVO": null,
+  "ArchiveVO": null,
+  "AccountVO": null,
+  "ShareVO": null
+}

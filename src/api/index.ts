@@ -9,3 +9,4 @@ export * from './getArchiveRootFolderVo';
 export * from './getAuthenticatedAccountVo';
 export * from './getFolderVo';
 export * from './getRecordVo';
+export * from './updateShareLinkVo';
