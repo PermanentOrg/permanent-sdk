@@ -1,6 +1,7 @@
 export * from './createFolderVo';
 export * from './createRecordVo';
 export * from './createS3UploadVo';
+export * from './createShareLinkVo';
 export * from './deleteFolderVo';
 export * from './deleteRecordVo';
 export * from './getAllArchiveVos';

@@ -6,3 +6,4 @@ export * from './FolderVo';
 export * from './PresignedPost';
 export * from './RecordVo';
 export * from './S3UploadVo';
+export * from './ShareLinkVo';

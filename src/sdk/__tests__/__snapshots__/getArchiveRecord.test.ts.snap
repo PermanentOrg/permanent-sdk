@@ -6,6 +6,7 @@ exports[`getArchiveRecord should return a Record 1`] = `
   "displayDate": 2022-06-01T18:44:43.000Z,
   "displayName": "face-in-clouds",
   "fileSystemCompatibleName": "face-in-clouds.gif",
+  "fileSystemId": 7976,
   "files": [
     {
       "checksum": "3d05ff3d66c90ac4b37f1db1ad86f657",
