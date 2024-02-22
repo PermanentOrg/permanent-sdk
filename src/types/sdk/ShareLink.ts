@@ -2,12 +2,12 @@ import type { Status } from './Status';
 import type { AccessRole } from './AccessRole';
 
 export interface ShareLink {
-  id: number;
-  sharedFileSystemItemId: number;
-  url: string;
-  urlToken: string;
-  byAccountId: number;
-  uses?: number;
+  readonly id: number;
+  readonly sharedFileSystemItemId: number;
+  readonly url: string;
+  readonly urlToken: string;
+  readonly byAccountId: number;
+  readonly uses?: number;
   maxUses?: number;
   autoApprove?: boolean;
   showPreview?: boolean;

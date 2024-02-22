@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`updateShareLinkVo should update share link 1`] = `
+{
+  "AccountVO": null,
+  "ArchiveVO": null,
+  "FolderVO": null,
+  "RecordVO": null,
+  "ShareVO": null,
+  "autoApproveToggle": 0,
+  "byAccountId": 1770,
+  "byArchiveId": 1765,
+  "createdDT": "2024-02-02T19:05:25",
+  "defaultAccessRole": "access.role.editor",
+  "expiresDT": null,
+  "folder_linkId": 8306,
+  "maxUses": 0,
+  "previewToggle": 0,
+  "shareUrl": "https://local.permanent.org/share/4fe0ce05ecd16d64d7fd223e66e279ea8d692d300c4ae61b0a5ed39530ff87fc",
+  "shareby_urlId": 203,
+  "status": "status.generic.ok",
+  "updatedDT": "2024-02-02T19:05:53",
+  "urlToken": "4fe0ce05ecd16d64d7fd223e66e279ea8d692d300c4ae61b0a5ed39530ff87fc",
+  "uses": 0,
+}
+`;

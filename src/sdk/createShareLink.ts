@@ -15,14 +15,14 @@ export const createShareLink = async (
   clientConfiguration: ClientConfiguration,
   fileSystemItem: FileSystemItem,
   maxUses?: number,
-  previewToggle?: boolean,
+  showPreview?: boolean,
   defaultAccessRole?: AccessRole,
 ): Promise<ShareLink> => {
   const shareLinkVo = await createShareLinkVo(
     clientConfiguration,
     fileSystemItem.fileSystemId,
     maxUses,
-    previewToggle,
+    showPreview,
     defaultAccessRole,
   );
   return shareLinkVoToShareLink(shareLinkVo);

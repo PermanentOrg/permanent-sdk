@@ -8,4 +8,5 @@ export * from './getArchiveRecord';
 export * from './getArchives';
 export * from './getAuthenticatedAccount';
 export * from './getFolder';
+export * from './updateShareLink';
 export * from './uploadFile';
