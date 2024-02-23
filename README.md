@@ -20,6 +20,13 @@ The project is organized as follows:
 | - index.ts // project root, exports the full contents of /sdk and the externally needed types from types.js
 ```
 
+## Publishing
+
+This can be published to npm with the `publish (npm)` GitHub
+Action. Make sure to update the [change
+log](https://github.com/PermanentOrg/permanent-sdk/blob/main/CHANGELOG.md)
+and increase the version number in package.json when you do so.
+
 ## Contributing
 
 Contributors to this repository agree to adhere to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). To report violations, get in touch with engineers@permanent.org.
