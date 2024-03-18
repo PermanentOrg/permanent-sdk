@@ -8,22 +8,26 @@ import type {
   RecordVo,
 } from '../types';
 
+export interface CreateRecordVoRequest {
+  s3Url: string;
+  displayName: string;
+  parentFolderId: number;
+  uploadFileName: string;
+  fileType: string;
+  size: number;
+}
+
 export const createRecordVo = async (
   clientConfiguration: ClientConfiguration,
-  s3Url: string,
-  displayName: string,
-  parentFolderId: number,
-  uploadFileName: string,
-  fileType: string,
-  size: number,
+  request: CreateRecordVoRequest,
 ): Promise<RecordVo> => {
   const body = JSON.stringify({
-    s3url: s3Url,
-    displayName,
-    parentFolderId,
-    uploadFileName,
-    fileType,
-    size,
+    s3url: request.s3Url,
+    displayName: request.displayName,
+    parentFolderId: request.parentFolderId,
+    uploadFileName: request.uploadFileName,
+    fileType: request.fileType,
+    size: request.size,
   });
 
   const response = await makePermanentApiCall(

@@ -64,17 +64,19 @@ describe('uploadFile', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      fileDataStream,
       {
-        size: fileSize,
-        contentType: 'text/plain',
-      },
-      {
-        displayName: 'myFile',
-        fileSystemCompatibleName: 'myFile.txt',
-      },
-      {
-        id: 1,
+        fileData: fileDataStream,
+        file: {
+          size: fileSize,
+          contentType: 'text/plain',
+        },
+        item: {
+          displayName: 'myFile',
+          fileSystemCompatibleName: 'myFile.txt',
+        },
+        parentFolder: {
+          id: 1,
+        },
       },
     );
 

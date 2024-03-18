@@ -12,30 +12,38 @@ import type {
   Folder,
 } from '../types';
 
+export interface UploadFileRequest {
+  fileData: Buffer | Readable;
+  file: Pick<File, 'contentType' | 'size'>;
+  item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>;
+  parentFolder: Pick<Folder, 'id'>;
+}
+
 export const uploadFile = async (
   clientConfiguration: ClientConfiguration,
-  fileData: Buffer | Readable,
-  file: Pick<File, 'contentType' | 'size'>,
-  item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>,
-  parentFolder: Pick<Folder, 'id'>,
+  request: UploadFileRequest,
 ): Promise<string> => {
   const s3UploadVo = await createS3UploadVo(
     clientConfiguration,
-    item.displayName,
-    parentFolder.id,
-    item.fileSystemCompatibleName,
-    file.contentType,
-    file.size,
+    {
+      displayName: request.item.displayName,
+      parentFolderId: request.parentFolder.id,
+      uploadFileName: request.item.fileSystemCompatibleName,
+      fileType: request.file.contentType,
+      size: request.file.size,
+    },
   );
 
   await executePresignedPost(
-    s3UploadVo.presignedPost.url,
     {
-      ...s3UploadVo.presignedPost.fields,
-      'Content-Type': file.contentType,
+      url: s3UploadVo.presignedPost.url,
+      bodyFields: {
+        ...s3UploadVo.presignedPost.fields,
+        'Content-Type': request.file.contentType,
+      },
+      fileData: request.fileData,
+      fileSize: request.file.size,
     },
-    fileData,
-    file.size,
   );
   return s3UploadVo.destinationUrl;
 };
