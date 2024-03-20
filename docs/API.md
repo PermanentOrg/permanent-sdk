@@ -73,3 +73,40 @@ updateShareLink(
 ```
 
 Each non-readonly property of the share link will be updated to match `shareLink`.
+
+#### uploadFile
+
+Run this to upload the file to S3.
+
+```
+uploadFile(
+  configuration: ClientConfiguration,
+  fileData: Buffer | Readable,
+  file: contentType and size of the file to upload
+  item: displayName and fileSystemCompatibleName of the record or folder
+  parentFolder: id of the parent folder
+):
+```
+
+You can see this most easily in
+`src/sdk/__tests__/uploadFile.test.ts`. `fileSystemCompatibleName` is
+referred to as `downloadName` elsewhere. It should be unique in a
+given folder so that folder contents can be downloaded without
+overwriting each other. On first creation, use the original file or
+folder name, knowing that the backend may adjust this value to make
+sure it is unique in the parent folder.
+
+#### createArchiveRecord
+
+Run this to store values in the Permanent database.
+
+```
+createArchiveRecord(
+  configuration: ClientConfiguration,
+  s3Url: string (this is returned by uploadFile)
+  file: contentType and size of the file to upload
+  item: displayName and fileSystemCompatibleName of the record or folder
+  parentFolder: id of the parent folder
+):
+
+```
