@@ -27,7 +27,8 @@ export const uploadFile = async (
     file.contentType,
     file.size,
   );
-
+  console.log("So bizarre");
+  console.log(file.size)
   await executePresignedPost(
     s3UploadVo.presignedPost.url,
     {
