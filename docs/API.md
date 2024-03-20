@@ -83,7 +83,16 @@ uploadFile(
   params: UploadFileParams,
 ): Promise<string>
 ```
-The string returned is the file's location in S3
+The string returned is the file's location in S3.
+
+Notes: `fileSystemCompatibleName` is referred to as `downloadName`
+elsewhere. It should be unique in a given folder so that folder
+contents can be downloaded without overwriting each other. On first
+creation, use the original file or folder name, knowing that the
+backend may adjust this value to make sure it is unique in the parent
+folder. Note that we have seen errors when `fileData` is explicitly
+set to use `utf8` encoding. If using `createReadStream` to create a
+`Readable` it may be best to avoid specifying an encoding.
 
 ## Records
 
@@ -151,7 +160,10 @@ CreateArchiveRecordParams {
   parentFolder: Pick<Folder, 'id'>;
 }
 ```
-s3Url will generally be the value returned by `uploadFile`.
+
+s3Url will generally be the value returned by `uploadFile`. Run
+`createArchiveRecord` to store information about uploaded files in the
+Permanent database.
 
 ```
 createArchiveRecord(
@@ -363,3 +375,4 @@ updateShareLink(
 ```
 
 Each non-readonly property of the share link will be updated to match `shareLink`.
+
