@@ -15,7 +15,9 @@ describe('deleteArchiveRecord', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      1,
+      {
+        archiveRecordId: 1,
+      },
     )).resolves.not.toThrow();
   });
 
@@ -31,7 +33,9 @@ describe('deleteArchiveRecord', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      1,
+      {
+        archiveRecordId: 1,
+      },
     )).rejects.toThrow(HttpResponseError);
   });
 });

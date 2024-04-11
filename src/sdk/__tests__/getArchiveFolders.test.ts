@@ -21,7 +21,9 @@ describe('getArchiveFolders', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      1,
+      {
+        archiveId: 1,
+      },
     );
 
     expect(archives).toMatchSnapshot();

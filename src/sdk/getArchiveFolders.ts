@@ -5,13 +5,17 @@ import type {
   Folder,
 } from '../types';
 
+export interface GetArchiveFoldersParams {
+  archiveId: number;
+}
+
 export const getArchiveFolders = async (
   clientConfiguration: ClientConfiguration,
-  archiveId: number,
+  params: GetArchiveFoldersParams,
 ): Promise<Folder[]> => {
   const rootFolderVo = await getArchiveRootFolderVo(
     clientConfiguration,
-    archiveId,
+    params.archiveId,
   );
   const rootFolder = folderVoToFolder(rootFolderVo);
   return rootFolder.folders;

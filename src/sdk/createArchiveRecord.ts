@@ -11,21 +11,25 @@ import type {
   Folder,
 } from '../types';
 
+export interface CreateArchiveRecordParams {
+  s3Url: string;
+  file: Pick<File, 'contentType' | 'size'>;
+  item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>;
+  parentFolder: Pick<Folder, 'id'>;
+}
+
 export const createArchiveRecord = async (
   clientConfiguration: ClientConfiguration,
-  s3Url: string,
-  file: Pick<File, 'contentType' | 'size'>,
-  item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>,
-  parentFolder: Pick<Folder, 'id'>,
+  params: CreateArchiveRecordParams,
 ): Promise<ArchiveRecord> => {
   const recordVo = await createRecordVo(
     clientConfiguration,
-    s3Url,
-    item.displayName,
-    parentFolder.id,
-    item.fileSystemCompatibleName,
-    file.contentType,
-    file.size,
+    params.s3Url,
+    params.item.displayName,
+    params.parentFolder.id,
+    params.item.fileSystemCompatibleName,
+    params.file.contentType,
+    params.file.size,
   );
   return recordVoToArchiveRecord(recordVo);
 };

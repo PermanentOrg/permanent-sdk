@@ -11,19 +11,23 @@ import type {
   AccessRole,
 } from '../types';
 
+export interface CreateShareLinkParams {
+  fileSystemItem: FileSystemItem;
+  maxUses?: number;
+  showPreview?: boolean;
+  defaultAccessRole?: AccessRole;
+}
+
 export const createShareLink = async (
   clientConfiguration: ClientConfiguration,
-  fileSystemItem: FileSystemItem,
-  maxUses?: number,
-  showPreview?: boolean,
-  defaultAccessRole?: AccessRole,
+  params: CreateShareLinkParams,
 ): Promise<ShareLink> => {
   const shareLinkVo = await createShareLinkVo(
     clientConfiguration,
-    fileSystemItem.fileSystemId,
-    maxUses,
-    showPreview,
-    defaultAccessRole,
+    params.fileSystemItem.fileSystemId,
+    params.maxUses,
+    params.showPreview,
+    params.defaultAccessRole,
   );
   return shareLinkVoToShareLink(shareLinkVo);
 };

@@ -5,14 +5,18 @@ import type {
   ClientConfiguration,
 } from '../types';
 
+export interface GetArchiveRecordParams {
+  archiveRecordId: number;
+  archiveId: number;
+}
+
 export const getArchiveRecord = async (
   clientConfiguration: ClientConfiguration,
-  archiveRecordId: number,
-  archiveId: number,
+  params: GetArchiveRecordParams,
 ): Promise<ArchiveRecord> => recordVoToArchiveRecord(
   await getRecordVo(
     clientConfiguration,
-    archiveRecordId,
-    archiveId,
+    params.archiveRecordId,
+    params.archiveId,
   ),
 );

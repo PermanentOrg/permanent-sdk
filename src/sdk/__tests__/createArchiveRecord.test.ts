@@ -32,17 +32,19 @@ describe('createArchiveRecord', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      'https://permanet.local/_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63',
       {
-        size: fileSize,
-        contentType: 'text/plain',
-      },
-      {
-        displayName: 'myFile',
-        fileSystemCompatibleName: 'myFile.txt',
-      },
-      {
-        id: 1,
+        s3Url: 'https://permanet.local/_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63',
+        file: {
+          size: fileSize,
+          contentType: 'text/plain',
+        },
+        item: {
+          displayName: 'myFile',
+          fileSystemCompatibleName: 'myFile.txt',
+        },
+        parentFolder: {
+          id: 1,
+        },
       },
     );
 
