@@ -16,4 +16,6 @@ jobs:
           node-version: 18.x
       - run: npm install --production=false
       - run: npm test -- --coverage
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
