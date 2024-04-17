@@ -22,8 +22,10 @@ describe('getFolder', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      7457,
-      1,
+      {
+        folderId: 7457,
+        archiveId: 1,
+      },
     );
 
     expect(folder).toMatchSnapshot();
@@ -49,8 +51,10 @@ describe('getFolder', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      7457,
-      1,
+      {
+        folderId: 7457,
+        archiveId: 1,
+      },
     );
 
     expect(folder).toMatchSnapshot();

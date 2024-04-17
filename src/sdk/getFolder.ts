@@ -5,14 +5,18 @@ import type {
   ClientConfiguration,
 } from '../types';
 
+export interface GetFolderParams {
+  folderId: number;
+  archiveId: number;
+}
+
 export const getFolder = async (
   clientConfiguration: ClientConfiguration,
-  folderId: number,
-  archiveId: number,
+  params: GetFolderParams,
 ): Promise<Folder> => folderVoToFolder(
   await getFolderVo(
     clientConfiguration,
-    folderId,
-    archiveId,
+    params.folderId,
+    params.archiveId,
   ),
 );

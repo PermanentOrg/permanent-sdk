@@ -25,10 +25,12 @@ describe('createShareLink', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      { fileSystemId: 8306 },
-      0,
-      false,
-      AccessRole.Viewer,
+      {
+        fileSystemItem: { fileSystemId: 8306 },
+        maxUses: 0,
+        showPreview: false,
+        defaultAccessRole: AccessRole.Viewer,
+      },
     );
 
     expect(shareLink).toMatchSnapshot();

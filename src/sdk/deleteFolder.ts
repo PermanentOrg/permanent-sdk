@@ -3,10 +3,14 @@ import type {
   ClientConfiguration,
 } from '../types';
 
+export interface DeleteFolderParams {
+  folderId: number;
+}
+
 export const deleteFolder = async (
   clientConfiguration: ClientConfiguration,
-  folderId: number,
+  params: DeleteFolderParams,
 ): Promise<void> => deleteFolderVo(
   clientConfiguration,
-  folderId,
+  params.folderId,
 );

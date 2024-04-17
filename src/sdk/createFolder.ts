@@ -5,14 +5,18 @@ import type {
   ClientConfiguration,
 } from '../types';
 
+export interface CreateFolderParams {
+  folder: Pick<Folder, 'name'>;
+  parentFolder: Pick<Folder, 'id'>;
+}
+
 export const createFolder = async (
   clientConfiguration: ClientConfiguration,
-  folder: Pick<Folder, 'name'>,
-  parentFolder: Pick<Folder, 'id'>,
+  params: CreateFolderParams,
 ): Promise<Folder> => folderVoToFolder(
   await createFolderVo(
     clientConfiguration,
-    folder,
-    parentFolder,
+    params.folder,
+    params.parentFolder,
   ),
 );

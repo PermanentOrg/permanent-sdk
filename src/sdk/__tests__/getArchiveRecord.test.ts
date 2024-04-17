@@ -22,8 +22,10 @@ describe('getArchiveRecord', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      512,
-      1,
+      {
+        archiveRecordId: 512,
+        archiveId: 1,
+      },
     );
 
     expect(folder).toMatchSnapshot();

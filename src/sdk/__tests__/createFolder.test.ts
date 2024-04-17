@@ -25,10 +25,12 @@ describe('createFolder', () => {
         baseUrl: 'https://permanent.local/api',
       },
       {
-        name: 'testFolder',
-      },
-      {
-        id: 1,
+        folder: {
+          name: 'testFolder',
+        },
+        parentFolder: {
+          id: 1,
+        },
       },
     );
 
