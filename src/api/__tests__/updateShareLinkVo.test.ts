@@ -26,12 +26,14 @@ describe('updateShareLinkVo', () => {
         bearerToken: '12345',
         baseUrl: 'https://permanent.local/api',
       },
-      1,
-      10,
-      true,
-      true,
-      'access.role.editor',
-      '2022-01-01T00:00:00Z',
+      {
+        shareByUrlId: 1,
+        maxUses: 10,
+        previewToggle: true,
+        autoApproveToggle: true,
+        defaultAccessRole: 'access.role.editor',
+        expiresDT: '2022-01-01T00:00:00Z',
+      },
     );
 
     expect(shareLinkVo).toMatchSnapshot();

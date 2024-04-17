@@ -8,19 +8,18 @@ import {
   isShareLinkVo,
 } from '../types';
 
+export interface CreateShareLinkVoRequest {
+  folderLinkId: number;
+  maxUses?: number;
+  previewToggle?: boolean;
+  defaultAccessRole?: string;
+}
+
 export const createShareLinkVo = async (
   clientConfiguration: ClientConfiguration,
-  folderLinkId: number,
-  maxUses?: number,
-  previewToggle?: boolean,
-  defaultAccessRole?: string,
+  request: CreateShareLinkVoRequest,
 ): Promise<ShareLinkVo> => {
-  const body = JSON.stringify({
-    folderLinkId,
-    maxUses,
-    previewToggle,
-    defaultAccessRole,
-  });
+  const body = JSON.stringify(request);
   const response = await makePermanentApiCall(
     clientConfiguration,
     '/share/generateShareLink',

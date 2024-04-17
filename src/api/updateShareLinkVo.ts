@@ -8,23 +8,20 @@ import {
   isShareLinkVo,
 } from '../types';
 
+export interface UpdateShareLinkVoRequest {
+  shareByUrlId: number;
+  maxUses?: number;
+  previewToggle?: boolean;
+  autoApproveToggle?: boolean;
+  defaultAccessRole?: string;
+  expiresDT?: string;
+}
+
 export const updateShareLinkVo = async (
   clientConfiguration: ClientConfiguration,
-  shareByUrlId: number,
-  maxUses?: number,
-  previewToggle?: boolean,
-  autoApproveToggle?: boolean,
-  defaultAccessRole?: string,
-  expiresDT?: string,
+  request: UpdateShareLinkVoRequest,
 ): Promise<ShareLinkVo> => {
-  const body = JSON.stringify({
-    shareByUrlId,
-    maxUses,
-    previewToggle,
-    autoApproveToggle,
-    defaultAccessRole,
-    expiresDT,
-  });
+  const body = JSON.stringify(request);
   const response = await makePermanentApiCall(
     clientConfiguration,
     '/share/updateShareLink',
