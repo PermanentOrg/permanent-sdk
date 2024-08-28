@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2024-08-28
+## Changed
+- BREAKING CHANGE: All functions now take either one or two arguments. The first argument is always the `ClientConfig`
+object. The second argument, if it is present, is always an object containing the rest of the parameters for the
+function. Documentation describing each function and its inputs has been added in API.md.
+
 ## [0.7.0] - 2024-02-23
 ## Added
 - The `updateShareLink` function now exists
