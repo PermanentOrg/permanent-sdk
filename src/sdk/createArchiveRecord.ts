@@ -13,7 +13,7 @@ import type {
 
 export interface CreateArchiveRecordParams {
   s3Url: string;
-  file: Pick<File, 'contentType' | 'size'>;
+  file: Pick<Partial<File>, 'contentType'> & Pick<File, 'size'>;
   item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>;
   parentFolder: Pick<Folder, 'id'>;
 }

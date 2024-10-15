@@ -155,7 +155,7 @@ ArchiveRecord {
 ```
 CreateArchiveRecordParams {
   s3Url: string;
-  file: Pick<File, 'contentType' | 'size'>;
+  file: Pick<Partial<File>, 'contentType'> & Pick<File, 'size'>;
   item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>;
   parentFolder: Pick<Folder, 'id'>;
 }
@@ -164,6 +164,9 @@ CreateArchiveRecordParams {
 s3Url will generally be the value returned by `uploadFile`. Run
 `createArchiveRecord` to store information about uploaded files in the
 Permanent database.
+
+file.contentType is deprecated. The field is still accepted for backwards compatibility, but it is not used.
+The content type is determined by the file extension of the uploaded file.
 
 ```
 createArchiveRecord(

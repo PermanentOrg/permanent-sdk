@@ -13,7 +13,7 @@ export interface CreateRecordVoRequest {
   displayName: string;
   parentFolderId: number;
   uploadFileName: string;
-  fileType: string;
+  fileType?: string;
   size: number;
 }
 
