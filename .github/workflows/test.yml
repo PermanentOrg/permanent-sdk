@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        name: Test Node.js 18.x
+        name: Test
       - uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version-file: .node-version
       - run: npm install --production=false
       - run: npm test -- --coverage
       - uses: codecov/codecov-action@v5
