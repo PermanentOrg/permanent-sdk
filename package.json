@@ -41,7 +41,7 @@
     "url": "https://github.com/PermanentOrg/permanent-sdk/issues"
   },
   "engines": {
-    "node": ">=16.0"
+    "node": ">=20.0"
   },
   "files": [
     "dist"
@@ -49,9 +49,9 @@
   "homepage": "https://github.com/PermanentOrg/permanent-sdk#readme",
   "devDependencies": {
     "@tsconfig/esm": "^1.0.0",
-    "@tsconfig/node18": "^18.2.0",
+    "@tsconfig/node20": "^20.1.4",
     "@types/jest": "^29.5.3",
-    "@types/node": "^18.17.4",
+    "@types/node": "^20.17.19",
     "@types/node-fetch": "^2.6.1",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",

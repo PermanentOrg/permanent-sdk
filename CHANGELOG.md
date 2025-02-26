@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Changed
+- BREAKING CHANGE: Dropped support for Node 18.
+
 ## [0.8.0] - 2024-08-28
 ## Changed
 - BREAKING CHANGE: All functions now take either one or two arguments. The first argument is always the `ClientConfig`
