@@ -10,6 +10,7 @@ describe('createFolderVo', () => {
         {
           displayName: 'testFolder',
           parentFolderId: 1,
+          failOnDuplicateName: false,
         },
       )
       .replyWithFile(
@@ -31,6 +32,7 @@ describe('createFolderVo', () => {
       {
         id: 1,
       },
+      false,
     );
 
     expect(folderVo).toMatchSnapshot();
@@ -43,6 +45,7 @@ describe('createFolderVo', () => {
         {
           displayName: 'testFolder',
           parentFolderId: 1,
+          failOnDuplicateName: false,
         },
       )
       .reply(
@@ -64,6 +67,7 @@ describe('createFolderVo', () => {
       {
         id: 1,
       },
+      false,
     )).rejects.toBeInstanceOf(ValidationError);
   });
 });

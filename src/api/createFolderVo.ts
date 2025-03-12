@@ -13,10 +13,12 @@ export const createFolderVo = async (
   clientConfiguration: ClientConfiguration,
   folder: Pick<Folder, 'name'>,
   parentFolder: Pick<Folder, 'id'>,
+  failOnDuplicateName?: boolean,
 ): Promise<FolderVo> => {
   const body = JSON.stringify({
     displayName: folder.name,
     parentFolderId: parentFolder.id,
+    failOnDuplicateName: failOnDuplicateName ?? false,
   });
   const response = await makePermanentApiCall(
     clientConfiguration,

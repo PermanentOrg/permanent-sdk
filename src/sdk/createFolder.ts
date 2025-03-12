@@ -8,6 +8,7 @@ import type {
 export interface CreateFolderParams {
   folder: Pick<Folder, 'name'>;
   parentFolder: Pick<Folder, 'id'>;
+  failOnDuplicateName?: boolean;
 }
 
 export const createFolder = async (
@@ -18,5 +19,6 @@ export const createFolder = async (
     clientConfiguration,
     params.folder,
     params.parentFolder,
+    params.failOnDuplicateName,
   ),
 );

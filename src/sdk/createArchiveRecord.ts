@@ -16,6 +16,7 @@ export interface CreateArchiveRecordParams {
   file: Pick<Partial<File>, 'contentType'> & Pick<File, 'size'>;
   item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>;
   parentFolder: Pick<Folder, 'id'>;
+  failOnDuplicateName?: boolean;
 }
 
 export const createArchiveRecord = async (
@@ -31,6 +32,7 @@ export const createArchiveRecord = async (
       uploadFileName: params.item.fileSystemCompatibleName,
       fileType: params.file.contentType,
       size: params.file.size,
+      failOnDuplicateName: params.failOnDuplicateName,
     },
   );
   return recordVoToArchiveRecord(recordVo);
