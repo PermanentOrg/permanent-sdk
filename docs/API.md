@@ -1,7 +1,9 @@
 # API Documentation
 
 ## Configuration
+
 Each function provided by this SDK takes a `ClientConfiguration` object:
+
 ```
 {
   bearerToken: string;
@@ -18,6 +20,7 @@ Setting `baseUrl` is only necessary when testing the SDK against one of Permanen
 ### Models
 
 #### Account
+
 ```
 Account {
   id: number;
@@ -30,6 +33,7 @@ Account {
 ### Functions
 
 #### getAuthenticatedAccount
+
 ```
 getAuthenticatedAccount(
   clientConfiguration: ClientConfiguration,
@@ -41,6 +45,7 @@ getAuthenticatedAccount(
 ### Models
 
 #### DerivativeType
+
 ```
 enum DerivativeType {
   Converted = 'file.format.converted',
@@ -51,6 +56,7 @@ enum DerivativeType {
 ```
 
 #### File
+
 ```
 File {
   id: number;
@@ -68,6 +74,7 @@ File {
 ### Functions
 
 #### uploadFile
+
 ```
 UploadFileParams {
   fileData: Buffer | Readable;
@@ -83,6 +90,7 @@ uploadFile(
   params: UploadFileParams,
 ): Promise<string>
 ```
+
 The string returned is the file's location in S3.
 
 Notes: `fileSystemCompatibleName` is referred to as `downloadName`
@@ -99,6 +107,7 @@ set to use `utf8` encoding. If using `createReadStream` to create a
 ### Models
 
 #### ArchiveRecordType
+
 ```
 enum ArchiveRecordType {
   Archive = 'type.record.archive',
@@ -119,6 +128,7 @@ enum ArchiveRecordType {
 ```
 
 #### Status
+
 ```
 enum Status {
   Declined = 'status.generic.declined',
@@ -134,6 +144,7 @@ enum Status {
 ```
 
 #### ArchiveRecord
+
 ```
 ArchiveRecord {
   id: number;
@@ -152,6 +163,7 @@ ArchiveRecord {
 ### Functions
 
 #### createArchiveRecord
+
 ```
 CreateArchiveRecordParams {
   s3Url: string;
@@ -176,6 +188,7 @@ createArchiveRecord(
 ```
 
 #### deleteArchiveRecord
+
 ```
 DeleteArchiveRecordParams {
   archiveRecordId: number;
@@ -190,6 +203,7 @@ deleteArchiveRecord(
 ```
 
 #### getArchiveRecord
+
 ```
 GetArchiveRecordParams {
   archiveRecordId: number;
@@ -209,6 +223,7 @@ getArchiveRecord(
 ### Models
 
 #### Folder
+
 ```
 Folder {
   id: number;
@@ -227,12 +242,20 @@ Folder {
 ### Function
 
 #### createFolder
+
 ```
 CreateFolderParams {
   folder: Pick<Folder, 'name'>;
   parentFolder: Pick<Folder, 'id'>;
+  failOnDuplicateName?: boolean (defaults to false)
 }
 ```
+
+If `failOnDuplicateName` is true, this will return an error
+if `folder.name` is the same as the `fileSystemCompatibleName`
+of another item in `parentFolder`. Otherwise, `folder` will get
+a `fileSystemCompatibleName` of `<folder.name> (n)`, where n is
+a positive integer.
 
 ```
 createFolder(
@@ -242,6 +265,7 @@ createFolder(
 ```
 
 #### deleteFolder
+
 ```
 DeleteFolderParams {
   folderId: number;
@@ -256,6 +280,7 @@ deleteFolder(
 ```
 
 #### getArchiveFolders
+
 ```
 GetArchiveFoldersParams {
   archiveId: number;
@@ -270,6 +295,7 @@ getArchiveFolders(
 ```
 
 #### getFolder
+
 ```
 GetFolderParams {
   folderId: number;
@@ -287,6 +313,7 @@ getFolder(
 ## Archives
 
 ### Models
+
 ```
 Archive {
   id: number;
@@ -300,6 +327,7 @@ Archive {
 ### Functions
 
 #### getArchives
+
 ```
 getArchives(
   clientConfiguration: ClientConfiguration,
@@ -311,7 +339,9 @@ getArchives(
 ### Models
 
 #### FileSystemItem
+
 A `FileSystemItem` represents a record or folder stored in Permanent
+
 ```
 FileSystemItem {
   fileSystemId: number;
@@ -319,6 +349,7 @@ FileSystemItem {
 ```
 
 #### ShareLink
+
 ```
 ShareLink {
   readonly id: number;
@@ -341,6 +372,7 @@ ShareLink {
 ### Functions
 
 #### createShareLink
+
 ```
 CreateShareLinkParams {
   fileSystemItem: FileSystemItem;
@@ -364,6 +396,7 @@ set, share recipients will have the Viewer role. Note that if a share link alrea
 have the settings you passed in, this is probably what happened.
 
 #### updateShareLink
+
 ```
 UpdateShareLinkParams {
   shareLink: ShareLink;
@@ -378,4 +411,3 @@ updateShareLink(
 ```
 
 Each non-readonly property of the share link will be updated to match `shareLink`.
-

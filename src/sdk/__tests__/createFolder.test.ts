@@ -9,6 +9,7 @@ describe('createFolder', () => {
         {
           displayName: 'testFolder',
           parentFolderId: 1,
+          failOnDuplicateName: false,
         },
       )
       .replyWithFile(
@@ -31,6 +32,35 @@ describe('createFolder', () => {
         parentFolder: {
           id: 1,
         },
+      },
+    );
+
+    expect(folder).toMatchSnapshot();
+  });
+  it('should use the failOnDuplicateName parameter if set', async () => {
+    nock('https://permanent.local')
+      .post('/api/folder/post', {
+        displayName: 'testFolder',
+        parentFolderId: 1,
+        failOnDuplicateName: true,
+      })
+      .replyWithFile(200, `${__dirname}/fixtures/createFolder/folder.json`, {
+        'Content-Type': 'application/json',
+      });
+
+    const folder = await createFolder(
+      {
+        bearerToken: '12345',
+        baseUrl: 'https://permanent.local/api',
+      },
+      {
+        folder: {
+          name: 'testFolder',
+        },
+        parentFolder: {
+          id: 1,
+        },
+        failOnDuplicateName: true,
       },
     );
 
