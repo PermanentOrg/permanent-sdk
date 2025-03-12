@@ -170,6 +170,7 @@ CreateArchiveRecordParams {
   file: Pick<Partial<File>, 'contentType'> & Pick<File, 'size'>;
   item: Pick<ArchiveRecord, 'displayName' | 'fileSystemCompatibleName'>;
   parentFolder: Pick<Folder, 'id'>;
+  failOnDuplicateName?: boolean (default false);
 }
 ```
 
@@ -179,6 +180,12 @@ Permanent database.
 
 file.contentType is deprecated. The field is still accepted for backwards compatibility, but it is not used.
 The content type is determined by the file extension of the uploaded file.
+
+If `failOnDuplicateName` is true, this will return an error
+if `folder.name` is the same as the `fileSystemCompatibleName`
+of another item in `parentFolder`. Otherwise, `folder` will get
+a `fileSystemCompatibleName` of `<folder.name> (n)`, where n is
+a positive integer.
 
 ```
 createArchiveRecord(

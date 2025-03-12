@@ -15,6 +15,7 @@ export interface CreateRecordVoRequest {
   uploadFileName: string;
   fileType?: string;
   size: number;
+  failOnDuplicateName?: boolean;
 }
 
 export const createRecordVo = async (
@@ -28,6 +29,7 @@ export const createRecordVo = async (
     uploadFileName: request.uploadFileName,
     fileType: request.fileType,
     size: request.size,
+    failOnDuplicateName: request.failOnDuplicateName ?? false,
   });
 
   const response = await makePermanentApiCall(

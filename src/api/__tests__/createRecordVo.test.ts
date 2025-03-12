@@ -14,6 +14,7 @@ describe('createRecordVo', () => {
           uploadFileName: 'testFile.txt',
           fileType: 'text/plain',
           size: 12,
+          failOnDuplicateName: false,
         },
       )
       .replyWithFile(
@@ -53,6 +54,7 @@ describe('createRecordVo', () => {
           uploadFileName: 'testFile.txt',
           fileType: 'text/plain',
           size: 12,
+          failOnDuplicateName: false,
         },
       )
       .reply(
