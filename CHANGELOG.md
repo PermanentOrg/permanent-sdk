@@ -7,8 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Added
+- ClientConfiguration now accepts a `stelaBaseUrl`
+
 ## Changed
 - BREAKING CHANGE: Dropped support for Node 18.
+- BREAKING CHANGE: getFolder() now uses stela endpoints, which uses `stelaBaseUrl`.
 
 ## [0.8.0] - 2024-08-28
 ## Changed

@@ -5,7 +5,7 @@ export interface Folder {
   fileSystemId: number;
   name: string;
   size: number;
-  displayDate?: Date;
+  displayDate: Date | null;
   readonly fileSystemCompatibleName: string;
   readonly folders: Folder[];
   readonly archiveRecords: ArchiveRecord[];

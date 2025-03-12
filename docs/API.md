@@ -8,12 +8,13 @@ Each function provided by this SDK takes a `ClientConfiguration` object:
 {
   bearerToken: string;
   baseUrl?: string;
+  stelaBaseUrl?: string;
 }
 ```
 
 `bearerToken` is required and should be a JWT corresponding to a logged in Permanent account, such as that returned by
 Permanent's `/api/auth/login` endpoint. `baseUrl` is optional, with the default value of `https://permanent.org/api`.
-Setting `baseUrl` is only necessary when testing the SDK against one of Permanent's test environments.
+Setting `baseUrl` and `stelaBaseUrl` is only necessary when testing the SDK against one of Permanent's test environments.
 
 ## Account
 
