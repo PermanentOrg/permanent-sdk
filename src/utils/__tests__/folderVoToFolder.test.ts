@@ -21,7 +21,7 @@ describe('folderVoToFolder', () => {
       name: 'Hello!',
       size: 0,
       fileSystemCompatibleName: 'Hello! (1)',
-      displayDate: undefined,
+      displayDate: null,
       createdAt: new Date('2022-08-10T14:59:03.853Z'),
       updatedAt: new Date('2022-09-10T14:59:03.853Z'),
     });
@@ -47,7 +47,7 @@ describe('folderVoToFolder', () => {
       name: 'Hello!',
       size: 0,
       fileSystemCompatibleName: 'Hello! (1)',
-      displayDate: undefined,
+      displayDate: null,
       createdAt: new Date('2022-08-10T14:59:03.853Z'),
       updatedAt: new Date('2022-09-10T14:59:03.853Z'),
     });

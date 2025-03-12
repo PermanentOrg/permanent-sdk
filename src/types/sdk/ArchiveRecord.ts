@@ -5,7 +5,7 @@ import type { File } from './File';
 export interface ArchiveRecord {
   id: number;
   fileSystemId: number;
-  displayDate: Date;
+  displayDate: Date | null;
   type: ArchiveRecordType;
   displayName: string;
   files: File[];
