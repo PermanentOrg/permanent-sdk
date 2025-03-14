@@ -17,7 +17,7 @@ export interface GetFolderParams {
   folderId: number;
 }
 
-const LOAD_CHILDREN_PAGE_SIZE = 20;
+const LOAD_CHILDREN_PAGE_SIZE = 100;
 
 const loadAllStelaChildrenForFolder = async (
   clientConfiguration: ClientConfiguration,
