@@ -1,4 +1,3 @@
-import { formatTimestampAsUtc } from './formatTimestampAsUtc';
 import type {
   StelaFolder,
   Folder,
@@ -10,11 +9,11 @@ export const stelaFolderToFolder = (stelaFolder: StelaFolder): Folder => ({
   name: stelaFolder.displayName,
   fileSystemCompatibleName: stelaFolder.downloadName,
   size: stelaFolder.size ?? 0,
-  createdAt: new Date(formatTimestampAsUtc(stelaFolder.createdAt)),
-  updatedAt: new Date(formatTimestampAsUtc(stelaFolder.updatedAt)),
+  createdAt: new Date(stelaFolder.createdAt),
+  updatedAt: new Date(stelaFolder.updatedAt),
   displayDate: stelaFolder.displayTimestamp === null || stelaFolder.displayTimestamp === undefined
     ? null
-    : new Date(formatTimestampAsUtc(stelaFolder.displayTimestamp)),
+    : new Date(stelaFolder.displayTimestamp),
   folders: [],
   archiveRecords: [],
 });

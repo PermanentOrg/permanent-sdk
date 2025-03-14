@@ -19,7 +19,7 @@ describe('getFolder', () => {
     const firstChildrenPage = nock('https://api.permanent.local')
       .get('/api/v2/folder/7457/children')
       .query({
-        pageSize: 20,
+        pageSize: 100,
       })
       .replyWithFile(
         200,
@@ -32,7 +32,7 @@ describe('getFolder', () => {
     const secondChildrenPage = nock('https://api.permanent.local')
       .get('/api/v2/folder/7457/children')
       .query({
-        pageSize: 20,
+        pageSize: 100,
         cursor: '1575064',
       })
       .replyWithFile(
