@@ -7,13 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Stela endpoint response dates are no longer being incorrectly modified by the SDK.
+
 ## [0.9.0] - 2025-03-12
 
-## Added
+### Added
 
 - ClientConfiguration now accepts a `stelaBaseUrl`
 
-## Changed
+### Changed
 
 - BREAKING CHANGE: Dropped support for Node 18.
 - BREAKING CHANGE: getFolder() now uses stela endpoints, which uses `stelaBaseUrl`.
@@ -21,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.8.0] - 2024-08-28
 
-## Changed
+### Changed
 
 - BREAKING CHANGE: All functions now take either one or two arguments. The first argument is always the `ClientConfig`
   object. The second argument, if it is present, is always an object containing the rest of the parameters for the
@@ -29,31 +33,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.7.0] - 2024-02-23
 
-## Added
+### Added
 
 - The `updateShareLink` function now exists
-
-## Added
-
 - The `createShareLink` function now exists
 
-## Changed
+### Changed
 
 - This package no longer supports Node v14.
 - The `deleteFolder` and `deleteArchiveRecord` SDK methods now return void (was boolean).
 - All SDK methods now throw if the server responds with a non-OK status.
 
-## Added
+### Added
 
 - The `HttpResponseError` type now exists.
 
 ## [0.6.0] - 2023-05-18
 
-## Changed
+### Changed
 
 - The `createArchiveRecord` function no longer uploads files, clients must use the new `uploadFile` function for this.
 
-## Added
+### Added
 
 - The `uploadFile` function now exists.
 
