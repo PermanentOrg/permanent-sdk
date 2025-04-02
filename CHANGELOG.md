@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- SDK clients can now be configured to `retryOn` various HTTP status codes.
+
 ## [0.9.1] - 2025-03-13
 
 ### Fixed

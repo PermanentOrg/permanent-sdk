@@ -71,4 +71,25 @@ describe('makeStelaApiCall', () => {
     );
     await expect(call).rejects.toThrow(HttpResponseError);
   });
+
+  it('should retry if configured to do so', async () => {
+    const mock = nock('https://api.permanent.local')
+      .get('/api/v2/testing')
+      .reply(404, 'it did not work')
+      .get('/api/v2/testing')
+      .reply(200, 'it worked');
+
+    const response = await makeStelaApiCall(
+      {
+        bearerToken: '12345',
+        stelaBaseUrl: 'https://api.permanent.local/api/v2',
+        retryOn: [404],
+      },
+      '/testing',
+    );
+    const responseBody = await response.text();
+
+    expect(responseBody).toEqual('it worked');
+    expect(mock.isDone()).toBe(true); // All mocked responses were invoked
+  });
 });

@@ -1,5 +1,5 @@
-import fetch from 'node-fetch';
 import { HttpResponseError } from '../errors';
+import { getFetch } from './getFetch';
 import type {
   RequestInit,
   Response,
@@ -25,6 +25,7 @@ export const makeStelaApiCall = async (
   endpointPath: string,
   requestParameters?: RequestInit,
 ): Promise<Response> => {
+  const fetch = getFetch(clientConfiguration);
   const headers = {
     ...generateApiHeaders(clientConfiguration),
     ...(requestParameters?.headers),
