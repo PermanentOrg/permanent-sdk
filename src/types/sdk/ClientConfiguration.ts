@@ -3,4 +3,6 @@ export interface ClientConfiguration {
   baseUrl?: string;
   stelaBaseUrl?: string;
   retryOn?: number[];
+  retries?: number;
+  retryDelay?: (attempt: number) => number;
 }
