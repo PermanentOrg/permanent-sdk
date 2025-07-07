@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { updateShareLinkVo } from "..";
 
@@ -14,7 +15,12 @@ describe("updateShareLinkVo", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/updateShareLinkVo/shareLinkVo.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"updateShareLinkVo",
+					"shareLinkVo.json",
+				),
 				{ "Content-Type": "application/json" },
 			);
 

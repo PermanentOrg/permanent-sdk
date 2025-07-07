@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { createFolderVo } from "..";
 import { ValidationError } from "../../errors";
@@ -10,9 +11,13 @@ describe("createFolderVo", () => {
 				parentFolderId: 1,
 				failOnDuplicateName: false,
 			})
-			.replyWithFile(200, `${__dirname}/fixtures/createFolderVo/folder.json`, {
-				"Content-Type": "application/json",
-			});
+			.replyWithFile(
+				200,
+				path.join(__dirname, "fixtures", "createFolderVo", "folder.json"),
+				{
+					"Content-Type": "application/json",
+				},
+			);
 
 		const folderVo = await createFolderVo(
 			{

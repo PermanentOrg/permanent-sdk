@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { createFolder } from "..";
 
@@ -9,9 +10,13 @@ describe("createFolder", () => {
 				parentFolderId: 1,
 				failOnDuplicateName: false,
 			})
-			.replyWithFile(200, `${__dirname}/fixtures/createFolder/folder.json`, {
-				"Content-Type": "application/json",
-			});
+			.replyWithFile(
+				200,
+				path.join(__dirname, "fixtures", "createFolder", "folder.json"),
+				{
+					"Content-Type": "application/json",
+				},
+			);
 
 		const folder = await createFolder(
 			{
@@ -37,9 +42,13 @@ describe("createFolder", () => {
 				parentFolderId: 1,
 				failOnDuplicateName: true,
 			})
-			.replyWithFile(200, `${__dirname}/fixtures/createFolder/folder.json`, {
-				"Content-Type": "application/json",
-			});
+			.replyWithFile(
+				200,
+				path.join(__dirname, "fixtures", "createFolder", "folder.json"),
+				{
+					"Content-Type": "application/json",
+				},
+			);
 
 		const folder = await createFolder(
 			{

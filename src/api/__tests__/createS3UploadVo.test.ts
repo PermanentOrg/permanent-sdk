@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { createS3UploadVo } from "..";
 import { ValidationError } from "../../errors";
@@ -14,7 +15,7 @@ describe("createS3UploadVo", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/createS3UploadVo/s3Upload.json`,
+				path.join(__dirname, "fixtures", "createS3UploadVo", "s3Upload.json"),
 				{
 					"Content-Type": "application/json",
 				},

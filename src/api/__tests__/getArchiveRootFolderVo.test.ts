@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getArchiveRootFolderVo } from "..";
 import { ValidationError } from "../../errors";
@@ -9,7 +10,12 @@ describe("getArchiveRootFolderVo", () => {
 			.query({ archiveId: 1 })
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getArchiveRootFolderVo/archiveRoot.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getArchiveRootFolderVo",
+					"archiveRoot.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},

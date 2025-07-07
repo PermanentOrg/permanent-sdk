@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getAuthenticatedAccountVo } from "..";
 import { ValidationError } from "../../errors";
@@ -8,7 +9,12 @@ describe("getAuthenticatedAccountVo", () => {
 			.get("/api/account/getAuthenticatedAccount")
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getAuthenticatedAccountVo/accountVo.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getAuthenticatedAccountVo",
+					"accountVo.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},

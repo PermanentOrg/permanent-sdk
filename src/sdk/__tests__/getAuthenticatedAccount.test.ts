@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getAuthenticatedAccount } from "..";
 
@@ -7,7 +8,12 @@ describe("getAuthenticatedAccount", () => {
 			.get("/api/account/getAuthenticatedAccount")
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getAuthenticatedAccount/accountVo.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getAuthenticatedAccount",
+					"accountVo.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},
