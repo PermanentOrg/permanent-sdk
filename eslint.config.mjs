@@ -40,7 +40,6 @@ export default defineConfig([
 			// These rules are enabled by the `love` ruleset and our code base violates them.
 			// We're disabling them here so we can re-enable one-by-one alongside necessary fixes.
 			"@typescript-eslint/no-magic-numbers": "off",
-			"@typescript-eslint/no-misused-spread": "off",
 			"@typescript-eslint/explicit-function-return-type": "off",
 			"@typescript-eslint/no-unsafe-type-assertion": "off",
 			"@typescript-eslint/return-await": "off",
