@@ -1,5 +1,10 @@
-import { makeStelaApiCall } from "../utils";
-import type { ClientConfiguration, Items, StelaFolder } from "../types";
+import { makeStelaApiCall, typedJsonParse } from "../utils";
+import {
+	generateIsItems,
+	stelaFolderSchema,
+	type ClientConfiguration,
+	type StelaFolder,
+} from "../types";
 
 export const getStelaFolder = async (
 	clientConfiguration: ClientConfiguration,
@@ -14,7 +19,10 @@ export const getStelaFolder = async (
 		{ method: "GET" },
 	);
 	const responseText = await response.text();
-	const { items } = JSON.parse(responseText) as Items<StelaFolder>;
+	const { items } = typedJsonParse(
+		responseText,
+		generateIsItems(stelaFolderSchema),
+	);
 	if (items.length === 0) {
 		throw new Error("Folder not found");
 	}

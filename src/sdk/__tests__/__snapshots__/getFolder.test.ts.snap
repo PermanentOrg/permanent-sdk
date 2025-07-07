@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`getFolder should return a Folder 1`] = `
 {
@@ -3542,7 +3542,7 @@ exports[`getFolder should return a Folder 1`] = `
   "createdAt": 2025-03-12T14:32:10.000Z,
   "displayDate": 2025-03-12T14:34:17.000Z,
   "fileSystemCompatibleName": "garf",
-  "fileSystemId": "1575054",
+  "fileSystemId": 1575054,
   "folders": [
     {
       "archiveRecords": [],
@@ -3569,7 +3569,7 @@ exports[`getFolder should return a Folder 1`] = `
       "updatedAt": 2025-03-12T22:15:34.000Z,
     },
   ],
-  "id": "189434",
+  "id": 189434,
   "name": "garf",
   "size": 65750943,
   "updatedAt": 2025-03-12T14:38:26.000Z,
