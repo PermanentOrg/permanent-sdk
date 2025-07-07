@@ -1,5 +1,5 @@
-import fs from "fs";
-import { URL } from "url";
+import fs from "node:fs";
+import { URL } from "node:url";
 import nock from "nock";
 import { uploadFile } from "..";
 import { bodyContainsMultipartFormFields } from "../../test/utils";

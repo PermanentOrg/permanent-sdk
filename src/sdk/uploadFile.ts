@@ -1,6 +1,6 @@
 import { createS3UploadVo } from "../api";
 import { executePresignedPost } from "../utils";
-import type { Readable } from "stream";
+import type { Readable } from "node:stream";
 import type {
 	ArchiveRecord,
 	File,
