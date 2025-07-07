@@ -2,7 +2,9 @@ import originalFetch from "node-fetch";
 import fetchRetry from "fetch-retry";
 import type { ClientConfiguration } from "../types/sdk/ClientConfiguration";
 
-const getFetch = (clientConfiguration: ClientConfiguration) =>
+const getFetch = (
+	clientConfiguration: ClientConfiguration,
+): ReturnType<typeof fetchRetry<typeof originalFetch>> =>
 	fetchRetry(originalFetch, {
 		retries: clientConfiguration.retries ?? 3,
 		retryDelay:
