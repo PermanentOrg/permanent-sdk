@@ -38,11 +38,11 @@ export const shareLinkVoToShareLink = (shareLinkVo: ShareLinkVo): ShareLink => {
 		autoApprove:
 			shareLinkVo.autoApproveToggle !== undefined &&
 			shareLinkVo.autoApproveToggle !== null &&
-			!!shareLinkVo.autoApproveToggle,
+			shareLinkVo.autoApproveToggle !== 0,
 		showPreview:
 			shareLinkVo.previewToggle !== undefined &&
 			shareLinkVo.previewToggle !== null &&
-			!!shareLinkVo.previewToggle,
+			shareLinkVo.previewToggle !== 0,
 		defaultAccessRole,
 		status,
 		createdAt,
