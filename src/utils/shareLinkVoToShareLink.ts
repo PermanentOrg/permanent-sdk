@@ -8,6 +8,9 @@ import {
 } from "../types";
 import { formatTimestampAsUtc } from "./formatTimestampAsUtc";
 
+const PERMANENT_API_AUTO_APPROVE_DISABLED = 0;
+const PERMANENT_API_PREVIEW_DISABLED = 0;
+
 const shareLinkVoStatusToStatus = (status: string): Status =>
 	isStatus(status) ? status : Status.Undefined;
 
@@ -38,11 +41,11 @@ export const shareLinkVoToShareLink = (shareLinkVo: ShareLinkVo): ShareLink => {
 		autoApprove:
 			shareLinkVo.autoApproveToggle !== undefined &&
 			shareLinkVo.autoApproveToggle !== null &&
-			shareLinkVo.autoApproveToggle !== 0,
+			shareLinkVo.autoApproveToggle !== PERMANENT_API_AUTO_APPROVE_DISABLED,
 		showPreview:
 			shareLinkVo.previewToggle !== undefined &&
 			shareLinkVo.previewToggle !== null &&
-			shareLinkVo.previewToggle !== 0,
+			shareLinkVo.previewToggle !== PERMANENT_API_PREVIEW_DISABLED,
 		defaultAccessRole,
 		status,
 		createdAt,

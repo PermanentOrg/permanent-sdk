@@ -9,12 +9,14 @@ const extractFolderVos = (items: unknown[]): FolderVo[] =>
 const extractRecordVos = (items: unknown[]): RecordVo[] =>
 	items.filter<RecordVo>((item): item is RecordVo => isRecordVo(item));
 
+const DEFAULT_FOLDER_SIZE = 0;
+
 export const folderVoToFolder = (folderVo: FolderVo): Folder => ({
 	id: folderVo.folderId,
 	fileSystemId: folderVo.folder_linkId,
 	name: folderVo.displayName,
 	fileSystemCompatibleName: folderVo.downloadName,
-	size: 0,
+	size: DEFAULT_FOLDER_SIZE,
 	createdAt: new Date(formatTimestampAsUtc(folderVo.createdDT)),
 	updatedAt: new Date(formatTimestampAsUtc(folderVo.updatedDT)),
 	displayDate:
