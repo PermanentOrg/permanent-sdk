@@ -9,4 +9,4 @@ const stelaFolderChildSchema: JSONSchemaType<StelaFolderChild> = {
 	oneOf: [stelaRecordSchema, stelaFolderSchema],
 };
 
-export { StelaFolderChild, stelaFolderChildSchema };
+export { type StelaFolderChild, stelaFolderChildSchema };
