@@ -8,4 +8,6 @@ export interface DeleteFolderParams {
 export const deleteFolder = async (
 	clientConfiguration: ClientConfiguration,
 	params: DeleteFolderParams,
-): Promise<void> => deleteFolderVo(clientConfiguration, params.folderId);
+): Promise<void> => {
+	await deleteFolderVo(clientConfiguration, params.folderId);
+};

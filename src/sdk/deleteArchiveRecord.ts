@@ -8,4 +8,6 @@ export interface DeleteArchiveRecordParams {
 export const deleteArchiveRecord = async (
 	clientConfiguration: ClientConfiguration,
 	params: DeleteArchiveRecordParams,
-): Promise<void> => deleteRecordVo(clientConfiguration, params.archiveRecordId);
+): Promise<void> => {
+	await deleteRecordVo(clientConfiguration, params.archiveRecordId);
+};

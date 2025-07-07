@@ -18,7 +18,7 @@ export const executePresignedPost = async (
 		formData.append(key, request.bodyFields[key]);
 	});
 	formData.append("file", request.fileData, { knownLength: request.fileSize });
-	return fetch(request.url, {
+	return await fetch(request.url, {
 		method: "POST",
 		body: formData,
 	});
