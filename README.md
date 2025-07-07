@@ -3,6 +3,7 @@
 [![codecov](https://codecov.io/gh/PermanentOrg/permanent-sdk/branch/main/graph/badge.svg?token=MKQZQ1VKHY)](https://codecov.io/gh/PermanentOrg/permanent-sdk)
 
 # @permanentorg/sdk
+
 This project is a TypeScript SDK for interfacing with Permanent.org's API.
 
 You can view [the project's changelog](CHANGELOG.md) to learn more about our releases.

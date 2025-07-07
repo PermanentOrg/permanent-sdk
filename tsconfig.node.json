@@ -1,14 +1,10 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
-  "compilerOptions": {
-    "outDir": "dist/cjs",
-    "declaration": true,
-    "allowSyntheticDefaultImports": true
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "**/*.test.ts"
-  ]
+	"extends": "@tsconfig/node20/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist/cjs",
+		"declaration": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["**/*.test.ts"]
 }

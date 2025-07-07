@@ -1,15 +1,15 @@
 {
-    "destinationUrl": "https://permanent-local.s3.amazonaws.com/_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63",
-    "presignedPost": {
-        "url": "https://s3.us-west-2.amazonaws.com/permanent-local",
-        "fields": {
-            "Key": "_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63",
-            "bucket": "permanent-local",
-            "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
-            "X-Amz-Credential": "12345678/20230123/us-west-2/s3/aws4_request",
-            "X-Amz-Date": "20230123T210239Z",
-            "Policy": "123456789=",
-            "X-Amz-Signature": "1234567890"
-        }
-    }
+	"destinationUrl": "https://permanent-local.s3.amazonaws.com/_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63",
+	"presignedPost": {
+		"url": "https://s3.us-west-2.amazonaws.com/permanent-local",
+		"fields": {
+			"Key": "_slifty/unprocessed/12345678-e6ef-4238-85d3-20001abebb63",
+			"bucket": "permanent-local",
+			"X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+			"X-Amz-Credential": "12345678/20230123/us-west-2/s3/aws4_request",
+			"X-Amz-Date": "20230123T210239Z",
+			"Policy": "123456789=",
+			"X-Amz-Signature": "1234567890"
+		}
+	}
 }

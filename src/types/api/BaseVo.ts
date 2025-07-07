@@ -1,4 +1,4 @@
 export interface BaseVo {
-  createdDT: string;
-  updatedDT: string;
+	createdDT: string;
+	updatedDT: string;
 }

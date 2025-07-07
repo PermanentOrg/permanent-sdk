@@ -1,30 +1,24 @@
-import { ajv } from '../utils/ajv';
-import { archiveVoSchema } from '../types';
-import {
-  makePermanentApiCall,
-  typedJsonParse,
-} from '../utils';
-import type { JSONSchemaType } from 'ajv';
-import type {
-  ArchiveVo,
-  ClientConfiguration,
-} from '../types';
+import { ajv } from "../utils/ajv";
+import { archiveVoSchema } from "../types";
+import { makePermanentApiCall, typedJsonParse } from "../utils";
+import type { JSONSchemaType } from "ajv";
+import type { ArchiveVo, ClientConfiguration } from "../types";
 
 const archiveVoArraySchema: JSONSchemaType<ArchiveVo[]> = {
-  type: 'array',
-  items: archiveVoSchema,
+	type: "array",
+	items: archiveVoSchema,
 };
 
 const isArchiveVoArray = ajv.compile(archiveVoArraySchema);
 
 export const getAllArchiveVos = async (
-  clientConfiguration: ClientConfiguration,
+	clientConfiguration: ClientConfiguration,
 ): Promise<ArchiveVo[]> => {
-  const response = await makePermanentApiCall(
-    clientConfiguration,
-    '/archive/getAllArchives',
-    { method: 'GET' },
-  );
-  const responseText = await response.text();
-  return typedJsonParse(responseText, isArchiveVoArray);
+	const response = await makePermanentApiCall(
+		clientConfiguration,
+		"/archive/getAllArchives",
+		{ method: "GET" },
+	);
+	const responseText = await response.text();
+	return typedJsonParse(responseText, isArchiveVoArray);
 };
