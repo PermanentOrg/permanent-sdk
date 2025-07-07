@@ -33,7 +33,10 @@ const loadAllStelaChildrenForFolder = async (
 			cursor,
 			LOAD_CHILDREN_PAGE_SIZE,
 		);
-		cursor = page.pagination.nextCursor;
+		const {
+			pagination: { nextCursor },
+		} = page;
+		cursor = nextCursor;
 		children.push(...page.items);
 
 		// If this was a full page, loop one more time to get the next page
