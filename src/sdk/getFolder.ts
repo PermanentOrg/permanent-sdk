@@ -19,8 +19,8 @@ const LOAD_CHILDREN_PAGE_SIZE = 100;
 const loadAllStelaChildrenForFolder = async (
 	clientConfiguration: ClientConfiguration,
 	folderId: number,
-): Promise<(StelaFolder | StelaRecord)[]> => {
-	const children: (StelaRecord | StelaFolder)[] = [];
+): Promise<Array<StelaFolder | StelaRecord>> => {
+	const children: Array<StelaRecord | StelaFolder> = [];
 	let cursor: string | null = null;
 	let allChildrenLoaded = false;
 
@@ -45,7 +45,7 @@ const loadAllStelaChildrenForFolder = async (
 };
 
 const getFoldersFromStelaChildren = (
-	stelaChildren: (StelaFolder | StelaRecord)[],
+	stelaChildren: Array<StelaFolder | StelaRecord>,
 ): Folder[] =>
 	stelaChildren.reduce((acc: Folder[], stelaChild) => {
 		if (isStelaFolder(stelaChild)) {
@@ -55,7 +55,7 @@ const getFoldersFromStelaChildren = (
 	}, []);
 
 const getArchiveRecordsFromStelaChildren = (
-	stelaChildren: (StelaFolder | StelaRecord)[],
+	stelaChildren: Array<StelaFolder | StelaRecord>,
 ): ArchiveRecord[] =>
 	stelaChildren.reduce((acc: ArchiveRecord[], stelaChild) => {
 		if (isStelaRecord(stelaChild)) {

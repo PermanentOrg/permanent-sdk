@@ -9,7 +9,7 @@ export interface FolderVo extends BaseVo {
 	// https://github.com/PermanentOrg/back-end/blob/main/api/core/folder/vo/folder.vo.php
 	folderId: number;
 	folder_linkId: number;
-	ChildItemVOs: (FolderVo | RecordVo)[];
+	ChildItemVOs: Array<FolderVo | RecordVo>;
 	displayName: string;
 	downloadName: string;
 	displayDT?: string | null;
