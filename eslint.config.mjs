@@ -35,7 +35,6 @@ export default defineConfig([
 					caughtErrorsIgnorePattern: "^_",
 				},
 			],
-			"@typescript-eslint/require-await": "off",
 		},
 	},
 	{
