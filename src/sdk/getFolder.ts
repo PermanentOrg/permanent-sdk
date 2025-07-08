@@ -27,9 +27,6 @@ const loadAllStelaChildrenForFolder = async (
 	while (!allChildrenLoaded) {
 		allChildrenLoaded = true; // Defensively default to ending the loop
 
-		// We need the result of this call to determine whether to continue loading.
-		// This is listed as an valid use of await in a loop in the eslint rules documentation.
-		// eslint-disable-next-line no-await-in-loop
 		const page = await getStelaFolderChildren(
 			clientConfiguration,
 			folderId,
