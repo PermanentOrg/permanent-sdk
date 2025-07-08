@@ -4,21 +4,18 @@
 // form data.  Multipart forms are silly.
 // https://www.ietf.org/rfc/rfc2388.txt
 export const bodyContainsMultipartFormFields = (
-  body: unknown,
-  expectedParts: Record<string, string>,
+	body: unknown,
+	expectedParts: Record<string, string>,
 ): boolean => {
-  if (typeof body !== 'string') {
-    return false;
-  }
-  const parts = body.split(/--+\d+/g);
-  return Object.keys(expectedParts).reduce<boolean>(
-    (doesMatch, partName) => {
-      const regex = new RegExp(
-        `form-data; name="${partName}[^]*${expectedParts[partName]}`,
-        'm',
-      );
-      return doesMatch && parts.some((part) => regex.test(part));
-    },
-    true,
-  );
+	if (typeof body !== "string") {
+		return false;
+	}
+	const parts = body.split(/--+\d+/g);
+	return Object.keys(expectedParts).reduce<boolean>((doesMatch, partName) => {
+		const regex = new RegExp(
+			`form-data; name="${partName}[^]*${expectedParts[partName]}`,
+			"m",
+		);
+		return doesMatch && parts.some((part) => regex.test(part));
+	}, true);
 };

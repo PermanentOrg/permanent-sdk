@@ -37,4 +37,3 @@ registered to the application, which will mostly be the case for
 us. The response will include a `token`, which can be used as the
 JWT. The user must be registered to the application to get a refresh
 token.
-

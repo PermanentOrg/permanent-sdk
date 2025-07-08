@@ -1,56 +1,53 @@
 {
-    "items": [
-        {
-            "folderId": "189434",
-            "size": 65750943,
-            "shares": null,
-            "tags": null,
-            "createdAt": "2025-03-12T14:32:10.000Z",
-            "updatedAt": "2025-03-12T14:38:26.000Z",
-            "description": null,
-            "displayTimestamp": "2025-03-12T14:34:17.000Z",
-            "displayEndTimestamp": "2025-03-12T14:38:11.000Z",
-            "displayName": "garf",
-            "downloadName": "garf",
-            "imageRatio": 1,
-            "publicAt": null,
-            "sort": "alphabetical-ascending",
-            "type": "private",
-            "status": "ok",
-            "view": "grid",
-            "folderLinkId": "1575054",
-            "location": {
-                "id": null,
-                "streetNumber": null,
-                "streetName": null,
-                "locality": null,
-                "county": null,
-                "state": null,
-                "latitude": null,
-                "longitude": null,
-                "country": null,
-                "countryCode": null,
-                "displayName": null
-            },
-            "parentFolder": {
-                "id": "65405"
-            },
-            "archive": {
-                "id": "5159"
-            },
-            "paths": {
-                "names": [
-                    "My Files",
-                    "garf"
-                ]
-            },
-            "thumbnailUrls": {
-                "200": "https://cdn2.permanent.org/034o-0007.thumb.w200?t=1757687905&Expires=1757687905&Signature=Iz9PXr9zHwYHMaOYBXKsavutW3cpnb2cYVApBifyiAbK~Z6Os~uN8e3JR6gqQvyt4ficQS-UKmq-1o1zLeMx8qwugQ4ROw4pxkJwra1Vi-3KVpX1iREk08yLJJztGu4LiRleDJbtRBYeD9jJb2SW3Q9~S3LZQNN~4vdaDmln9708g5GQYGACbSTLL4S3WroOryYFqtnj0mVYfgUBaWsUOUViQcP1D-XC5otQDmxPx2UVPh1TnEJyvFfM9AZLgh3KruwKM62dSu9cdEovA4LZ70oBJSdWF3~GFn1XLMjZ4wbgt2P0Xb5HoRwRxSH6Z~Y2o2qOO0RlZJAiIpHorcEAzA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-                "256": null,
-                "500": "https://cdn2.permanent.org/034o-0007.thumb.w500?t=1757687905&Expires=1757687905&Signature=BW3WL616s8BvVtHRZTsLr~Rt7giZr1m30uaeHU2QG88rpDmb8icF1UKpZ3X0nwh2QEEM2MIN~umbw8Z5BfnC93I1~8iiDyB0Yw6P2K7mus77460YHEXQNE1PszKNRjAkAXiFhHYnIc~esGLQZQ5u6C6lBcmfKZfc-hLzNNPySQ8k9MydUd-0ZURlexg9dkRTH3D6svgkhboWVvvBbh0V83OSDd0LVqy5fgIF4EI8PUA7Nd4V9gNUDDpUWrwqaBtHYug~AqpVecUm48QfMtSysFCVvKJk69zttkLi7zNupugafI-NH~pq4xJ5k9w~wdUQTJ8W6o6buk~mjPnc6WGUGg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-                "1000": "https://cdn2.permanent.org/034o-0007.thumb.w1000?t=1757687905&Expires=1757687905&Signature=B9yx1uTnYJjuolL6kEWyB1XUolTtC4nkCYZCsOObEOCP~CC~e0K90yb6VdCJNv~lw4PLG9Tqs8KmyWqnynI~d2UwBxWZ91oozXrvmtLUg7S7zRqEvs2UqCrOEi7OjVM~gexblTvDnOadnK1qvMQ5FJgwVb1jrFsKjWB0syEzW5FszPj3hPAR-RXhdU6h5Ai0VKJAco2X4zoz3oU6DGzsY-QoCCub-YHUM4DCpIw4VN4orsEbi890-A12kZ4bDWkuv1HhMFbwtbd97-QQFo4hQ3os97DTt3OPSXAeLsQw6xFlkJ3Tg~RAgXJ~UCxw~8U9YDCiopj-2oY4qI~p6tFOWA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
-                "2000": "https://cdn2.permanent.org/034o-0007.thumb.w2000?t=1757687905&Expires=1757687905&Signature=I~FNDQiYS501VKRbMEInNxtwU~FF4Ov4tHs1BbJAZ2QNUmrxXGSa1iJxSCJiLdM3w5nJvloxDbPbCeTwn1vWxxrEevBWGE5-ePyWfPJVG8T2ZY3h6tJ5MdytW8fYuBfxG5XxuHmfX4wi6cWqvJa2uMs-C8m7m-2dh-TWCkRLqibybZ4jhwQ6OAWPpvYThhmQs1Bowqk6opzu1MTKPpHJgMhYjofjLm1wyT5PF6bPx1HfmHWNxHxi8claZlF1gCBVzrBaKtdbbs1AG70HHY5CfwnAPGa-mlYNrXhtCF1GPYBdAOWNid8EaeyXCNaBBt2A15dTHfenlPN~rtJz67CyuA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q"
-            }
-        }
-    ]
+	"items": [
+		{
+			"folderId": "189434",
+			"size": 65750943,
+			"shares": null,
+			"tags": null,
+			"createdAt": "2025-03-12T14:32:10.000Z",
+			"updatedAt": "2025-03-12T14:38:26.000Z",
+			"description": null,
+			"displayTimestamp": "2025-03-12T14:34:17.000Z",
+			"displayEndTimestamp": "2025-03-12T14:38:11.000Z",
+			"displayName": "garf",
+			"downloadName": "garf",
+			"imageRatio": 1,
+			"publicAt": null,
+			"sort": "alphabetical-ascending",
+			"type": "private",
+			"status": "ok",
+			"view": "grid",
+			"folderLinkId": "1575054",
+			"location": {
+				"id": null,
+				"streetNumber": null,
+				"streetName": null,
+				"locality": null,
+				"county": null,
+				"state": null,
+				"latitude": null,
+				"longitude": null,
+				"country": null,
+				"countryCode": null,
+				"displayName": null
+			},
+			"parentFolder": {
+				"id": "65405"
+			},
+			"archive": {
+				"id": "5159"
+			},
+			"paths": {
+				"names": ["My Files", "garf"]
+			},
+			"thumbnailUrls": {
+				"200": "https://cdn2.permanent.org/034o-0007.thumb.w200?t=1757687905&Expires=1757687905&Signature=Iz9PXr9zHwYHMaOYBXKsavutW3cpnb2cYVApBifyiAbK~Z6Os~uN8e3JR6gqQvyt4ficQS-UKmq-1o1zLeMx8qwugQ4ROw4pxkJwra1Vi-3KVpX1iREk08yLJJztGu4LiRleDJbtRBYeD9jJb2SW3Q9~S3LZQNN~4vdaDmln9708g5GQYGACbSTLL4S3WroOryYFqtnj0mVYfgUBaWsUOUViQcP1D-XC5otQDmxPx2UVPh1TnEJyvFfM9AZLgh3KruwKM62dSu9cdEovA4LZ70oBJSdWF3~GFn1XLMjZ4wbgt2P0Xb5HoRwRxSH6Z~Y2o2qOO0RlZJAiIpHorcEAzA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+				"256": null,
+				"500": "https://cdn2.permanent.org/034o-0007.thumb.w500?t=1757687905&Expires=1757687905&Signature=BW3WL616s8BvVtHRZTsLr~Rt7giZr1m30uaeHU2QG88rpDmb8icF1UKpZ3X0nwh2QEEM2MIN~umbw8Z5BfnC93I1~8iiDyB0Yw6P2K7mus77460YHEXQNE1PszKNRjAkAXiFhHYnIc~esGLQZQ5u6C6lBcmfKZfc-hLzNNPySQ8k9MydUd-0ZURlexg9dkRTH3D6svgkhboWVvvBbh0V83OSDd0LVqy5fgIF4EI8PUA7Nd4V9gNUDDpUWrwqaBtHYug~AqpVecUm48QfMtSysFCVvKJk69zttkLi7zNupugafI-NH~pq4xJ5k9w~wdUQTJ8W6o6buk~mjPnc6WGUGg__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+				"1000": "https://cdn2.permanent.org/034o-0007.thumb.w1000?t=1757687905&Expires=1757687905&Signature=B9yx1uTnYJjuolL6kEWyB1XUolTtC4nkCYZCsOObEOCP~CC~e0K90yb6VdCJNv~lw4PLG9Tqs8KmyWqnynI~d2UwBxWZ91oozXrvmtLUg7S7zRqEvs2UqCrOEi7OjVM~gexblTvDnOadnK1qvMQ5FJgwVb1jrFsKjWB0syEzW5FszPj3hPAR-RXhdU6h5Ai0VKJAco2X4zoz3oU6DGzsY-QoCCub-YHUM4DCpIw4VN4orsEbi890-A12kZ4bDWkuv1HhMFbwtbd97-QQFo4hQ3os97DTt3OPSXAeLsQw6xFlkJ3Tg~RAgXJ~UCxw~8U9YDCiopj-2oY4qI~p6tFOWA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q",
+				"2000": "https://cdn2.permanent.org/034o-0007.thumb.w2000?t=1757687905&Expires=1757687905&Signature=I~FNDQiYS501VKRbMEInNxtwU~FF4Ov4tHs1BbJAZ2QNUmrxXGSa1iJxSCJiLdM3w5nJvloxDbPbCeTwn1vWxxrEevBWGE5-ePyWfPJVG8T2ZY3h6tJ5MdytW8fYuBfxG5XxuHmfX4wi6cWqvJa2uMs-C8m7m-2dh-TWCkRLqibybZ4jhwQ6OAWPpvYThhmQs1Bowqk6opzu1MTKPpHJgMhYjofjLm1wyT5PF6bPx1HfmHWNxHxi8claZlF1gCBVzrBaKtdbbs1AG70HHY5CfwnAPGa-mlYNrXhtCF1GPYBdAOWNid8EaeyXCNaBBt2A15dTHfenlPN~rtJz67CyuA__&Key-Pair-Id=APKAJP2D34UGZ6IG443Q"
+			}
+		}
+	]
 }
