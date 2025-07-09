@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getArchiveFolders } from "..";
 
@@ -10,7 +11,12 @@ describe("getArchiveFolders", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getArchiveFolders/archiveRoot.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getArchiveFolders",
+					"archiveRoot.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},

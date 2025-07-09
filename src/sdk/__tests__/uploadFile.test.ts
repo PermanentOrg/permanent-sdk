@@ -1,5 +1,6 @@
-import fs from "fs";
-import { URL } from "url";
+import path from "node:path";
+import fs from "node:fs";
+import { URL } from "node:url";
 import nock from "nock";
 import { uploadFile } from "..";
 import { bodyContainsMultipartFormFields } from "../../test/utils";
@@ -23,7 +24,12 @@ describe("uploadFile", () => {
 			},
 		};
 		const presignedPostUrl = new URL(s3UploadVo.presignedPost.url);
-		const filePath = `${__dirname}/fixtures/createArchiveRecord/myFile.txt`;
+		const filePath = path.join(
+			__dirname,
+			"fixtures",
+			"createArchiveRecord",
+			"myFile.txt",
+		);
 		const fileDataStream = fs.createReadStream(filePath);
 		const fileData = fs.readFileSync(filePath);
 		const { size: fileSize } = fs.statSync(filePath);

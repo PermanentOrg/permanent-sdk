@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getFolder } from "..";
 
@@ -8,9 +9,13 @@ describe("getFolder", () => {
 			.query({
 				"folderIds[]": "7457",
 			})
-			.replyWithFile(200, `${__dirname}/fixtures/getFolder/stelaFolder.json`, {
-				"Content-Type": "application/json",
-			});
+			.replyWithFile(
+				200,
+				path.join(__dirname, "fixtures", "getFolder", "stelaFolder.json"),
+				{
+					"Content-Type": "application/json",
+				},
+			);
 
 		const firstChildrenPage = nock("https://api.permanent.local")
 			.get("/api/v2/folder/7457/children")
@@ -19,7 +24,12 @@ describe("getFolder", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getFolder/stelaChildrenPageOne.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getFolder",
+					"stelaChildrenPageOne.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},
@@ -33,7 +43,12 @@ describe("getFolder", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getFolder/stelaChildrenPageTwo.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getFolder",
+					"stelaChildrenPageTwo.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},
@@ -63,7 +78,7 @@ describe("getFolder", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getFolder/stelaNoFolder.json`,
+				path.join(__dirname, "fixtures", "getFolder", "stelaNoFolder.json"),
 				{
 					"Content-Type": "application/json",
 				},

@@ -1,6 +1,6 @@
 import FormData from "form-data";
 import fetch from "node-fetch";
-import type { Readable } from "stream";
+import type { Readable } from "node:stream";
 import type { Response } from "node-fetch";
 
 export interface PresignedPostRequest {
@@ -18,7 +18,7 @@ export const executePresignedPost = async (
 		formData.append(key, request.bodyFields[key]);
 	});
 	formData.append("file", request.fileData, { knownLength: request.fileSize });
-	return fetch(request.url, {
+	return await fetch(request.url, {
 		method: "POST",
 		body: formData,
 	});

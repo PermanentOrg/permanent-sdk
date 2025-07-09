@@ -1,11 +1,13 @@
 import { URLSearchParams } from "node:url";
-import { makeStelaApiCall } from "../utils";
-import type {
-	ClientConfiguration,
-	PaginatedItems,
-	StelaFolder,
-	StelaRecord,
+import { makeStelaApiCall, typedJsonParse } from "../utils";
+import {
+	generateIsPaginatedItems,
+	type ClientConfiguration,
+	type PaginatedItems,
+	type StelaFolder,
+	type StelaRecord,
 } from "../types";
+import { stelaFolderChildSchema } from "../types/stela/StelaFolderChild";
 
 export const getStelaFolderChildren = async (
 	clientConfiguration: ClientConfiguration,
@@ -25,5 +27,8 @@ export const getStelaFolderChildren = async (
 		{ method: "GET" },
 	);
 	const responseText = await response.text();
-	return JSON.parse(responseText) as PaginatedItems<StelaFolder | StelaRecord>;
+	return typedJsonParse(
+		responseText,
+		generateIsPaginatedItems(stelaFolderChildSchema),
+	);
 };

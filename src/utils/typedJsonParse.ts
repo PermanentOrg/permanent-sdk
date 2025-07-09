@@ -3,7 +3,7 @@ import type { ValidateFunction } from "ajv";
 
 export const typedJsonParse = <T>(
 	jsonString: string,
-	typeguard: ValidateFunction<T>,
+	typeguard: ((input: unknown) => input is T) & Partial<ValidateFunction>,
 ): T => {
 	const value = JSON.parse(jsonString) as unknown;
 	if (typeguard(value)) {
@@ -12,7 +12,7 @@ export const typedJsonParse = <T>(
 
 	throw new ValidationError(
 		`Invalid JSON object structure when validated by '${typeguard.name}'`,
-		typeguard.errors,
+		typeguard.errors ?? [],
 		value,
 	);
 };

@@ -13,7 +13,7 @@ export class ValidationError extends Error {
 		input?: unknown,
 	) {
 		super(message);
-		this.name = this.constructor.name;
+		this.name = "ValidationError";
 		this.errors = errors;
 		this.input = input;
 	}

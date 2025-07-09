@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getAllArchiveVos } from "..";
 import { ValidationError } from "../../errors";
@@ -8,7 +9,12 @@ describe("getAllArchiveVos", () => {
 			.get("/api/archive/getAllArchives")
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getAllArchiveVos/multipleArchives.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getAllArchiveVos",
+					"multipleArchives.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},

@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getRecordVo } from "..";
 import { ValidationError } from "../../errors";
@@ -10,9 +11,13 @@ describe("getRecordVo", () => {
 				recordId: 512,
 				archiveId: 1,
 			})
-			.replyWithFile(200, `${__dirname}/fixtures/getRecordVo/recordVo.json`, {
-				"Content-Type": "application/json",
-			});
+			.replyWithFile(
+				200,
+				path.join(__dirname, "fixtures", "getRecordVo", "recordVo.json"),
+				{
+					"Content-Type": "application/json",
+				},
+			);
 
 		const recordVo = await getRecordVo(
 			{

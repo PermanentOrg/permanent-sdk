@@ -35,22 +35,14 @@ export default defineConfig([
 					caughtErrorsIgnorePattern: "^_",
 				},
 			],
-			"@typescript-eslint/require-await": "off",
+		},
+	},
+	{
+		files: ["**/index.ts"],
 
-			// These rules are enabled by the `love` ruleset and our code base violates them.
-			// We're disabling them here so we can re-enable one-by-one alongside necessary fixes.
-			"@typescript-eslint/no-magic-numbers": "off",
-			"@typescript-eslint/strict-boolean-expressions": "off",
-			"@typescript-eslint/no-misused-spread": "off",
-			"@typescript-eslint/explicit-function-return-type": "off",
-			"@typescript-eslint/no-unsafe-type-assertion": "off",
-			"@typescript-eslint/return-await": "off",
-			"import/enforce-node-protocol-usage": "off",
+		rules: {
+			// Indexes shouldn't care about the nature of the exports they are collating
 			"@typescript-eslint/consistent-type-exports": "off",
-			"@typescript-eslint/array-type": "off",
-			"@typescript-eslint/prefer-destructuring": "off",
-			"eslint-comments/require-description": "off",
-			"n/no-path-concat": "off",
 		},
 	},
 	{

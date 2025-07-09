@@ -1,10 +1,16 @@
-import fs from "fs";
+import path from "node:path";
+import fs from "node:fs";
 import nock from "nock";
 import { createArchiveRecord } from "..";
 
 describe("createArchiveRecord", () => {
 	it("should create an ArchiveRecord", async () => {
-		const filePath = `${__dirname}/fixtures/createArchiveRecord/myFile.txt`;
+		const filePath = path.join(
+			__dirname,
+			"fixtures",
+			"createArchiveRecord",
+			"myFile.txt",
+		);
 		const { size: fileSize } = fs.statSync(filePath);
 
 		nock("https://permanent.local")
@@ -20,7 +26,12 @@ describe("createArchiveRecord", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/createArchiveRecord/recordVo.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"createArchiveRecord",
+					"recordVo.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},
@@ -52,7 +63,12 @@ describe("createArchiveRecord", () => {
 	});
 
 	it("should pass the failOnDuplicateName parameter to the API", async () => {
-		const filePath = `${__dirname}/fixtures/createArchiveRecord/myFile.txt`;
+		const filePath = path.join(
+			__dirname,
+			"fixtures",
+			"createArchiveRecord",
+			"myFile.txt",
+		);
 		const { size: fileSize } = fs.statSync(filePath);
 
 		nock("https://permanent.local")
@@ -68,7 +84,12 @@ describe("createArchiveRecord", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/createArchiveRecord/recordVo.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"createArchiveRecord",
+					"recordVo.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},

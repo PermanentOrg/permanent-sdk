@@ -1,3 +1,4 @@
+import { Headers } from "node-fetch";
 import { HttpResponseError } from "../errors";
 import { getFetch } from "./getFetch";
 import type { RequestInit, Response } from "node-fetch";
@@ -25,10 +26,12 @@ export const makePermanentApiCall = async (
 	requestParameters?: RequestInit,
 ): Promise<Response> => {
 	const fetch = getFetch(clientConfiguration);
-	const headers = {
-		...generateApiHeaders(clientConfiguration),
-		...requestParameters?.headers,
-	};
+	const headers = generateApiHeaders(clientConfiguration);
+	const headerOverrides = new Headers(requestParameters?.headers ?? {});
+	headerOverrides.forEach((value, key) => {
+		headers[key] = value;
+	});
+
 	const response = await fetch(
 		resolveEndpointPathToUrl(clientConfiguration, endpointPath),
 		{

@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { updateShareLink } from "..";
 import { AccessRole, Status } from "../../types";
@@ -15,7 +16,7 @@ describe("updateShareLink", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/updateShareLink/shareLinkVo.json`,
+				path.join(__dirname, "fixtures", "updateShareLink", "shareLinkVo.json"),
 				{ "Content-Type": "application/json" },
 			);
 

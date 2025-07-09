@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { createRecordVo } from "..";
 import { ValidationError } from "../../errors";
@@ -16,7 +17,7 @@ describe("createRecordVo", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/createRecordVo/recordVo.json`,
+				path.join(__dirname, "fixtures", "createRecordVo", "recordVo.json"),
 				{
 					"Content-Type": "application/json",
 				},

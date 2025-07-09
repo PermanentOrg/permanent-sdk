@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { createShareLinkVo } from "..";
 
@@ -12,7 +13,7 @@ describe("createShareLink", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/createShareLink/shareLinkVo.json`,
+				path.join(__dirname, "fixtures", "createShareLink", "shareLinkVo.json"),
 				{ "Content-Type": "application/json" },
 			);
 

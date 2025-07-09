@@ -1,3 +1,4 @@
+import path from "node:path";
 import nock from "nock";
 import { getFolderVo } from "..";
 import { ValidationError } from "../../errors";
@@ -10,9 +11,13 @@ describe("getFolderVo", () => {
 				folderId: 7457,
 				archiveId: 1,
 			})
-			.replyWithFile(200, `${__dirname}/fixtures/getFolderVo/folder.json`, {
-				"Content-Type": "application/json",
-			});
+			.replyWithFile(
+				200,
+				path.join(__dirname, "fixtures", "getFolderVo", "folder.json"),
+				{
+					"Content-Type": "application/json",
+				},
+			);
 
 		const folderVo = await getFolderVo(
 			{
@@ -35,7 +40,12 @@ describe("getFolderVo", () => {
 			})
 			.replyWithFile(
 				200,
-				`${__dirname}/fixtures/getFolderVo/folderWithNullDisplayDt.json`,
+				path.join(
+					__dirname,
+					"fixtures",
+					"getFolderVo",
+					"folderWithNullDisplayDt.json",
+				),
 				{
 					"Content-Type": "application/json",
 				},

@@ -1,7 +1,7 @@
 import { bodyContainsMultipartFormFields } from "..";
 
 describe("bodyContainsMultipartFormFields", () => {
-	it("should match a valid body ", async () => {
+	it("should match a valid body ", () => {
 		const body = `----------------------------369405283061745602785268
 Content-Disposition: form-data; name="firstField"
 
@@ -22,7 +22,7 @@ hello`;
 		expect(bodyContainsMultipartFormFields(body, expectedFields)).toBe(true);
 	});
 
-	it("should not match fields values with future field values", async () => {
+	it("should not match fields values with future field values", () => {
 		const body = `----------------------------369405283061745602785268
 Content-Disposition: form-data; name="firstField"
 
@@ -43,7 +43,7 @@ hello`;
 		expect(bodyContainsMultipartFormFields(body, expectedFields)).toBe(false);
 	});
 
-	it("should not match a body that is not a string", async () => {
+	it("should not match a body that is not a string", () => {
 		const body = {
 			firstField: "foo",
 			secondField: "foo",

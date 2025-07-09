@@ -1,11 +1,13 @@
 import type { StelaFolder, Folder } from "../types";
 
+const DEFAULT_FOLDER_SIZE = 0;
+
 export const stelaFolderToFolder = (stelaFolder: StelaFolder): Folder => ({
 	id: stelaFolder.folderId,
 	fileSystemId: stelaFolder.folderLinkId,
 	name: stelaFolder.displayName,
 	fileSystemCompatibleName: stelaFolder.downloadName,
-	size: stelaFolder.size ?? 0,
+	size: stelaFolder.size ?? DEFAULT_FOLDER_SIZE,
 	createdAt: new Date(stelaFolder.createdAt),
 	updatedAt: new Date(stelaFolder.updatedAt),
 	displayDate:
