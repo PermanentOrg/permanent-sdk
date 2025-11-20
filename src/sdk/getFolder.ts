@@ -27,6 +27,10 @@ const loadAllStelaChildrenForFolder = async (
 	while (!allChildrenLoaded) {
 		allChildrenLoaded = true; // Defensively default to ending the loop
 
+		/* eslint-disable-next-line no-await-in-loop --
+		 * Sequential await is required for pagination because
+		 * each request depends on the cursor from the previous response.
+		 */
 		const page = await getStelaFolderChildren(
 			clientConfiguration,
 			folderId,
