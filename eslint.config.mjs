@@ -32,6 +32,12 @@ export default defineConfig([
 					caughtErrorsIgnorePattern: "^_",
 				},
 			],
+
+			/*
+			 * The `v` flag requires ES2024, but as an SDK we target ES2022 for
+			 * broader compatibility with consumer build environments.
+			 */
+			"require-unicode-regexp": "off",
 		},
 	},
 	{
