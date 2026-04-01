@@ -38,8 +38,6 @@ export default defineConfig([
 			 * broader compatibility with consumer build environments.
 			 */
 			"require-unicode-regexp": "off",
-
-			"@typescript-eslint/no-unnecessary-type-arguments": "off",
 		},
 	},
 	{
