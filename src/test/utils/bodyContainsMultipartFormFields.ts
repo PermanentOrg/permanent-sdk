@@ -11,7 +11,7 @@ export const bodyContainsMultipartFormFields = (
 		return false;
 	}
 	const parts = body.split(/--+\d+/g);
-	return Object.keys(expectedParts).reduce<boolean>((doesMatch, partName) => {
+	return Object.keys(expectedParts).reduce((doesMatch, partName) => {
 		const regex = new RegExp(
 			`form-data; name="${partName}[^]*${expectedParts[partName]}`,
 			"m",
